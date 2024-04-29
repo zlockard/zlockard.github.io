@@ -13,3 +13,5 @@ theme = 'papermod2'
 [params]
     [params.label]
         icon = '/moviebanner2.jpg'
+    [params.assets]
+        disableFingerprinting = true
