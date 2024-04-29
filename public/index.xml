@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Summer Movie Night</title>
-    <link>http://localhost:1313/</link>
+    <link>https://zlockard.github.io/</link>
     <description>Recent content on Summer Movie Night</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.125.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jun 2022 21:47:06 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Saturday, June 4 (7:30PM)</title>
-      <link>http://localhost:1313/posts/first/</link>
-      <pubDate>Sat, 04 Jun 2022 21:47:06 -0700</pubDate>
-      <guid>http://localhost:1313/posts/first/</guid>
-      <description></description>
-    </item>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://zlockard.github.io/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
