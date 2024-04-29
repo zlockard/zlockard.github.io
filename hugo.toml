@@ -2,7 +2,10 @@ baseURL = 'https://zlockard.github.io/'
 languageCode = 'en-us'
 title = 'Summer Movie Night'
 theme = 'papermod2'
-summaryLength = '2'
+
+[minify]
+  disableCSS = true
+
 [markup]
     [markup.goldmark]
         [markup.goldmark.renderer]
