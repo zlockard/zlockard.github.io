@@ -1,0 +1,12 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Summer Movie Night'
+theme = 'papermod'
+summaryLength = '2'
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = false
+[params]
+    [params.label]
+        icon = '/moviebanner2.jpg'

@@ -1,0 +1,16 @@
+.logo-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.logo-image-text {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
