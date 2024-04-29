@@ -16,3 +16,14 @@
     padding-left: 25px;
     border-radius: 5px;
 }
+
+.movie-name {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+.movie-attrib {
+    font-weight:  bold;
+    color: black;
+}

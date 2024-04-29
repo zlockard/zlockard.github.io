@@ -1,5 +1,6 @@
 <!-- movie summary -->
 <td valign="top" width="*">
-<b>{{ .Get 0 }}</b><br/>
+<div class="movie-name">{{ .Get "title" }}</div>
+<div class="movie-attrib">{{ .Get "length" }} mins | {{ .Get "year" }}</div>
 {{.Inner}}
 </td>
