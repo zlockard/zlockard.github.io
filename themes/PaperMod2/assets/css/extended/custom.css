@@ -17,6 +17,15 @@
     border-radius: 5px;
 }
 
+.movie-object {
+    display: table-cell;
+}
+
+.movie-clip {
+    height:315px;
+    width: 560px;
+}
+
 .movie-name {
     font-weight: bold;
     color: black;
