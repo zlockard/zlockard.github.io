@@ -111,10 +111,12 @@
         [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-clip').style.height = height + "px";
     }
 
-    window.onresize = function() {
+    function resizeHandler() {
         handleLayout();
         handleTrailor();
     };
+
+    window.addEventListener('resize', resizeHandler);
 
     
     handleLayout();
