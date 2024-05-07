@@ -67,6 +67,7 @@
 
         [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-clip').style.width = width + "px";
         [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-clip').style.height = height + "px";
+        //[...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-night').style.height = 2.5 * height + "px";
     }
 
     function resizeHandler() {
