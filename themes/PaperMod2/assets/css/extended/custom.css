@@ -19,12 +19,13 @@
 
 .movie-night {
     width:"100%";
-    min-height: "*" ;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .movie-object {
     display: table-cell;
-    -webkit-transform: translate3d(0, 0, 0);
 }
 
 .movie-clip {
@@ -41,10 +42,4 @@
 .movie-attrib {
     font-weight:  bold;
     color: black;
-}
-
-.clear { clear: both; }
-
-*:not(html) {
-    -webkit-transform: translate3d(0, 0, 0);
 }
