@@ -17,8 +17,14 @@
     border-radius: 5px;
 }
 
+.movie-night {
+    width:"100%";
+    min-height: "*" ;
+}
+
 .movie-object {
     display: table-cell;
+    -webkit-transform: translate3d(0, 0, 0);
 }
 
 .movie-clip {
@@ -35,4 +41,8 @@
 .movie-attrib {
     font-weight:  bold;
     color: black;
+}
+
+*:not(html) {
+    -webkit-transform: translate3d(0, 0, 0);
 }
