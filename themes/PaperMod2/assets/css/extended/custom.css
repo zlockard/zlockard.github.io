@@ -19,6 +19,7 @@
 
 .movie-object {
     display: table-cell;
+    -webkit-transform: translate3d(0, 0, 0);
 }
 
 .movie-clip {
