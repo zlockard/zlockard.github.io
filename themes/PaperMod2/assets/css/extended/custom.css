@@ -19,7 +19,6 @@
 
 .movie-object {
     display: table-cell;
-    -webkit-transform: translate3d(0, 0, 0);
 }
 
 .movie-clip {
@@ -36,8 +35,4 @@
 .movie-attrib {
     font-weight:  bold;
     color: black;
-}
-
-*:not(html) {
-    -webkit-transform: translate3d(0, 0, 0);
 }
