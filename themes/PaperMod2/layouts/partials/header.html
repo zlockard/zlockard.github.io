@@ -46,7 +46,7 @@
     };
 
     function handleLayout() {
-        if ((window.mobileCheck()) || (window.innerWidth < 1024)) {
+        if (window.innerWidth < 1024) {
             [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-object').style.display='block';
         } else {
             [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-object').style.display='table-cell';
