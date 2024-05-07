@@ -43,3 +43,7 @@
     font-weight:  bold;
     color: black;
 }
+
+*:not(html) {
+    -webkit-transform: translate3d(0, 0, 0);
+}
