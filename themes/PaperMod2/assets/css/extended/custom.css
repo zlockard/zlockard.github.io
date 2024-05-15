@@ -1,19 +1,18 @@
 .logo-image-container {
     position: relative;
-    display: inline-block;
-    width: 100%;
+}
+
+.logo-image {
+    filter: brightness(70%)
 }
 
 .logo-image-text {
     position: absolute;
-    top: 00%;
-    left: 00%;
-    height: 100%;
-    width: 100%;
-    /*font-size: 28px;*/
+    top: 45%;
+    left: 0;
+    transform: translate(0, -45%);
+    font-size: 3.5vw;
     color: white;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding-top: 25px;
     padding-left: 25px;
     border-radius: 5px;
 }
@@ -37,15 +36,20 @@
 
 .movie-name {
     font-weight: bold;
-    /*color: black;*/
+    color: var(--primary);
     font-size: 20px;
 }
 
 .movie-attrib {
     font-weight:  bold;
-    /*color: black;*/
+    color: var(--primary);
 }
 
+.movie-summary {
+    color: var(--primary);
+}
+
+/*
 *:not(html) {
     -webkit-transform: translate3d(0, 0, 0);
-}
+}*/
