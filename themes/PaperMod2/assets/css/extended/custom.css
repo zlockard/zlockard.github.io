@@ -3,7 +3,7 @@
 }
 
 .logo-image {
-    filter: brightness(70%)
+    filter: brightness(50%)
 }
 
 .logo-image-text {
@@ -11,7 +11,7 @@
     top: 45%;
     left: 0;
     transform: translate(0, -45%);
-    font-size: 3.5vw;
+    font-size: calc(50% + 3vw);
     color: white;
     padding-left: 25px;
     border-radius: 5px;
@@ -44,7 +44,7 @@ table.movie-night td {
 }
 
 .movie-attrib {
-    font-weight:  bold;
+    font-weight: bold;
     color: var(--primary);
 }
 

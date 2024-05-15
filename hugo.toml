@@ -8,7 +8,9 @@ theme = 'papermod2'
         [markup.goldmark.renderer]
             unsafe = false
 [params]
+    hideFooter = true
     [params.label]
-        icon = '/moviebanner2.jpg'
+        icon = '/moviebanner3.jpg'
+        text = "Zac's Summer Movie Night"
     [params.assets]
         disableFingerprinting = true
