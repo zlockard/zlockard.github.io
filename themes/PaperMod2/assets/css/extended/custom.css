@@ -1,15 +1,16 @@
 .logo-image-container {
     position: relative;
     display: inline-block;
+    width: 100%;
 }
 
 .logo-image-text {
     position: absolute;
     top: 00%;
     left: 00%;
-    height: 120px;
+    height: 100%;
     width: 100%;
-    font-size: 28px;
+    /*font-size: 28px;*/
     color: white;
     background-color: rgba(0, 0, 0, 0.4);
     padding-top: 25px;
@@ -18,7 +19,7 @@
 }
 
 .movie-night {
-    width:"100%";
+    width: 100%;
     display: flex;
     flex-direction: column;
     min-height: 200vh;
@@ -36,13 +37,13 @@
 
 .movie-name {
     font-weight: bold;
-    color: black;
+    /*color: black;*/
     font-size: 20px;
 }
 
 .movie-attrib {
     font-weight:  bold;
-    color: black;
+    /*color: black;*/
 }
 
 *:not(html) {
