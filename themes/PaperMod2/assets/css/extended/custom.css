@@ -17,11 +17,14 @@
     border-radius: 5px;
 }
 
+table.movie-night td {
+    padding:10px;
+}
+
 .movie-night {
     width: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 200vh;
     overflow: visible;
 }
 
@@ -48,8 +51,3 @@
 .movie-summary {
     color: var(--primary);
 }
-
-/*
-*:not(html) {
-    -webkit-transform: translate3d(0, 0, 0);
-}*/
