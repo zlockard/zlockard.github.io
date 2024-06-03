@@ -2,12 +2,12 @@
 <td valign="top" class="movie-object">
 <div class="movie-name">{{ .Get "title" }}</div>
 <div class="movie-attrib">
-{{- if .Get "director" }}
-Director: {{ .Get "director" }} | 
-{{- end }}
 {{ .Get "year" }} | {{ .Get "length" }} mins
 {{- if .Get "botw" }}
  | BOTW
+{{- end }}
+{{- if .Get "director" }}
+<br/>Director: <span style="font-weight: normal">{{ .Get "director" }}</span>
 {{- end }}
 </div>
 <div class="movie-summary" height="*">
