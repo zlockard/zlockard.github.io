@@ -11,10 +11,32 @@
     top: 45%;
     left: 0;
     transform: translate(0, -45%);
-    /*font-size: calc(50% + 3vw);*/
-    font-size: 3.2em;
     color: var(--title-color);
     padding-left: 25px;
+}
+
+@media (max-width: 1024px) {
+    .logo-image-text {
+        font-size: calc(20% + 6.5vw);
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo-image-text {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 675px) {
+    .logo-image-text {
+        font-size: calc(1px + 6vw);
+    }
+}
+
+@container (width < 1024px) {
+    logo-image-text {
+        font-size: 10px;
+    }
 }
 
 table.movie-night td {
