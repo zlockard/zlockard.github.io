@@ -1,6 +1,6 @@
-baseURL = 'https://zlockard.github.io/'
+baseURL = 'https://zac.events/'
 languageCode = 'en-us'
-title = 'Summer Movie Night'
+title = "Zac's Summer Movie Night"
 theme = 'papermod2'
 
 [markup]
@@ -10,7 +10,7 @@ theme = 'papermod2'
 [params]
     hideFooter = true
     [params.label]
-        icon = '/moviebanner4.png'
+        icon = '/moviebanner5.png'
         text = "Zac's Summer Movie Night"
     [params.assets]
         disableFingerprinting = true

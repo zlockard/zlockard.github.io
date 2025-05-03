@@ -4,6 +4,13 @@
 
 .logo-image {
     filter: var(--title-filter);
+    position: relative;
+}
+
+.logo-overlay {
+    position: relative;
+    top:30%;
+    left:30%
 }
 
 .logo-image-text {
@@ -14,6 +21,31 @@
     color: var(--title-color);
     padding-left: 25px;
 }
+
+.logo-image-text-neon {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    transform: translate(0, -45%);
+    padding-left: 25px;
+    font-family: neon;
+
+    color: #e757a4;
+    text-shadow:
+        0 0 7px #913566,
+        0 0 10px #e757a4,
+        0 0 21px #e757a4,
+        0 0 42px #e757a4,
+        0 0 82px #fff,
+        0 0 92px #fff,
+        0 0 102px #fff,
+        0 0 151px #fff;
+}
+
+@font-face {
+    font-family: neon;
+    src: url(absoluteneonscript.ttf);
+  }
 
 @media (max-width: 1024px) {
     .logo-image-text {
