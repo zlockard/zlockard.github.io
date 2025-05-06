@@ -42,6 +42,20 @@
         0 0 151px #fff;
 }
 
+.link-button {
+    background-color: var(--secondary);
+    width: 33%;
+    padding: 2px;
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+    border-radius: 7px;
+    display: inline-block;
+    font-weight: bolder;
+    color: var(--secondary-contrast);
+}
+
 @font-face {
     font-family: neon;
     src: url(absoluteneonscript.ttf);

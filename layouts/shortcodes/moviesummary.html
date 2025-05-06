@@ -2,13 +2,29 @@
 <td valign="top" class="movie-object">
 <div class="movie-name">{{ .Get "title" }}</div>
 <div class="movie-attrib">
+
 {{ .Get "year" }} | {{ .Get "length" }} mins
-{{- if .Get "botw" }}
- | BOTW
-{{- end }}
+
+{{- if .Get "rating" }} | Rating: <span style="font-weight: normal">{{ .Get "rating" }}</span>{{- end}}
+
 {{- if .Get "director" }}
 <br/>Director: <span style="font-weight: normal">{{ .Get "director" }}</span>
 {{- end }}
+
+{{- if or (.Get "botw") (.Get "imdb") }}
+<div>
+{{- end }}
+{{- if .Get "botw" }}
+<a href="http://youtube.com/watch?v={{ .Get "botw"}}" target="_blank" rel="noopener noreferrer" class="link-button">BOTW</a>
+{{- end }}
+{{- if .Get "imdb" }}
+<a href="http://imdb.com/title/{{ .Get "imdb"}}" target="_blank" rel="noopener noreferrer" class="link-button">IMDB</a>
+{{- end }}
+
+{{- if or (.Get "botw") (.Get "imdb") }}
+</div>
+{{- end }}
+
 </div>
 <div class="movie-summary" height="*">
 {{.Inner}}
