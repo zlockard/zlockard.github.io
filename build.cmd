@@ -1,3 +1,2 @@
 @ECHO OFF
-hugo
-REM --buildFuture
+hugo --buildFuture
