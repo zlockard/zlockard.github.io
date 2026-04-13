@@ -80,6 +80,9 @@
       </span>
       {{- end }}
     </h2>
+    {{- if (.Param "Event")}}
+      <div class="event-logo"><img src="{{- (.Param "Event") | absURL -}}"></div></h2>
+    {{- end }}  
   </header>
   {{- if (ne (.Param "hideSummary") true) }}
   <div class="entry-content">

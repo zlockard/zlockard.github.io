@@ -56,6 +56,12 @@
     color: var(--secondary-contrast);
 }
 
+.event-logo {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: -15px;
+}
+
 @font-face {
     font-family: neon;
     src: url(absoluteneonscript.ttf);
