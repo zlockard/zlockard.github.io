@@ -125,4 +125,5 @@ table.movie-night td {
 
 .movie-summary {
     color: var(--primary);
+    margin: 2px;
 }
