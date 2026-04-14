@@ -3,7 +3,9 @@
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
     max-width: calc(var(--main-width) + var(--gap) * 2);
     margin: auto;
+    margin-top: 0px;
     padding: var(--gap);
+    padding-top: 0px;
 }
 
 .page-header h1 {

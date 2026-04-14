@@ -31,7 +31,7 @@
     display: inline;
     vertical-align: middle;
     pointer-events: none;
-    border-radius: 15px;
+    border-radius: var(--radius);
     margin-inline-end: 8px;
 }
 
@@ -89,4 +89,9 @@ body:not(.dark) #sun {
 
 .logo-switches {
     flex-wrap: inherit;
+    padding-top:10px;
+}
+
+.logo-switch-box {
+    height: 40px;
 }
