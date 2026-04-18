@@ -10,7 +10,6 @@
 {{- if .Get "director" }}
 <br/>Director: <span style="font-weight: normal">{{ .Get "director" }}</span>
 {{- end }}
-
 {{- if or (.Get "botw") (.Get "imdb") }}
 <div>
 {{- end }}
@@ -24,6 +23,8 @@
 {{- if or (.Get "botw") (.Get "imdb") }}
 </div>
 {{- end }}
+
+{{- if (.Get "movietag")}}<div><center><img src="{{ .Get "movietag"}}"></center></div>{{- end }}
 
 </div>
 <div class="movie-summary" height="*">
