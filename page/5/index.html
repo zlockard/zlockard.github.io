@@ -11,7 +11,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="canonical" href="https://zac.events/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=3" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=4" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://zac.events/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://zac.events/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://zac.events/favicon-32x32.png">
@@ -95,43 +95,6 @@
     }
 
 </script>
-<script>
-    function handleLayout() {
-        if (window.innerWidth < 1024) {
-            [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-object').style.display='block';
-        } else {
-            [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-object').style.display='table-cell';
-        }
-    }
-
-    function handleTrailor() {
-        var height;
-        var width;
-
-        if (window.innerWidth >= 560) {
-            width = 560;
-        } else {
-            width = Math.round(window.innerWidth *.9);
-        }
-
-        height = Math.round(width * .5625);
-
-        [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-clip').style.width = width + "px";
-        [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-clip').style.height = height + "px";
-    }
-
-    function resizeHandler() {
-        handleLayout();
-        handleTrailor();
-    };
-
-    
-    window.addEventListener('resize', resizeHandler);
-
-    
-    resizeHandler();
-</script>
-
 <header class="header">
     <nav class="nav">
         <div class="logo">
@@ -163,15 +126,16 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+
             </div>
         </div>
         <ul id="menu">
         </ul>
     </nav>
 </header>
-<main class="main"> 
+<main class="main">
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, September 3rd (7:30PM)</div>
@@ -247,10 +211,9 @@ At a farmhouse in the middle of nowhere, a hopeful hair-metal band seeking inspi
 
   </div>
   <footer class="entry-footer"><span title='2022-09-03 21:47:06 -0700 PDT'>September 3, 2022</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, August 20th (7:30PM)</div>
@@ -325,10 +288,9 @@ Dragon Sound, the house band at Orlando's #1 nightclub is made up of five orphan
 
   </div>
   <footer class="entry-footer"><span title='2022-08-20 21:47:06 -0700 PDT'>August 20, 2022</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, July 23rd (7:30PM)</div>
@@ -405,10 +367,9 @@ This is the RiffTrax Live version
 
   </div>
   <footer class="entry-footer"><span title='2022-07-23 21:47:06 -0700 PDT'>July 23, 2022</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, July 9th (7:30PM)</div>
@@ -485,10 +446,9 @@ Trailer NSFW
 
   </div>
   <footer class="entry-footer"><span title='2022-07-09 21:47:06 -0700 PDT'>July 9, 2022</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, June 25th (7:30PM)</div>
@@ -558,10 +518,9 @@ Years ago, Madman Marz violently murdered his family only to escape into the woo
 
   </div>
   <footer class="entry-footer"><span title='2022-06-25 21:47:06 -0700 PDT'>June 25, 2022</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, June 11th (7:30PM)</div>
@@ -638,10 +597,9 @@ Directed by Sergio Martino, director of such classics as 'Hands of Steel'
 
   </div>
   <footer class="entry-footer"><span title='2022-06-11 19:30:06 -0700 PDT'>June 11, 2022</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, June 4th (7:30PM)</div>
@@ -717,7 +675,6 @@ Originally shot in 1984 and not finished until 2021, New York Ninja is about a s
 
   </div>
   <footer class="entry-footer"><span title='2022-06-04 21:47:06 -0700 PDT'>June 4, 2022</span></footer>
-  
 </article>
 <footer class="page-footer">
   <nav class="pagination">
