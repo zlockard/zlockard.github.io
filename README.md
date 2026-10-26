@@ -35,7 +35,7 @@ home page. To remove the box for an individual post, add this to its front matte
 hideBox = true
 ```
 
-This removes the background, visible border, rounded corners, and press animation
+This removes the background, visible border, rounded corners, and shadow
 in home, posts, and category/tag listings, including paginated pages. Padding,
 alignment, and typography stay consistent with boxed posts. Omit `hideBox` or
 set it to `false` to keep the normal box. Individual post pages are unaffected.
@@ -102,6 +102,28 @@ including future events, with `.\build.cmd`.
 
 ## Theme development
 
+The backyard-drive-in layout keeps the original white/light-gray and charcoal
+palettes, with neutral headings and accents. Date headers and movie/party headings use
+local system fonts; no font downloads are needed. Arrival dates and times still
+come from the post's `title`, not its publication timestamp. There are no theme
+animations, press scaling, fades, or smooth scrolling.
+
+For a season break, use `hideBox = true`, `hideTitle = true`, and
+`hideMeta = true` in the post's front matter, then use the existing `rawhtml`
+shortcode:
+
+```text
+{{<rawhtml>}}
+<div class="season-divider">
+  <p class="season-divider-label">That's a wrap</p>
+  <h2>Previous Nights 2026</h2>
+</div>
+{{</rawhtml>}}
+```
+
+This is presentation only: it does not change sorting or automatically group
+events by year.
+
 This site uses a deliberately slimmed-down local copy of PaperMod in
 `themes/PaperMod2`, not the full upstream feature set.
 
@@ -121,12 +143,10 @@ navigation, edit/canonical footer links, code-copy buttons, Chroma stylesheets,
 unused theme shortcodes, and non-English translations have been removed.
 Generic Markdown typography and image rendering are still supported.
 
-Movie cells stack below 1024px. Trailer dimensions remain 560 by 315px at
-viewports at least 560px wide, and 90vw by 50.625vw below that breakpoint.
-These rules work without JavaScript. CSS viewport units account for classic
-scrollbars, so small-screen trailers can be slightly narrower than the old
-JavaScript sizing. CSS also uses fractional dimensions and viewport breakpoints
-instead of the previous JavaScript's integer rounding.
+Movie cells stack below 1024px. Trailers use a 560px-wide cell, constrained to the
+available content width when stacked, and keep a 16:9 aspect ratio at every size.
+Card padding cannot crop them.
+These rules work without JavaScript and use fractional viewport breakpoints.
 
 After changing CSS, increment `params.assets.styleSheetVersion` in `hugo.toml`
 to invalidate cached stylesheets. Keep the PaperMod license and CSS attribution

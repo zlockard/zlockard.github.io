@@ -1,25 +1,19 @@
 .post-entry {
     position: relative;
-    margin-bottom: var(--gap);
+    margin-bottom: var(--content-gap);
     padding: var(--gap);
     background: var(--entry);
     border-radius: var(--radius);
-    transition: transform 0.1s;
     border: 1px solid var(--border);
-}
-
-.post-entry:active {
-    transform: scale(0.96);
+    border-top: 3px solid var(--accent);
+    box-shadow: 0 3px 0 var(--border);
 }
 
 .post-entry-unboxed {
     background: transparent;
     border-color: transparent;
     border-radius: 0;
-}
-
-.post-entry-unboxed:active {
-    transform: none;
+    box-shadow: none;
 }
 
 .entry-header h2 {
@@ -30,7 +24,7 @@
 .entry-content {
     margin: 8px 0;
     color: var(--secondary);
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
     overflow: hidden;
     display: flex;
