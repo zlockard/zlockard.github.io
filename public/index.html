@@ -11,7 +11,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="canonical" href="https://zac.events/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=3" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=4" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://zac.events/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://zac.events/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://zac.events/favicon-32x32.png">
@@ -95,43 +95,6 @@
     }
 
 </script>
-<script>
-    function handleLayout() {
-        if (window.innerWidth < 1024) {
-            [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-object').style.display='block';
-        } else {
-            [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-object').style.display='table-cell';
-        }
-    }
-
-    function handleTrailor() {
-        var height;
-        var width;
-
-        if (window.innerWidth >= 560) {
-            width = 560;
-        } else {
-            width = Math.round(window.innerWidth *.9);
-        }
-
-        height = Math.round(width * .5625);
-
-        [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-clip').style.width = width + "px";
-        [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-clip').style.height = height + "px";
-    }
-
-    function resizeHandler() {
-        handleLayout();
-        handleTrailor();
-    };
-
-    
-    window.addEventListener('resize', resizeHandler);
-
-    
-    resizeHandler();
-</script>
-
 <header class="header">
     <nav class="nav">
         <div class="logo">
@@ -163,15 +126,16 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+
             </div>
         </div>
         <ul id="menu">
         </ul>
     </nav>
 </header>
-<main class="main"> 
+<main class="main">
 
-<article class="first-entry"> 
+<article class="first-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, October 31st (8:00PM)</div>
@@ -201,10 +165,9 @@
 
   </div>
   <footer class="entry-footer"><span title='2026-10-31 00:15:57 -0700 PDT'>October 31, 2026</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, October 17th (7:30PM)</div>
@@ -280,10 +243,9 @@ After inheriting decades of unresolved family trauma, Cory does the sensible thi
 
   </div>
   <footer class="entry-footer"><span title='2026-10-17 00:15:57 -0700 PDT'>October 17, 2026</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, October 3rd (7:30PM)</div>
@@ -359,10 +321,9 @@ Sgt. Kabukiman N.Y.P.D. is basically what happens when someone asks, "What if Ba
 
   </div>
   <footer class="entry-footer"><span title='2026-10-03 00:15:57 -0700 PDT'>October 3, 2026</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, September 19th (7:30PM)</div>
@@ -439,10 +400,9 @@ Guided by his ghost grandfather, ignored by every adult in sight, and armed with
 
   </div>
   <footer class="entry-footer"><span title='2026-09-19 00:15:57 -0700 PDT'>September 19, 2026</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, September 5th (7:30PM)</div>
@@ -518,10 +478,9 @@ A group of scientists have developed the Resonator, a machine which allows whoev
 
   </div>
   <footer class="entry-footer"><span title='2026-09-05 00:15:57 -0700 PDT'>September 5, 2026</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, August 15th (7:30PM)</div>
@@ -598,10 +557,9 @@ A small-town skater rolls into Los Angeles expecting sun, tricks, and maybe a li
 
   </div>
   <footer class="entry-footer"><span title='2026-08-15 00:15:57 -0700 PDT'>August 15, 2026</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, July 25th (7:30PM)</div>
@@ -680,10 +638,9 @@ A young woman named Yin dreams of leaving her modest village life for a chance t
 
   </div>
   <footer class="entry-footer"><span title='2026-07-25 00:15:57 -0700 PDT'>July 25, 2026</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, July 11th (7:30PM)</div>
@@ -762,10 +719,9 @@ The mission is classified. The mustache is not.
 
   </div>
   <footer class="entry-footer"><span title='2026-07-11 00:15:57 -0700 PDT'>July 11, 2026</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, June 27th (7:30PM)</div>
@@ -845,10 +801,9 @@ International terrorists pick the most terrifying target imaginable: a random In
 
   </div>
   <footer class="entry-footer"><span title='2026-06-27 00:15:57 -0700 PDT'>June 27, 2026</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
     </div>
@@ -860,7 +815,6 @@ International terrorists pick the most terrifying target imaginable: a random In
 
 
   </div>
-  
 </article>
 <footer class="page-footer">
   <nav class="pagination">

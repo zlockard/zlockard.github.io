@@ -11,7 +11,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="canonical" href="https://zac.events/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=3" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=4" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://zac.events/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://zac.events/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://zac.events/favicon-32x32.png">
@@ -95,43 +95,6 @@
     }
 
 </script>
-<script>
-    function handleLayout() {
-        if (window.innerWidth < 1024) {
-            [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-object').style.display='block';
-        } else {
-            [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-object').style.display='table-cell';
-        }
-    }
-
-    function handleTrailor() {
-        var height;
-        var width;
-
-        if (window.innerWidth >= 560) {
-            width = 560;
-        } else {
-            width = Math.round(window.innerWidth *.9);
-        }
-
-        height = Math.round(width * .5625);
-
-        [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-clip').style.width = width + "px";
-        [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-clip').style.height = height + "px";
-    }
-
-    function resizeHandler() {
-        handleLayout();
-        handleTrailor();
-    };
-
-    
-    window.addEventListener('resize', resizeHandler);
-
-    
-    resizeHandler();
-</script>
-
 <header class="header">
     <nav class="nav">
         <div class="logo">
@@ -163,15 +126,16 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+
             </div>
         </div>
         <ul id="menu">
         </ul>
     </nav>
 </header>
-<main class="main"> 
+<main class="main">
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, September 2nd (7:30PM)</div>
@@ -249,10 +213,9 @@ Directed by Sergio Martino, director of such classics as 'Hands of Steel'
 
   </div>
   <footer class="entry-footer"><span title='2023-09-02 21:47:06 -0700 PDT'>September 2, 2023</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, August 19th (7:30PM)</div>
@@ -327,10 +290,9 @@ A warrior from another planet must battle six opponents from different parts of 
 
   </div>
   <footer class="entry-footer"><span title='2023-08-19 21:47:06 -0700 PDT'>August 19, 2023</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, July 29th (7:30PM)</div>
@@ -400,10 +362,9 @@ A group of martial-arts students is heading to an island that supposedly is home
 
   </div>
   <footer class="entry-footer"><span title='2023-07-29 21:47:06 -0700 PDT'>July 29, 2023</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, July 15th (7:30PM)</div>
@@ -473,10 +434,9 @@ Identical twin brothers become hybrid A.I entities, yet torn in different direct
 
   </div>
   <footer class="entry-footer"><span title='2023-07-15 21:47:06 -0700 PDT'>July 15, 2023</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, July 1st (7:30PM)</div>
@@ -546,10 +506,9 @@ A group of shipwreck victims find themselves stranded on an uncharted island whe
 
   </div>
   <footer class="entry-footer"><span title='2023-07-01 21:47:06 -0700 PDT'>July 1, 2023</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, June 17th (7:30PM)</div>
@@ -624,10 +583,9 @@ A tough Alabama cop is blackmailed by the FBI into going undercover in a violent
 
   </div>
   <footer class="entry-footer"><span title='2023-06-17 21:47:06 -0700 PDT'>June 17, 2023</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
     </div>
@@ -639,10 +597,9 @@ A tough Alabama cop is blackmailed by the FBI into going undercover in a violent
 
 
   </div>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, October 15th (7:30PM)</div>
@@ -712,10 +669,9 @@ In 1959, an alien experiment crashes to earth and infects a fraternity member. T
 
   </div>
   <footer class="entry-footer"><span title='2022-10-15 21:47:06 -0700 PDT'>October 15, 2022</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, October 1st (7:30PM)</div>
@@ -788,10 +744,9 @@ A shock-filled tale of a serious and shy but brilliant science student who, when
 
   </div>
   <footer class="entry-footer"><span title='2022-10-01 21:47:06 -0700 PDT'>October 1, 2022</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, September 17th (7:30PM)</div>
@@ -867,7 +822,6 @@ A team of scientists go to a nuclear mining facility to investigate a possible m
 
   </div>
   <footer class="entry-footer"><span title='2022-09-17 21:47:06 -0700 PDT'>September 17, 2022</span></footer>
-  
 </article>
 <footer class="page-footer">
   <nav class="pagination">

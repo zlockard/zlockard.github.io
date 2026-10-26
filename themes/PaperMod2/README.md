@@ -1,3 +1,8 @@
+> This is a site-specific, slimmed-down PaperMod fork. See
+> [the project theme-development guide](../../README.md#theme-development) for
+> the supported features and file layout. The upstream documentation below
+> describes the original theme, including features removed from this copy.
+
 <h1 align=center>Hugo PaperMod | <a href="https://adityatelange.github.io/hugo-PaperMod/" rel="nofollow">Demo</a></h1>
 
 <h4 align=center>☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive</h4>

@@ -1,9 +1,5 @@
 {{- define "main" }}
 
-{{- if (and site.Params.profileMode.enabled .IsHome) }}
-{{- partial "index_profile.html" . }}
-{{- else }} {{/* if not profileMode */}}
-
 {{- if not .IsHome | and .Title }}
 <header class="page-header">
   {{- partial "breadcrumbs.html" . }}
@@ -47,16 +43,12 @@
 
 {{- $paginator := .Paginate $pages }}
 
-{{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
-{{- partial "home_info.html" . }}
-{{- end }}
-
 {{- $term := .Data.Term }}
 {{- range $index, $page := $paginator.Pages }}
 
 {{- $class := "post-entry" }}
 
-{{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
+{{- $user_preferred := site.Params.disableSpecial1stPost }}
 {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
 {{- $class = "first-entry" }}
 {{- else if $term }}
@@ -64,8 +56,6 @@
 {{- end }}
 
 <article class="{{ $class }}">
-  {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
-  {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
   <header class="entry-header">
     <div class="event-date-box">
       {{- if (ne (.Param "hideTitle") true) }}
@@ -94,7 +84,6 @@
     {{- partial "post_meta.html" . -}}
   </footer>
   {{- end }}
-  <!--<a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>-->
 </article>
 {{- end }}
 
@@ -120,7 +109,5 @@
   </nav>
 </footer>
 {{- end }}
-
-{{- end }}{{/* end profileMode */}}
 
 {{- end }}{{- /* end main */ -}}

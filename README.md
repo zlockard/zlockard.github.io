@@ -81,8 +81,40 @@ does not need to know what kind of event it holds. This also keeps Markdown
 rendering separate from trusted shortcode HTML without enabling raw HTML in
 the site's Markdown configuration.
 
-The `movienight` shortcode remains a compatibility alias for `event`; new posts
-should use `event`.
+Use `event` for all event containers. The old `movienight` alias has been removed.
 
 Preview drafts and future events with `.\test.cmd`. Build published posts,
 including future events, with `.\build.cmd`.
+
+## Theme development
+
+This site uses a deliberately slimmed-down local copy of PaperMod in
+`themes/PaperMod2`, not the full upstream feature set.
+
+- Event shortcodes and their shared wrapper live in `layouts/`.
+- Page/list templates and shared header, footer, metadata, and asset loading
+  live in `themes/PaperMod2/layouts/`.
+- Event-specific styling and responsive movie/trailer rules live in
+  `themes/PaperMod2/assets/css/extended/custom.css`.
+- General layout and Markdown styles live in the theme's `css/common/` directory.
+- English UI strings live in `themes/PaperMod2/i18n/en.yaml`.
+
+The retained theme supports event listings, individual posts, pagination,
+categories/tags, RSS, metadata for link previews and search engines, dark mode,
+and scroll-to-top navigation. Search, archives, profile/home-info modes, social
+icons, sharing buttons, comments, cover-image UI, table of contents, post-to-post
+navigation, edit/canonical footer links, code-copy buttons, Chroma stylesheets,
+unused theme shortcodes, and non-English translations have been removed.
+Generic Markdown typography and image rendering are still supported.
+
+Movie cells stack below 1024px. Trailer dimensions remain 560 by 315px at
+viewports at least 560px wide, and 90vw by 50.625vw below that breakpoint.
+These rules work without JavaScript. CSS viewport units account for classic
+scrollbars, so small-screen trailers can be slightly narrower than the old
+JavaScript sizing. CSS also uses fractional dimensions and viewport breakpoints
+instead of the previous JavaScript's integer rounding.
+
+After changing CSS, increment `params.assets.styleSheetVersion` in `hugo.toml`
+to invalidate cached stylesheets. Keep the PaperMod license and CSS attribution
+when editing the vendored theme. Upstream updates must be reviewed selectively,
+because copying the full theme back in would restore removed features.

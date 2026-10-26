@@ -14,20 +14,5 @@
     one : "word"
     other: "{{ .Count }} words"
 
-- id: toc
-  translation: "Table of Contents"
-
-- id: translations
-  translation: "Translations"
-
 - id: home
   translation: "Home"
-
-- id: edit_post
-  translation: "Edit"
-
-- id: code_copy
-  translation: "copy"
-
-- id: code_copied
-  translation: "copied!"

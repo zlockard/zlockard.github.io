@@ -11,7 +11,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="canonical" href="https://zac.events/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=3" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=4" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://zac.events/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://zac.events/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://zac.events/favicon-32x32.png">
@@ -95,43 +95,6 @@
     }
 
 </script>
-<script>
-    function handleLayout() {
-        if (window.innerWidth < 1024) {
-            [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-object').style.display='block';
-        } else {
-            [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-object').style.display='table-cell';
-        }
-    }
-
-    function handleTrailor() {
-        var height;
-        var width;
-
-        if (window.innerWidth >= 560) {
-            width = 560;
-        } else {
-            width = Math.round(window.innerWidth *.9);
-        }
-
-        height = Math.round(width * .5625);
-
-        [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-clip').style.width = width + "px";
-        [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-clip').style.height = height + "px";
-    }
-
-    function resizeHandler() {
-        handleLayout();
-        handleTrailor();
-    };
-
-    
-    window.addEventListener('resize', resizeHandler);
-
-    
-    resizeHandler();
-</script>
-
 <header class="header">
     <nav class="nav">
         <div class="logo">
@@ -163,15 +126,16 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+
             </div>
         </div>
         <ul id="menu">
         </ul>
     </nav>
 </header>
-<main class="main"> 
+<main class="main">
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, October 12th (7:30PM)</div>
@@ -251,10 +215,9 @@ Directed by Sergio Martino, director of such classics as 'Hands of Steel'
 
   </div>
   <footer class="entry-footer"><span title='2024-10-12 00:15:57 -0700 PDT'>October 12, 2024</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, September 21st (7:30PM)</div>
@@ -330,10 +293,9 @@ On his seventeenth birthday, Michael wears little kid dinosaur pajamas and unwit
 
   </div>
   <footer class="entry-footer"><span title='2024-09-21 00:15:57 -0700 PDT'>September 21, 2024</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, September 7th (7:30PM)</div>
@@ -403,10 +365,9 @@ In a post-apocalyptic America, She, a fierce warrior who leads a women's cult, t
 
   </div>
   <footer class="entry-footer"><span title='2024-09-07 00:15:57 -0700 PDT'>September 7, 2024</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, August 24th (7:30PM)</div>
@@ -476,10 +437,9 @@ This time China O'Brien has trouble with a dealer who puts a prize on her head b
 
   </div>
   <footer class="entry-footer"><span title='2024-08-24 00:15:57 -0700 PDT'>August 24, 2024</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, August 10th (7:30PM)</div>
@@ -548,10 +508,9 @@ In this spoof of spy films, CIA agent, Kelly, is in Rio De Janeiro spying on a w
 
   </div>
   <footer class="entry-footer"><span title='2024-08-10 00:15:57 -0700 PDT'>August 10, 2024</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, July 27th (7:30PM)</div>
@@ -624,10 +583,9 @@ After her boyfriend is murdered by the gangsters whose diamonds he stole, a girl
 
   </div>
   <footer class="entry-footer"><span title='2024-07-27 00:15:57 -0700 PDT'>July 27, 2024</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, July 13th (7:30PM)</div>
@@ -699,10 +657,9 @@ Soon, Ha's actions catch the interest of C.I.D. Senior Inspector Cindy See (Cynt
 
   </div>
   <footer class="entry-footer"><span title='2024-07-13 00:15:57 -0700 PDT'>July 13, 2024</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, June 22nd (7:30PM)</div>
@@ -772,10 +729,9 @@ A medical student sets out to recreate his decapitated fiancée by building her 
 
   </div>
   <footer class="entry-footer"><span title='2024-06-22 00:15:57 -0700 PDT'>June 22, 2024</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
     </div>
@@ -787,10 +743,9 @@ A medical student sets out to recreate his decapitated fiancée by building her 
 
 
   </div>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, September 30th (7:30PM)</div>
@@ -863,7 +818,6 @@ A wicked sorcerer tries to sacrifice a group of people inside his house with the
 
   </div>
   <footer class="entry-footer"><span title='2023-09-30 21:47:06 -0700 PDT'>September 30, 2023</span></footer>
-  
 </article>
 <footer class="page-footer">
   <nav class="pagination">

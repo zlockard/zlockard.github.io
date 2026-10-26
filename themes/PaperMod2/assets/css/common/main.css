@@ -30,16 +30,6 @@
 }
 
 
-.social-icons a {
-    display: inline-flex;
-    padding: 10px;
-}
-
-.social-icons a svg {
-    height: 26px;
-    width: 26px;
-}
-
 code {
     direction: ltr;
 }
@@ -47,22 +37,4 @@ code {
 div.highlight,
 pre {
     position: relative;
-}
-
-.copy-code {
-    display: none;
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    color: rgba(255, 255, 255, 0.8);
-    background: rgba(78, 78, 78, 0.8);
-    border-radius: var(--radius);
-    padding: 0 5px;
-    font-size: 14px;
-    user-select: none;
-}
-
-div.highlight:hover .copy-code,
-pre:hover .copy-code {
-    display: block;
 }

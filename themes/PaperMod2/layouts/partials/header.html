@@ -38,43 +38,6 @@
 
 </script>
 {{- end }}
-<script>
-    function handleLayout() {
-        if (window.innerWidth < 1024) {
-            [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-object').style.display='block';
-        } else {
-            [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-object').style.display='table-cell';
-        }
-    }
-
-    function handleTrailor() {
-        var height;
-        var width;
-
-        if (window.innerWidth >= 560) {
-            width = 560;
-        } else {
-            width = Math.round(window.innerWidth *.9);
-        }
-
-        height = Math.round(width * .5625);
-
-        [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-clip').style.width = width + "px";
-        [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-clip').style.height = height + "px";
-    }
-
-    function resizeHandler() {
-        handleLayout();
-        handleTrailor();
-    };
-
-    
-    window.addEventListener('resize', resizeHandler);
-
-    // Do an initial handling
-    resizeHandler();
-</script>
-
 <header class="header">
     <nav class="nav">
         <div class="logo">
@@ -135,27 +98,6 @@
                 </button>
                 {{- end }}
 
-                {{- $lang := .Lang}}
-                {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
-                {{- with site.Home.Translations }}
-                <ul class="lang-switch">
-                    {{- if $separator }}<li>|</li>{{ end }}
-                    {{- range . -}}
-                    {{- if ne $lang .Lang }}
-                    <li>
-                        <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
-                            aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
-                            {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
-                            {{- .Language.LanguageName | emojify -}}
-                            {{- else }}
-                            {{- .Lang | title -}}
-                            {{- end -}}
-                        </a>
-                    </li>
-                    {{- end -}}
-                    {{- end}}
-                </ul>
-                {{- end }}
             </div>
         </div>
         {{- $currentPage := . }}
@@ -163,10 +105,8 @@
             {{- range site.Menus.main }}
             {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
             {{- $page_url:= $currentPage.Permalink | absLangURL }}
-            {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
             <li>
-                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
-                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
+                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
                     <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
                         {{- .Pre }}
                         {{- .Name -}}
