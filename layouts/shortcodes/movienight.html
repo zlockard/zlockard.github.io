@@ -1,7 +1,1 @@
-<!-- movie night  -->
-<div>
-<hr>
-<table class="movie-night">
-{{.Inner}}
-</table>
-</div>
+{{- partial "event.html" (dict "Inner" .Inner) -}}

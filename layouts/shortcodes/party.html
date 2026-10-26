@@ -1,0 +1,14 @@
+<table class="movie-night party">
+<tr>
+<td valign="top" class="movie-object">
+  {{- with .Get "title" }}
+  <div class="movie-name">{{ . }}</div>
+  {{- end }}
+  {{- with .Inner }}
+  <div class="movie-summary">
+    {{ $.Page.RenderString (dict "display" "block") . }}
+  </div>
+  {{- end }}
+</td>
+</tr>
+</table>

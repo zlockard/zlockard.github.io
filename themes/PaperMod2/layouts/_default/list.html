@@ -67,9 +67,9 @@
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
   <header class="entry-header">
-    <div class="movie-night-date-box">
+    <div class="event-date-box">
       {{- if (ne (.Param "hideTitle") true) }}
-        <div class="movie-night-date">{{- .Title }}</div>
+        <div class="event-date">{{- .Title }}</div>
       {{- end }}
       {{- if (.Param "Event")}}
         <div class="event-logo"><img src="{{- (.Param "Event") | absURL -}}" style="object-fit: none; "></div>
@@ -86,7 +86,7 @@
   </header>
   {{- if (ne (.Param "hideSummary") true) }}
   <div class="entry-content">
-    <p>{{ .Content }}</p>
+    {{ .Content }}
   </div>
   {{- end }}
   {{- if not (.Param "hideMeta") }}
