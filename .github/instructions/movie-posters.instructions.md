@@ -7,7 +7,8 @@ applyTo: "static/posters/**,layouts/shortcodes/moviesummary.html,themes/PaperMod
 
 Use the current [Troll 2](../../static/posters/troll-2.svg) and
 [Bad Biology](../../static/posters/bad-biology.svg) artwork as the approved
-references. Preserve their established composition when making new posters.
+references for VHS construction and their individual color identities.
+Keep that construction consistent while varying the sleeve-front design.
 See the [authoring guide](../../README.md) for the optional `poster` parameter.
 
 ## Composition and proportions
@@ -36,6 +37,11 @@ See the [authoring guide](../../README.md) for the optional `poster` parameter.
   than only generic genre symbols. Reference examples include Nilbog, green
   food, and vegetation for Troll 2; abnormal cells and chemical motifs for
   Bad Biology.
+- Prefer the original restrained, abstract illustrations and symbolic movie
+  props over literal scenes, detailed characters, or photographic artwork.
+  The fuller scene-based revision was rejected in favor of the abstract covers.
+- Preserve existing illustration shapes when the request is only for layout,
+  color, or typography changes. Repositioning and uniform scaling are fine.
 - Use clean silhouettes, restrained detail, consistent strokes, aligned margins,
   and bold, readable titles. Recenter artwork when changing the sleeve width.
 - Never stretch the lettering or illustrations with nonuniform scaling.
@@ -43,6 +49,30 @@ See the [authoring guide](../../README.md) for the optional `poster` parameter.
   Movie titles, years, a small VHS mark, and relevant in-world signs are fine.
 - Preserve each reference's color identity: cream/forest green/burnt orange
   for Troll 2, and deep purple/coral/turquoise/acid green for Bad Biology.
+
+## Sleeve-front variety
+
+- Do not give every movie the same title-above-art template. Mix artwork-first
+  covers with lower titles, boxed lower titles, angled headings, left- and
+  right-aligned titles, side-by-side motifs, and staggered title lines.
+- Preserve the established varied layouts when changing only colors or fonts.
+  Useful examples are [Savage Beach](../../static/posters/savage-beach-1989.svg),
+  [Rock and Roll Nightmare](../../static/posters/rock-and-roll-nightmare-1987.svg),
+  [Miami Connection](../../static/posters/miami-connection-1987.svg), and
+  [Alien Private Eye](../../static/posters/alien-private-eye-1989.svg).
+- Mix saturated and pastel colorways, warm and cool hues, and light and dark
+  sleeve backgrounds. Use coordinated, contrasting colors for titles and motifs;
+  do not merely recolor a small accent while leaving every sleeve alike.
+- Vary title typography with condensed display faces, bold serifs, monospace,
+  humanist or wide sans-serifs, heavy lettering, and italic treatments.
+  Use system-font stacks with appropriate generic fallbacks; do not introduce
+  font downloads or change the site's typography for poster styling.
+- Keep title text at least 4.5:1 contrast against the sleeve background.
+  Measure actual title bounds and refit font sizes, line spacing, and positions
+  for each font treatment. Check fallback fonts as well as the preferred face.
+  Do not stretch text, distort glyphs, or let titles touch borders or artwork.
+- Keep these variations on the sleeve. Preserve the black cassette, its labels,
+  and its approved geometry unless a cassette change is specifically requested.
 
 ## Display and verification
 
@@ -55,3 +85,7 @@ See the [authoring guide](../../README.md) for the optional `poster` parameter.
 - Keep the design static, with no animation.
 - Verify the sleeve ratio numerically. Check face joins, exposed cassette
   edges, close sleeve fit, and clipping; loading successfully is not enough.
+- Review collection contact sheets to confirm meaningful layout, color, and
+  font variety. Check title/art overlap and contrast, not just asset loading.
+- Reuse the same poster for repeat screenings. Preserve movie metadata and
+  unrelated site styles when refining artwork.
