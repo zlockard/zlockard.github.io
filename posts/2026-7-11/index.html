@@ -10,7 +10,7 @@
 <meta name="description" content="Savage Beach1989 | 92 mins | Rating: RDirector: Andy SidarisIMDBIn this sequel to Hard Ticket To Hawaii, DEA agents fly cargo as part of their cover make an emergency landing on a remote island in the pacific, where several unscrupulous parties are looking for a WWII gold treasure.Some beaches have sharks. This one has rocket launchers.Malibu Express1985 | 101 mins | Rating: RDirector: Andy SidarisIMDBIn a world of spies, blackmail, and absurdly attractive suspects, one man is about to prove that national security is safest in the hands of someone who absolutely should not be in charge.">
 <meta name="author" content="">
 <link rel="canonical" href="https://zac.events/posts/2026-7-11/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=5" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=7" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://zac.events/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://zac.events/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://zac.events/favicon-32x32.png">
@@ -279,13 +279,7 @@ The mission is classified. The mustache is not.
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
+            document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {

@@ -10,7 +10,7 @@
 <meta name="description" content="Chopping Mall1986 | 77 mins | Rating: RDirector: Jim WynorskiBOTWIMDBA group of young shopping mall employees stay behind for a late night party in one of the stores. When the mall goes on lock-down before they can get out, the robot security system malfunctions, and goes on a killing spree.Devil Story1986 | 76 mins | Rating: UnratedDirector: Bernard LaunoisBOTWIMDBA deformed man living with his mother in the countryside roams the woods killing indiscriminately.">
 <meta name="author" content="">
 <link rel="canonical" href="https://zac.events/posts/2025-9-27/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=5" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=7" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://zac.events/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://zac.events/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://zac.events/favicon-32x32.png">
@@ -279,13 +279,7 @@ A deformed man living with his mother in the countryside roams the woods killing
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
+            document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {

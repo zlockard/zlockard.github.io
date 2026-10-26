@@ -10,7 +10,7 @@
 <meta name="description" content="Posts - Zac&#39;s Summer Movie Night">
 <meta name="author" content="">
 <link rel="canonical" href="https://zac.events/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=5" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=7" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://zac.events/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://zac.events/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://zac.events/favicon-32x32.png">
@@ -173,7 +173,7 @@
   <footer class="entry-footer"><span title='2026-10-31 00:15:57 -0700 PDT'>October 31, 2026</span></footer>
 </article>
 
-<article class="post-entry">
+<article class="post-entry post-entry-unboxed">
   <header class="entry-header">
     <div class="event-date-box">
     </div>
@@ -181,7 +181,10 @@
   <div class="entry-content">
     
 
-<div class="movie-name" style="text-align:center">Previous Nights 2026</div>
+<div class="season-divider">
+  <p class="season-divider-label">That's a wrap</p>
+  <h2>Previous Nights 2026</h2>
+</div>
 
 
   </div>
@@ -849,13 +852,7 @@ International terrorists pick the most terrifying target imaginable: a random In
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
+            document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {

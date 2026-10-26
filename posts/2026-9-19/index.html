@@ -10,7 +10,7 @@
 <meta name="description" content="Bad Biology2008 | 84 mins | Rating: NRDirector: Frank HenenlotterIMDBShe&#39;s searching for the perfect partner.He&#39;s battling a deeply personal medical condition that absolutely no doctor prepared for.Troll 21990 | 95 mins | Rating: PG-13Director: Claudio FragassoIMDBGuided by his ghost grandfather, ignored by every adult in sight, and armed with nothing but questionable bladder control, one young boy must save his family from the worst farm-to-table experience imaginable.">
 <meta name="author" content="">
 <link rel="canonical" href="https://zac.events/posts/2026-9-19/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=5" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=7" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://zac.events/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://zac.events/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://zac.events/favicon-32x32.png">
@@ -278,13 +278,7 @@ Guided by his ghost grandfather, ignored by every adult in sight, and armed with
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
+            document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {
