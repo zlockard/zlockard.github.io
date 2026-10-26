@@ -10,7 +10,7 @@
 <meta name="description" content="Primal Rage1988 | 91 minsDirector: Patrick MageeA scientist at a Florida university inadvertently creates a &#34;rage virus&#34; while performing experiments intended to restore dead brain tissue in baboons. When a journalist for the college paper breaks into the campus lab, he&#39;s bitten by one of the infected baboons; the virus soon spreads to a trio of rapists and a valley girl, all of whom go on killing sprees.">
 <meta name="author" content="">
 <link rel="canonical" href="https://zac.events/posts/2023-7-15/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=7" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=11" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://zac.events/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://zac.events/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://zac.events/favicon-32x32.png">
@@ -100,8 +100,8 @@
   "keywords": [
     
   ],
-  "articleBody": "\rPrimal Rage\r1988 | 91 mins\rDirector: Patrick Magee\rA scientist at a Florida university inadvertently creates a \"rage virus\" while performing experiments intended to restore dead brain tissue in baboons. When a journalist for the college paper breaks into the campus lab, he's bitten by one of the infected baboons; the virus soon spreads to a trio of rapists and a valley girl, all of whom go on killing sprees.\rTwisted Pair\r2018 | 89 mins\rDirector: m2IV0BajqAk\rIdentical twin brothers become hybrid A.I entities, yet torn in different directions to achieve justice for humanity.\r",
-  "wordCount" : "96",
+  "articleBody": "\rPrimal Rage\r1988 | 91 mins\rDirector: Patrick Magee\rA scientist at a Florida university inadvertently creates a \"rage virus\" while performing experiments intended to restore dead brain tissue in baboons. When a journalist for the college paper breaks into the campus lab, he's bitten by one of the infected baboons; the virus soon spreads to a trio of rapists and a valley girl, all of whom go on killing sprees.\rWatch trailer\rHide trailer\rLoading trailer...\nEnable JavaScript to watch trailers here.\nTwisted Pair\r2018 | 89 mins\rDirector: m2IV0BajqAk\rIdentical twin brothers become hybrid A.I entities, yet torn in different directions to achieve justice for humanity.\rWatch trailer\rHide trailer\rLoading trailer...\nEnable JavaScript to watch trailers here.\n",
+  "wordCount" : "120",
   "inLanguage": "en",
   "datePublished": "2023-07-15T21:47:06-07:00",
   "dateModified": "2023-07-15T21:47:06-07:00",
@@ -205,7 +205,21 @@ A scientist at a Florida university inadvertently creates a "rage virus" while p
 </td>
 
 <td class="movie-object movie-clip">
+<details class="movie-trailer">
+<summary>
+  <span class="movie-trailer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+  <span class="movie-trailer-show">Watch trailer</span>
+  <span class="movie-trailer-hide">Hide trailer</span>
+</summary>
+<div class="movie-trailer-frame">
+  <div class="movie-trailer-player" aria-busy="false"></div>
+  <p class="movie-trailer-status" role="status" hidden>Loading trailer...</p>
+</div>
+<template>
 <iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/nwJqWwq99as" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</template>
+</details>
+<noscript><p>Enable JavaScript to watch trailers here.</p></noscript>
 </td>
 
 </tr>
@@ -231,7 +245,21 @@ Identical twin brothers become hybrid A.I entities, yet torn in different direct
 </td>
 
 <td class="movie-object movie-clip">
+<details class="movie-trailer">
+<summary>
+  <span class="movie-trailer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+  <span class="movie-trailer-show">Watch trailer</span>
+  <span class="movie-trailer-hide">Hide trailer</span>
+</summary>
+<div class="movie-trailer-frame">
+  <div class="movie-trailer-player" aria-busy="false"></div>
+  <p class="movie-trailer-status" role="status" hidden>Loading trailer...</p>
+</div>
+<template>
 <iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/S2BfsbZOuTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</template>
+</details>
+<noscript><p>Enable JavaScript to watch trailers here.</p></noscript>
 </td>
 
 </tr>
@@ -256,7 +284,57 @@ Identical twin brothers become hybrid A.I entities, yet torn in different direct
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
     </svg>
-</a>
+</a><script>
+    const mobileTrailers = window.matchMedia("(max-width: 1023.98px)");
+
+    document.querySelectorAll(".movie-trailer").forEach(trailer => {
+        const template = trailer.querySelector("template");
+        const player = trailer.querySelector(".movie-trailer-player");
+        const status = trailer.querySelector(".movie-trailer-status");
+
+        const updatePlayer = () => {
+            if (trailer.open && !player.firstElementChild) {
+                status.textContent = "Loading trailer...";
+                status.hidden = false;
+                player.setAttribute("aria-busy", "true");
+
+                const iframe = template.content.firstElementChild.cloneNode(true);
+                const finishLoading = (message = "") => {
+                    if (iframe.parentElement !== player) {
+                        return;
+                    }
+                    player.setAttribute("aria-busy", "false");
+                    status.hidden = !message;
+                    if (message) {
+                        status.textContent = message;
+                    }
+                };
+
+                iframe.addEventListener("load", () => finishLoading(), { once: true });
+                iframe.addEventListener("error", () => finishLoading(
+                    mobileTrailers.matches
+                        ? "The trailer couldn't load. Close and reopen it to try again."
+                        : "The trailer couldn't load. Reload the page to try again."
+                ), { once: true });
+                player.replaceChildren(iframe);
+            } else if (!trailer.open) {
+                player.replaceChildren();
+                player.setAttribute("aria-busy", "false");
+                status.hidden = true;
+            }
+        };
+
+        const updateLayout = () => {
+            trailer.open = !mobileTrailers.matches;
+            updatePlayer();
+        };
+
+        trailer.addEventListener("toggle", updatePlayer);
+        mobileTrailers.addEventListener("change", updateLayout);
+        updateLayout();
+    });
+</script>
+
 
 <script>
     let menu = document.getElementById('menu')

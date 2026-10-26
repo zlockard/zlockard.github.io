@@ -10,7 +10,7 @@
 <meta name="description" content="Alien Private Eye1989 | 95 minsDirector: Vik RubenfeldBOTWAliens have long integrated themselves among the human population to the point that they are physically indistinguishable, except for their uniquely pointed ears; a physical trait they go to great lengths to hide or have surgically altered in order to fully blend into human society. Lemro, an alien, has found his calling on earth working as a private investigator.">
 <meta name="author" content="">
 <link rel="canonical" href="https://zac.events/posts/2023-8-19/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=7" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=11" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://zac.events/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://zac.events/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://zac.events/favicon-32x32.png">
@@ -100,8 +100,8 @@
   "keywords": [
     
   ],
-  "articleBody": "\rAlien Private Eye\r1989 | 95 mins\rDirector: Vik Rubenfeld\rBOTW\rAliens have long integrated themselves among the human population to the point that they are physically indistinguishable, except for their uniquely pointed ears; a physical trait they go to great lengths to hide or have surgically altered in order to fully blend into human society. Lemro, an alien, has found his calling on earth working as a private investigator.\rOne day a beautiful and mysterious woman visits his office and shares the story of a mysterious disc shaped artifact which has the potential to destroy the human race, begging for Lemro's help in preventing such devastation. Initially uncertain if he should take the case, Lemro quickly finds himself embroiled in an intergalactic drug smuggling ring hellbent on turning every human into a mindless junkie. Putting his investigative - and martial arts skills - to the ultimate test, Lemro begins a deadly fight to smash the drug smuggling operation while racing against time to unlock the secret of the mysterious disc before it is too late.\rGame of Survival\r1989 | 76 mins\rDirector: Armand Gazarian\rA warrior from another planet must battle six opponents from different parts of the universe.\r",
-  "wordCount" : "201",
+  "articleBody": "\rAlien Private Eye\r1989 | 95 mins\rDirector: Vik Rubenfeld\rBOTW\rAliens have long integrated themselves among the human population to the point that they are physically indistinguishable, except for their uniquely pointed ears; a physical trait they go to great lengths to hide or have surgically altered in order to fully blend into human society. Lemro, an alien, has found his calling on earth working as a private investigator.\rOne day a beautiful and mysterious woman visits his office and shares the story of a mysterious disc shaped artifact which has the potential to destroy the human race, begging for Lemro's help in preventing such devastation. Initially uncertain if he should take the case, Lemro quickly finds himself embroiled in an intergalactic drug smuggling ring hellbent on turning every human into a mindless junkie. Putting his investigative - and martial arts skills - to the ultimate test, Lemro begins a deadly fight to smash the drug smuggling operation while racing against time to unlock the secret of the mysterious disc before it is too late.\rWatch trailer\rHide trailer\rLoading trailer...\nEnable JavaScript to watch trailers here.\nGame of Survival\r1989 | 76 mins\rDirector: Armand Gazarian\rA warrior from another planet must battle six opponents from different parts of the universe.\rWatch trailer\rHide trailer\rLoading trailer...\nEnable JavaScript to watch trailers here.\n",
+  "wordCount" : "225",
   "inLanguage": "en",
   "datePublished": "2023-08-19T21:47:06-07:00",
   "dateModified": "2023-08-19T21:47:06-07:00",
@@ -210,7 +210,21 @@ One day a beautiful and mysterious woman visits his office and shares the story 
 </td>
 
 <td class="movie-object movie-clip">
+<details class="movie-trailer">
+<summary>
+  <span class="movie-trailer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+  <span class="movie-trailer-show">Watch trailer</span>
+  <span class="movie-trailer-hide">Hide trailer</span>
+</summary>
+<div class="movie-trailer-frame">
+  <div class="movie-trailer-player" aria-busy="false"></div>
+  <p class="movie-trailer-status" role="status" hidden>Loading trailer...</p>
+</div>
+<template>
 <iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/uiuO1oLfp5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</template>
+</details>
+<noscript><p>Enable JavaScript to watch trailers here.</p></noscript>
 </td>
 
 </tr>
@@ -236,7 +250,21 @@ A warrior from another planet must battle six opponents from different parts of 
 </td>
 
 <td class="movie-object movie-clip">
+<details class="movie-trailer">
+<summary>
+  <span class="movie-trailer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+  <span class="movie-trailer-show">Watch trailer</span>
+  <span class="movie-trailer-hide">Hide trailer</span>
+</summary>
+<div class="movie-trailer-frame">
+  <div class="movie-trailer-player" aria-busy="false"></div>
+  <p class="movie-trailer-status" role="status" hidden>Loading trailer...</p>
+</div>
+<template>
 <iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/kXgpNnpmSVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</template>
+</details>
+<noscript><p>Enable JavaScript to watch trailers here.</p></noscript>
 </td>
 
 </tr>
@@ -261,7 +289,57 @@ A warrior from another planet must battle six opponents from different parts of 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
     </svg>
-</a>
+</a><script>
+    const mobileTrailers = window.matchMedia("(max-width: 1023.98px)");
+
+    document.querySelectorAll(".movie-trailer").forEach(trailer => {
+        const template = trailer.querySelector("template");
+        const player = trailer.querySelector(".movie-trailer-player");
+        const status = trailer.querySelector(".movie-trailer-status");
+
+        const updatePlayer = () => {
+            if (trailer.open && !player.firstElementChild) {
+                status.textContent = "Loading trailer...";
+                status.hidden = false;
+                player.setAttribute("aria-busy", "true");
+
+                const iframe = template.content.firstElementChild.cloneNode(true);
+                const finishLoading = (message = "") => {
+                    if (iframe.parentElement !== player) {
+                        return;
+                    }
+                    player.setAttribute("aria-busy", "false");
+                    status.hidden = !message;
+                    if (message) {
+                        status.textContent = message;
+                    }
+                };
+
+                iframe.addEventListener("load", () => finishLoading(), { once: true });
+                iframe.addEventListener("error", () => finishLoading(
+                    mobileTrailers.matches
+                        ? "The trailer couldn't load. Close and reopen it to try again."
+                        : "The trailer couldn't load. Reload the page to try again."
+                ), { once: true });
+                player.replaceChildren(iframe);
+            } else if (!trailer.open) {
+                player.replaceChildren();
+                player.setAttribute("aria-busy", "false");
+                status.hidden = true;
+            }
+        };
+
+        const updateLayout = () => {
+            trailer.open = !mobileTrailers.matches;
+            updatePlayer();
+        };
+
+        trailer.addEventListener("toggle", updatePlayer);
+        mobileTrailers.addEventListener("change", updateLayout);
+        updateLayout();
+    });
+</script>
+
 
 <script>
     let menu = document.getElementById('menu')
