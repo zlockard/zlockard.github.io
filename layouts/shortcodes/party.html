@@ -2,7 +2,7 @@
 <tr>
 <td valign="top" class="movie-object">
   {{- with .Get "title" }}
-  <div class="movie-name">{{ . }}</div>
+  <div class="movie-name{{ with $.Get "titleclass" }} {{ . }}{{ end }}">{{ . }}</div>
   {{- end }}
   {{- with .Inner }}
   <div class="movie-summary">

@@ -174,3 +174,18 @@ table.movie-night td {
 .party .movie-summary > :last-child {
     margin-bottom: 0;
 }
+
+.text-orange-outline {
+    color: #ff8c00;
+    font-size: 24px;
+    font-weight: 900;
+    text-shadow:
+        -2px -2px 0 #000,
+        0 -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 0 0 #000,
+        2px 0 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 2px 0 #000;
+}

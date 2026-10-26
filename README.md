@@ -32,14 +32,14 @@ A `party` contains an optional title and a Markdown description. Its title,
 content alignment, and spacing use the same layout and styles as `moviesummary`:
 
 ```text
-{{< event >}}
-{{< party title="Game Night" >}}
+{{<event>}}
+{{<party title="Game Night">}}
 Bring a **favorite game** to share.
 
 - Games start at 8 PM.
 - [See the details](https://example.com).
-{{< /party >}}
-{{< /event >}}
+{{</party>}}
+{{</event>}}
 ```
 
 For a heading-only party, leave the `party` body empty. Omit its `title` for a
@@ -47,20 +47,32 @@ body-only party. Each party can have its own heading, and an event can contain
 multiple parties. Events work in post
 listings and on the individual post page.
 
+To opt into orange lettering with a black outline, set the party's `titleclass`
+to `text-orange-outline`:
+
+```text
+{{<party title="Halloween Party!" titleclass="text-orange-outline">}}
+{{</party>}}
+```
+
+The class uses 24px, extra-bold lettering with an orange fill and a 2px black outline,
+preserving the title's left alignment. Omit `titleclass` for the normal title
+style. The CSS class can also be reused on other text elements.
+
 ## Movie nights
 
 A movie night is simply an event containing movies. Each `movie` provides its
 own table layout, using `moviesummary` and an optional `movietrailer`:
 
 ```text
-{{< event >}}
-{{< movie >}}
-{{< moviesummary title="Movie Title" year="2027" length="90" >}}
+{{<event>}}
+{{<movie>}}
+{{<moviesummary title="Movie Title" year="2027" length="90">}}
 A short description of the movie.
-{{< /moviesummary >}}
-{{< movietrailer YOUTUBE_VIDEO_ID >}}
-{{< /movie >}}
-{{< /event >}}
+{{</moviesummary>}}
+{{<movietrailer YOUTUBE_VIDEO_ID>}}
+{{</movie>}}
+{{</event>}}
 ```
 
 An event can mix parties and movies in any order. Party rendering belongs
