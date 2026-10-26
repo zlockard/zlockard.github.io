@@ -107,6 +107,46 @@ Without JavaScript, a message explains that it is needed to watch trailers here.
 Inline player loading, loading status, and breakpoint changes are handled by
 `layouts/partials/extend_footer.html`; existing shortcode calls need no changes.
 
+Movies have no visible feature-number labels. An **And then...** divider appears
+before the second and subsequent movies within each `event`; parties do not
+affect this sequence. Year,
+runtime, and rating appear as small, bold-text chips with contrasting 2px borders,
+with the director on a separate line.
+
+All current movies use original, full-color SVG artwork in `static/posters/`,
+not official film posters. Repeat screenings share the same artwork. Each
+design shows an illustrated case on the left and a VHS
+cassette partly slid out to the right, with vertically stacked reel windows.
+Sleeve fronts use an approximately 7.4:4.1 height-to-width ratio, excluding the
+perspective bevel.
+The covers use restrained, abstract, non-graphic movie-specific motifs. Layouts
+vary between artwork-first compositions, boxed lower titles, angled headings,
+left/right-aligned titles, paired motifs, and staggered lettering, while the VHS
+shape stays consistent. These do not use TMDB assets or require TMDB attribution.
+Sleeves also mix saturated and pastel palettes with condensed, serif, monospace,
+humanist, heavy sans-serif, and italic title treatments. Titles use system-font
+stacks with generic fallbacks, without downloading fonts or changing the site's
+typography.
+To select artwork, add an optional `poster` to `moviesummary`. New movies without
+this parameter retain the automatic title-and-year mockup:
+
+```text
+{{<moviesummary title="Movie Title" year="2027" length="90" poster="/posters/movie-title.jpg">}}
+A short description of the movie.
+{{</moviesummary>}}
+```
+
+Put local poster files under `static/posters/`. Poster images are lazy-loaded,
+and the full movie title always remains readable beside the poster.
+
+Home and posts listings include right-aligned **Browse by year** links on the
+same row as the left-aligned light/dark selector. On small screens the text label is hidden, keeping the selector and
+year buttons on one row; extra years can scroll horizontally. Each link jumps to the
+first event for that year on the appropriate existing pagination page; these
+are not separate archive pages. Links are generated from published event posts
+(including drafts when enabled), skip informational/season-divider posts, and
+update automatically when pagination changes.
+
 An event can mix parties and movies in any order. Party rendering belongs
 to `party`, and movie layout belongs to `movie`, so the container
 does not need to know what kind of event it holds. This also keeps Markdown

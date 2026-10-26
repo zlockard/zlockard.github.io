@@ -10,8 +10,8 @@ theme = 'papermod2'
 [params]
     hideFooter = true
     [params.label]
-        icon = '/moviebanner8.png'
-#        text = "Zac's Summer Movie Night3"
+        icon = '/banners/moviebanner8.png'
+#        text = "Zac's Summer Movie Night"
     [params.assets]
         disableFingerprinting = true
-        styleSheetVersion = 11
+        styleSheetVersion = 19

@@ -20,6 +20,7 @@
 
 .logo {
     flex-wrap: inherit;
+    width: calc(100% - (2 * var(--gap)));
 }
 
 .logo a {
@@ -70,12 +71,21 @@ body:not(.dark) #sun {
 }
 
 .logo-switches {
-    display: inline-flex;
-    margin: auto 4px;
-    flex-wrap: inherit;
-    padding-top:10px;
+    display: flex;
+    flex-shrink: 0;
 }
 
-.logo-switch-box {
-    height: 40px;
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: calc(100% - (2 * var(--gap)));
+    min-width: 0;
+    margin: 10px var(--gap) 16px;
+}
+
+.header-controls #theme-toggle {
+    min-width: 40px;
+    min-height: 40px;
+    margin: 0;
 }
