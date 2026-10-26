@@ -10,7 +10,7 @@
 <meta name="description" content="Halloween Party!Halloween party night! Come enjoy drinks, snacks, and a good time. At 9 we&rsquo;ll watch one (good) movie. It&rsquo;s not a costume party, but don&rsquo;t let me stop you.">
 <meta name="author" content="">
 <link rel="canonical" href="https://zac.events/posts/2026-10-31/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=7" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=11" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://zac.events/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://zac.events/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://zac.events/favicon-32x32.png">
@@ -216,7 +216,57 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
     </svg>
-</a>
+</a><script>
+    const mobileTrailers = window.matchMedia("(max-width: 1023.98px)");
+
+    document.querySelectorAll(".movie-trailer").forEach(trailer => {
+        const template = trailer.querySelector("template");
+        const player = trailer.querySelector(".movie-trailer-player");
+        const status = trailer.querySelector(".movie-trailer-status");
+
+        const updatePlayer = () => {
+            if (trailer.open && !player.firstElementChild) {
+                status.textContent = "Loading trailer...";
+                status.hidden = false;
+                player.setAttribute("aria-busy", "true");
+
+                const iframe = template.content.firstElementChild.cloneNode(true);
+                const finishLoading = (message = "") => {
+                    if (iframe.parentElement !== player) {
+                        return;
+                    }
+                    player.setAttribute("aria-busy", "false");
+                    status.hidden = !message;
+                    if (message) {
+                        status.textContent = message;
+                    }
+                };
+
+                iframe.addEventListener("load", () => finishLoading(), { once: true });
+                iframe.addEventListener("error", () => finishLoading(
+                    mobileTrailers.matches
+                        ? "The trailer couldn't load. Close and reopen it to try again."
+                        : "The trailer couldn't load. Reload the page to try again."
+                ), { once: true });
+                player.replaceChildren(iframe);
+            } else if (!trailer.open) {
+                player.replaceChildren();
+                player.setAttribute("aria-busy", "false");
+                status.hidden = true;
+            }
+        };
+
+        const updateLayout = () => {
+            trailer.open = !mobileTrailers.matches;
+            updatePlayer();
+        };
+
+        trailer.addEventListener("toggle", updatePlayer);
+        mobileTrailers.addEventListener("change", updateLayout);
+        updateLayout();
+    });
+</script>
+
 
 <script>
     let menu = document.getElementById('menu')

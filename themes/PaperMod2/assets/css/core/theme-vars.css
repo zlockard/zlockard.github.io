@@ -16,7 +16,6 @@
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
     --accent: var(--primary);
-    --heading-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --title-filter: opacity(100%);
     --title-color: rgb(63, 60, 60);
     --secondary-contrast: rgb(255, 255, 255);

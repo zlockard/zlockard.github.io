@@ -89,6 +89,24 @@ A short description of the movie.
 {{</event>}}
 ```
 
+Below 1024px, `movietrailer` displays a keyboard-accessible, ticket-style
+**Watch trailer** button below the movie's details. Opening it loads the YouTube
+player inline, without autoplay or animation. **Hide trailer** removes the player
+to stop playback; reopening loads a fresh player. On an initial mobile page load,
+YouTube is not contacted until a trailer is opened.
+
+On desktop, players load immediately beside the movie details, with no disclosure
+button. Switching to the mobile layout collapses and unloads the players;
+switching to desktop restores them without autoplay.
+
+The player area immediately shows a static **Loading trailer...** status until
+the iframe's load event fires. This reserves the video's space without animation;
+it indicates iframe loading, not YouTube's subsequent video buffering. Reported
+iframe errors display a retry instruction. There is no separate YouTube link.
+Without JavaScript, a message explains that it is needed to watch trailers here.
+Inline player loading, loading status, and breakpoint changes are handled by
+`layouts/partials/extend_footer.html`; existing shortcode calls need no changes.
+
 An event can mix parties and movies in any order. Party rendering belongs
 to `party`, and movie layout belongs to `movie`, so the container
 does not need to know what kind of event it holds. This also keeps Markdown
@@ -103,8 +121,8 @@ including future events, with `.\build.cmd`.
 ## Theme development
 
 The backyard-drive-in layout keeps the original white/light-gray and charcoal
-palettes, with neutral headings and accents. Date headers and movie/party headings use
-local system fonts; no font downloads are needed. Arrival dates and times still
+palettes, with neutral headings and accents. Headings and trailer buttons inherit
+the original body system-font stack; no font downloads are needed. Arrival dates and times still
 come from the post's `title`, not its publication timestamp. There are no theme
 animations, press scaling, fades, or smooth scrolling.
 
@@ -143,10 +161,11 @@ navigation, edit/canonical footer links, code-copy buttons, Chroma stylesheets,
 unused theme shortcodes, and non-English translations have been removed.
 Generic Markdown typography and image rendering are still supported.
 
-Movie cells stack below 1024px. Trailers use a 560px-wide cell, constrained to the
-available content width when stacked, and keep a 16:9 aspect ratio at every size.
-Card padding cannot crop them.
-These rules work without JavaScript and use fractional viewport breakpoints.
+Movie details and trailers sit side by side on desktop and stack below 1024px.
+Trailers use a 560px-wide cell, constrained to the available content width when
+stacked, and keep a 16:9 aspect ratio. Card padding cannot crop them. Responsive
+sizing and the mobile disclosure work without JavaScript; loading the inline
+player requires it. The same 1023.98px media query drives CSS and player loading.
 
 After changing CSS, increment `params.assets.styleSheetVersion` in `hugo.toml`
 to invalidate cached stylesheets. Keep the PaperMod license and CSS attribution
