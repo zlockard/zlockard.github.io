@@ -1,0 +1,22 @@
+{{- $seen := dict -}}
+{{- $links := slice -}}
+{{- range .Pagers -}}
+  {{- $url := .URL -}}
+  {{- range .Pages -}}
+    {{- if .HasShortcode "event" -}}
+      {{- $year := .Date.Format "2006" -}}
+      {{- if not (isset $seen $year) -}}
+        {{- $seen = merge $seen (dict $year true) -}}
+        {{- $links = $links | append (dict "year" $year "url" (printf "%s#event-%s" $url (.RelPermalink | anchorize))) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- with $links }}
+<nav class="season-navigation" aria-label="Browse events by year">
+  <span class="season-navigation-label">Browse by year</span>
+  {{- range sort . "year" "desc" }}
+  <a href="{{ .url }}">{{ .year }}</a>
+  {{- end }}
+</nav>
+{{- end }}

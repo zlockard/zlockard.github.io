@@ -10,7 +10,7 @@
 <meta name="description" content="Posts - Zac&#39;s Summer Movie Night">
 <meta name="author" content="">
 <link rel="canonical" href="https://zac.events/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=5" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=19" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://zac.events/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://zac.events/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://zac.events/favicon-32x32.png">
@@ -101,11 +101,12 @@
         <div class="logo">
             <a href="https://zac.events/" accesskey="h" title=" (Alt + H)">
                     <div class="logo-image-container">
-                        <img src="https://zac.events/moviebanner8.png" alt="Logo Image" class="logo-image">
+                        <img src="https://zac.events/banners/moviebanner8.png" alt="Logo Image" class="logo-image">
                         <div class="logo-image-text"></div>
                     </div>
             </a>
-            <div class="logo-switch-box"></div>
+        </div>
+        <div class="header-controls">
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -127,8 +128,16 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
-
             </div>
+<nav class="season-navigation" aria-label="Browse events by year">
+  <span class="season-navigation-label">Browse by year</span>
+  <a href="/posts/#event-posts2026-10-31">2026</a>
+  <a href="/posts/page/2/#event-posts2025-10-11">2025</a>
+  <a href="/posts/page/3/#event-posts2024-10-12">2024</a>
+  <a href="/posts/page/3/#event-posts2023-9-30">2023</a>
+  <a href="/posts/page/4/#event-posts2022-10-15">2022</a>
+</nav>
+
         </div>
         <ul id="menu">
         </ul>
@@ -141,7 +150,7 @@
   </h1>
 </header>
 
-<article class="post-entry">
+<article id="event-posts2025-end" class="post-entry post-entry-unboxed">
   <header class="entry-header">
     <div class="event-date-box">
     </div>
@@ -149,13 +158,16 @@
   <div class="entry-content">
     
 
-<div class="movie-name" style="text-align:center">Previous Nights 2025</div>
+<div class="season-divider">
+  <p class="season-divider-label">That's a wrap</p>
+  <h2>Previous Nights 2025</h2>
+</div>
 
 
   </div>
 </article>
 
-<article class="post-entry">
+<article id="event-posts2025-10-11" class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, October 11th (7:30PM)</div>
@@ -167,20 +179,32 @@
   <div class="event-body">
     
 
+<div class="movie-feature">
 <table class="movie-night">
 <tr>
 
 
 <td valign="top" class="movie-object">
+<div class="movie-heading">
+<div class="movie-poster" aria-hidden="true">
+<img src="/posters/re-animator-1985.svg" alt="" width="160" height="240" loading="lazy" decoding="async">
+</div>
+<div class="movie-information">
 <div class="movie-name">Re-Animator</div>
 <div class="movie-attrib">
 
-1985 | 84 mins | Rating: <span style="font-weight: normal">Unrated</span>
-<br/>Director: <span style="font-weight: normal">Stuart Gordon</span>
+<div class="movie-facts">
+<span class="movie-fact">1985</span>
+<span class="movie-fact">84 min</span>
+<span class="movie-fact">Rating: Unrated</span>
+</div>
+<p class="movie-director">Director: Stuart Gordon</p>
 <div>
 <a href="http://imdb.com/title/tt0089885" target="_blank" rel="noopener noreferrer" class="link-button">IMDB</a>
 </div>
 
+</div>
+</div>
 </div>
 <div class="movie-summary" height="*">
 
@@ -190,27 +214,55 @@ After an odd new medical student arrives on campus, a dedicated local and his gi
 </td>
 
 <td class="movie-object movie-clip">
+<details class="movie-trailer">
+<summary>
+  <span class="movie-trailer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+  <span class="movie-trailer-show">Watch trailer</span>
+  <span class="movie-trailer-hide">Hide trailer</span>
+</summary>
+<div class="movie-trailer-frame">
+  <div class="movie-trailer-player" aria-busy="false"></div>
+  <p class="movie-trailer-status" role="status" hidden>Loading trailer...</p>
+</div>
+<template>
 <iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/wLJ8Z3PDEGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</template>
+</details>
+<noscript><p>Enable JavaScript to watch trailers here.</p></noscript>
 </td>
 
 </tr>
 </table>
+</div>
 
+<div class="feature-intermission"><span>And then...</span></div>
+<div class="movie-feature">
 <table class="movie-night">
 <tr>
 
 
 <td valign="top" class="movie-object">
+<div class="movie-heading">
+<div class="movie-poster" aria-hidden="true">
+<img src="/posters/zombie-nightmare-1987.svg" alt="" width="160" height="240" loading="lazy" decoding="async">
+</div>
+<div class="movie-information">
 <div class="movie-name">Zombie Nightmare</div>
 <div class="movie-attrib">
 
-1987 | 89 mins | Rating: <span style="font-weight: normal">R</span>
-<br/>Director: <span style="font-weight: normal">Jack Bravman, John Fasano</span>
+<div class="movie-facts">
+<span class="movie-fact">1987</span>
+<span class="movie-fact">89 min</span>
+<span class="movie-fact">Rating: R</span>
+</div>
+<p class="movie-director">Director: Jack Bravman, John Fasano</p>
 <div>
 <a href="http://youtube.com/watch?v=8YyNxsevH_Q" target="_blank" rel="noopener noreferrer" class="link-button">BOTW</a>
 <a href="http://imdb.com/title/tt0092297" target="_blank" rel="noopener noreferrer" class="link-button">IMDB</a>
 </div>
 
+</div>
+</div>
 </div>
 <div class="movie-summary" height="*">
 
@@ -220,11 +272,26 @@ A mother resorts to voodoo to get back at those who killed her son.
 </td>
 
 <td class="movie-object movie-clip">
+<details class="movie-trailer">
+<summary>
+  <span class="movie-trailer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+  <span class="movie-trailer-show">Watch trailer</span>
+  <span class="movie-trailer-hide">Hide trailer</span>
+</summary>
+<div class="movie-trailer-frame">
+  <div class="movie-trailer-player" aria-busy="false"></div>
+  <p class="movie-trailer-status" role="status" hidden>Loading trailer...</p>
+</div>
+<template>
 <iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/PvrdXDELC30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</template>
+</details>
+<noscript><p>Enable JavaScript to watch trailers here.</p></noscript>
 </td>
 
 </tr>
 </table>
+</div>
 
   </div>
 </div>
@@ -234,7 +301,7 @@ A mother resorts to voodoo to get back at those who killed her son.
   <footer class="entry-footer"><span title='2025-10-11 00:15:57 -0700 PDT'>October 11, 2025</span></footer>
 </article>
 
-<article class="post-entry">
+<article id="event-posts2025-9-27" class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, September 27th (7:30PM)</div>
@@ -246,21 +313,33 @@ A mother resorts to voodoo to get back at those who killed her son.
   <div class="event-body">
     
 
+<div class="movie-feature">
 <table class="movie-night">
 <tr>
 
 
 <td valign="top" class="movie-object">
+<div class="movie-heading">
+<div class="movie-poster" aria-hidden="true">
+<img src="/posters/chopping-mall-1986.svg" alt="" width="160" height="240" loading="lazy" decoding="async">
+</div>
+<div class="movie-information">
 <div class="movie-name">Chopping Mall</div>
 <div class="movie-attrib">
 
-1986 | 77 mins | Rating: <span style="font-weight: normal">R</span>
-<br/>Director: <span style="font-weight: normal">Jim Wynorski</span>
+<div class="movie-facts">
+<span class="movie-fact">1986</span>
+<span class="movie-fact">77 min</span>
+<span class="movie-fact">Rating: R</span>
+</div>
+<p class="movie-director">Director: Jim Wynorski</p>
 <div>
 <a href="http://youtube.com/watch?v=LLanYkRg09I" target="_blank" rel="noopener noreferrer" class="link-button">BOTW</a>
 <a href="http://imdb.com/title/tt0090837" target="_blank" rel="noopener noreferrer" class="link-button">IMDB</a>
 </div>
 
+</div>
+</div>
 </div>
 <div class="movie-summary" height="*">
 
@@ -270,27 +349,55 @@ A group of young shopping mall employees stay behind for a late night party in o
 </td>
 
 <td class="movie-object movie-clip">
+<details class="movie-trailer">
+<summary>
+  <span class="movie-trailer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+  <span class="movie-trailer-show">Watch trailer</span>
+  <span class="movie-trailer-hide">Hide trailer</span>
+</summary>
+<div class="movie-trailer-frame">
+  <div class="movie-trailer-player" aria-busy="false"></div>
+  <p class="movie-trailer-status" role="status" hidden>Loading trailer...</p>
+</div>
+<template>
 <iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/jSkYxW5Ii28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</template>
+</details>
+<noscript><p>Enable JavaScript to watch trailers here.</p></noscript>
 </td>
 
 </tr>
 </table>
+</div>
 
+<div class="feature-intermission"><span>And then...</span></div>
+<div class="movie-feature">
 <table class="movie-night">
 <tr>
 
 
 <td valign="top" class="movie-object">
+<div class="movie-heading">
+<div class="movie-poster" aria-hidden="true">
+<img src="/posters/devil-story-1986.svg" alt="" width="160" height="240" loading="lazy" decoding="async">
+</div>
+<div class="movie-information">
 <div class="movie-name">Devil Story</div>
 <div class="movie-attrib">
 
-1986 | 76 mins | Rating: <span style="font-weight: normal">Unrated</span>
-<br/>Director: <span style="font-weight: normal">Bernard Launois</span>
+<div class="movie-facts">
+<span class="movie-fact">1986</span>
+<span class="movie-fact">76 min</span>
+<span class="movie-fact">Rating: Unrated</span>
+</div>
+<p class="movie-director">Director: Bernard Launois</p>
 <div>
 <a href="http://youtube.com/watch?v=8YyNxsevH_Q" target="_blank" rel="noopener noreferrer" class="link-button">BOTW</a>
 <a href="http://imdb.com/title/tt0233004" target="_blank" rel="noopener noreferrer" class="link-button">IMDB</a>
 </div>
 
+</div>
+</div>
 </div>
 <div class="movie-summary" height="*">
 
@@ -300,11 +407,26 @@ A deformed man living with his mother in the countryside roams the woods killing
 </td>
 
 <td class="movie-object movie-clip">
+<details class="movie-trailer">
+<summary>
+  <span class="movie-trailer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+  <span class="movie-trailer-show">Watch trailer</span>
+  <span class="movie-trailer-hide">Hide trailer</span>
+</summary>
+<div class="movie-trailer-frame">
+  <div class="movie-trailer-player" aria-busy="false"></div>
+  <p class="movie-trailer-status" role="status" hidden>Loading trailer...</p>
+</div>
+<template>
 <iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/GouRsoLweZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</template>
+</details>
+<noscript><p>Enable JavaScript to watch trailers here.</p></noscript>
 </td>
 
 </tr>
 </table>
+</div>
 
   </div>
 </div>
@@ -314,7 +436,7 @@ A deformed man living with his mother in the countryside roams the woods killing
   <footer class="entry-footer"><span title='2025-09-27 00:15:57 -0700 PDT'>September 27, 2025</span></footer>
 </article>
 
-<article class="post-entry">
+<article id="event-posts2025-9-13" class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, September 13th (7:30PM)</div>
@@ -326,20 +448,32 @@ A deformed man living with his mother in the countryside roams the woods killing
   <div class="event-body">
     
 
+<div class="movie-feature">
 <table class="movie-night">
 <tr>
 
 
 <td valign="top" class="movie-object">
+<div class="movie-heading">
+<div class="movie-poster" aria-hidden="true">
+<img src="/posters/danger-diabolik-1968.svg" alt="" width="160" height="240" loading="lazy" decoding="async">
+</div>
+<div class="movie-information">
 <div class="movie-name">Danger: Diabolik</div>
 <div class="movie-attrib">
 
-1968 | 105 mins | Rating: <span style="font-weight: normal">PG-13</span>
-<br/>Director: <span style="font-weight: normal">Mario Bava</span>
+<div class="movie-facts">
+<span class="movie-fact">1968</span>
+<span class="movie-fact">105 min</span>
+<span class="movie-fact">Rating: PG-13</span>
+</div>
+<p class="movie-director">Director: Mario Bava</p>
 <div>
 <a href="http://imdb.com/title/tt0062861" target="_blank" rel="noopener noreferrer" class="link-button">IMDB</a>
 </div>
 
+</div>
+</div>
 </div>
 <div class="movie-summary" height="*">
 
@@ -349,27 +483,55 @@ A master thief and his sensual lover pull off heist after heist, all while an en
 </td>
 
 <td class="movie-object movie-clip">
+<details class="movie-trailer">
+<summary>
+  <span class="movie-trailer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+  <span class="movie-trailer-show">Watch trailer</span>
+  <span class="movie-trailer-hide">Hide trailer</span>
+</summary>
+<div class="movie-trailer-frame">
+  <div class="movie-trailer-player" aria-busy="false"></div>
+  <p class="movie-trailer-status" role="status" hidden>Loading trailer...</p>
+</div>
+<template>
 <iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/-EacDLlkP0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</template>
+</details>
+<noscript><p>Enable JavaScript to watch trailers here.</p></noscript>
 </td>
 
 </tr>
 </table>
+</div>
 
+<div class="feature-intermission"><span>And then...</span></div>
+<div class="movie-feature">
 <table class="movie-night">
 <tr>
 
 
 <td valign="top" class="movie-object">
+<div class="movie-heading">
+<div class="movie-poster" aria-hidden="true">
+<img src="/posters/hard-ticket-to-hawaii-1987.svg" alt="" width="160" height="240" loading="lazy" decoding="async">
+</div>
+<div class="movie-information">
 <div class="movie-name">Hard Ticket to Hawaii</div>
 <div class="movie-attrib">
 
-1987 | 96 mins | Rating: <span style="font-weight: normal">R</span>
-<br/>Director: <span style="font-weight: normal">Andy Sidaris</span>
+<div class="movie-facts">
+<span class="movie-fact">1987</span>
+<span class="movie-fact">96 min</span>
+<span class="movie-fact">Rating: R</span>
+</div>
+<p class="movie-director">Director: Andy Sidaris</p>
 <div>
 <a href="http://youtube.com/watch?v=mbWTthXfdBc" target="_blank" rel="noopener noreferrer" class="link-button">BOTW</a>
 <a href="http://imdb.com/title/tt0093146" target="_blank" rel="noopener noreferrer" class="link-button">IMDB</a>
 </div>
 
+</div>
+</div>
 </div>
 <div class="movie-summary" height="*">
 
@@ -379,11 +541,26 @@ In Hawaii, an undercover DEA agent and her civilian friend stumble upon a drug t
 </td>
 
 <td class="movie-object movie-clip">
+<details class="movie-trailer">
+<summary>
+  <span class="movie-trailer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+  <span class="movie-trailer-show">Watch trailer</span>
+  <span class="movie-trailer-hide">Hide trailer</span>
+</summary>
+<div class="movie-trailer-frame">
+  <div class="movie-trailer-player" aria-busy="false"></div>
+  <p class="movie-trailer-status" role="status" hidden>Loading trailer...</p>
+</div>
+<template>
 <iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/UV7h4-2ZUqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</template>
+</details>
+<noscript><p>Enable JavaScript to watch trailers here.</p></noscript>
 </td>
 
 </tr>
 </table>
+</div>
 
   </div>
 </div>
@@ -393,7 +570,7 @@ In Hawaii, an undercover DEA agent and her civilian friend stumble upon a drug t
   <footer class="entry-footer"><span title='2025-09-13 00:15:57 -0700 PDT'>September 13, 2025</span></footer>
 </article>
 
-<article class="post-entry">
+<article id="event-posts2025-8-30" class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, August 30th (7:30PM)</div>
@@ -405,20 +582,32 @@ In Hawaii, an undercover DEA agent and her civilian friend stumble upon a drug t
   <div class="event-body">
     
 
+<div class="movie-feature">
 <table class="movie-night">
 <tr>
 
 
 <td valign="top" class="movie-object">
+<div class="movie-heading">
+<div class="movie-poster" aria-hidden="true">
+<img src="/posters/ski-school-1991.svg" alt="" width="160" height="240" loading="lazy" decoding="async">
+</div>
+<div class="movie-information">
 <div class="movie-name">Ski School</div>
 <div class="movie-attrib">
 
-1991 | 95 mins | Rating: <span style="font-weight: normal">R</span>
-<br/>Director: <span style="font-weight: normal">Damian Lee</span>
+<div class="movie-facts">
+<span class="movie-fact">1991</span>
+<span class="movie-fact">95 min</span>
+<span class="movie-fact">Rating: R</span>
+</div>
+<p class="movie-director">Director: Damian Lee</p>
 <div>
 <a href="http://imdb.com/title/tt0102940" target="_blank" rel="noopener noreferrer" class="link-button">IMDB</a>
 </div>
 
+</div>
+</div>
 </div>
 <div class="movie-summary" height="*">
 
@@ -428,26 +617,54 @@ Rival groups in a skiing school do battle on and off the piste. One gang are ric
 </td>
 
 <td class="movie-object movie-clip">
+<details class="movie-trailer">
+<summary>
+  <span class="movie-trailer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+  <span class="movie-trailer-show">Watch trailer</span>
+  <span class="movie-trailer-hide">Hide trailer</span>
+</summary>
+<div class="movie-trailer-frame">
+  <div class="movie-trailer-player" aria-busy="false"></div>
+  <p class="movie-trailer-status" role="status" hidden>Loading trailer...</p>
+</div>
+<template>
 <iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/Mjzqs6bStXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</template>
+</details>
+<noscript><p>Enable JavaScript to watch trailers here.</p></noscript>
 </td>
 
 </tr>
 </table>
+</div>
 
+<div class="feature-intermission"><span>And then...</span></div>
+<div class="movie-feature">
 <table class="movie-night">
 <tr>
 
 
 <td valign="top" class="movie-object">
+<div class="movie-heading">
+<div class="movie-poster" aria-hidden="true">
+<img src="/posters/rad-1986.svg" alt="" width="160" height="240" loading="lazy" decoding="async">
+</div>
+<div class="movie-information">
 <div class="movie-name">Rad</div>
 <div class="movie-attrib">
 
-1986 | 93 mins | Rating: <span style="font-weight: normal">PG</span>
-<br/>Director: <span style="font-weight: normal">Hal Needham</span>
+<div class="movie-facts">
+<span class="movie-fact">1986</span>
+<span class="movie-fact">93 min</span>
+<span class="movie-fact">Rating: PG</span>
+</div>
+<p class="movie-director">Director: Hal Needham</p>
 <div>
 <a href="http://imdb.com/title/tt0091817" target="_blank" rel="noopener noreferrer" class="link-button">IMDB</a>
 </div>
 
+</div>
+</div>
 </div>
 <div class="movie-summary" height="*">
 
@@ -457,11 +674,26 @@ The story of one young man, Cru Jones, who has the intensity and desire to win a
 </td>
 
 <td class="movie-object movie-clip">
+<details class="movie-trailer">
+<summary>
+  <span class="movie-trailer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+  <span class="movie-trailer-show">Watch trailer</span>
+  <span class="movie-trailer-hide">Hide trailer</span>
+</summary>
+<div class="movie-trailer-frame">
+  <div class="movie-trailer-player" aria-busy="false"></div>
+  <p class="movie-trailer-status" role="status" hidden>Loading trailer...</p>
+</div>
+<template>
 <iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/oY4BfmTlsvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</template>
+</details>
+<noscript><p>Enable JavaScript to watch trailers here.</p></noscript>
 </td>
 
 </tr>
 </table>
+</div>
 
   </div>
 </div>
@@ -471,7 +703,7 @@ The story of one young man, Cru Jones, who has the intensity and desire to win a
   <footer class="entry-footer"><span title='2025-08-30 00:15:57 -0700 PDT'>August 30, 2025</span></footer>
 </article>
 
-<article class="post-entry">
+<article id="event-posts2025-8-16" class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, August 16th (7:30PM)</div>
@@ -483,20 +715,32 @@ The story of one young man, Cru Jones, who has the intensity and desire to win a
   <div class="event-body">
     
 
+<div class="movie-feature">
 <table class="movie-night">
 <tr>
 
 
 <td valign="top" class="movie-object">
+<div class="movie-heading">
+<div class="movie-poster" aria-hidden="true">
+<img src="/posters/for-your-height-only-1981.svg" alt="" width="160" height="240" loading="lazy" decoding="async">
+</div>
+<div class="movie-information">
 <div class="movie-name">For Your Height Only</div>
 <div class="movie-attrib">
 
-1981 | 88 mins | Rating: <span style="font-weight: normal">Unrated</span>
-<br/>Director: <span style="font-weight: normal">Eddit Nicart</span>
+<div class="movie-facts">
+<span class="movie-fact">1981</span>
+<span class="movie-fact">88 min</span>
+<span class="movie-fact">Rating: Unrated</span>
+</div>
+<p class="movie-director">Director: Eddit Nicart</p>
 <div>
 <a href="http://imdb.com/title/tt0200642" target="_blank" rel="noopener noreferrer" class="link-button">IMDB</a>
 </div>
 
+</div>
+</div>
 </div>
 <div class="movie-summary" height="*">
 
@@ -506,26 +750,54 @@ The diminutive Agent 00 must rescue a kidnapped scientist and stop a mysterious 
 </td>
 
 <td class="movie-object movie-clip">
+<details class="movie-trailer">
+<summary>
+  <span class="movie-trailer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+  <span class="movie-trailer-show">Watch trailer</span>
+  <span class="movie-trailer-hide">Hide trailer</span>
+</summary>
+<div class="movie-trailer-frame">
+  <div class="movie-trailer-player" aria-busy="false"></div>
+  <p class="movie-trailer-status" role="status" hidden>Loading trailer...</p>
+</div>
+<template>
 <iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/iRajrmiarkg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</template>
+</details>
+<noscript><p>Enable JavaScript to watch trailers here.</p></noscript>
 </td>
 
 </tr>
 </table>
+</div>
 
+<div class="feature-intermission"><span>And then...</span></div>
+<div class="movie-feature">
 <table class="movie-night">
 <tr>
 
 
 <td valign="top" class="movie-object">
+<div class="movie-heading">
+<div class="movie-poster" aria-hidden="true">
+<img src="/posters/kiss-the-girls-and-make-them-die-1966.svg" alt="" width="160" height="240" loading="lazy" decoding="async">
+</div>
+<div class="movie-information">
 <div class="movie-name">Kiss the Girls and Make Them Die</div>
 <div class="movie-attrib">
 
-1966 | 106 mins | Rating: <span style="font-weight: normal">Unrated</span>
-<br/>Director: <span style="font-weight: normal">Henry Levin, Dino Mairui</span>
+<div class="movie-facts">
+<span class="movie-fact">1966</span>
+<span class="movie-fact">106 min</span>
+<span class="movie-fact">Rating: Unrated</span>
+</div>
+<p class="movie-director">Director: Henry Levin, Dino Mairui</p>
 <div>
 <a href="http://imdb.com/title/tt0060592" target="_blank" rel="noopener noreferrer" class="link-button">IMDB</a>
 </div>
 
+</div>
+</div>
 </div>
 <div class="movie-summary" height="*">
 
@@ -534,11 +806,26 @@ In this spoof of spy films, CIA agent, Kelly, is in Rio De Janeiro spying on a w
 </td>
 
 <td class="movie-object movie-clip">
+<details class="movie-trailer">
+<summary>
+  <span class="movie-trailer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+  <span class="movie-trailer-show">Watch trailer</span>
+  <span class="movie-trailer-hide">Hide trailer</span>
+</summary>
+<div class="movie-trailer-frame">
+  <div class="movie-trailer-player" aria-busy="false"></div>
+  <p class="movie-trailer-status" role="status" hidden>Loading trailer...</p>
+</div>
+<template>
 <iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/PBORt0Cc42o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</template>
+</details>
+<noscript><p>Enable JavaScript to watch trailers here.</p></noscript>
 </td>
 
 </tr>
 </table>
+</div>
 
   </div>
 </div>
@@ -548,7 +835,7 @@ In this spoof of spy films, CIA agent, Kelly, is in Rio De Janeiro spying on a w
   <footer class="entry-footer"><span title='2025-08-16 00:15:57 -0700 PDT'>August 16, 2025</span></footer>
 </article>
 
-<article class="post-entry">
+<article id="event-posts2025-7-26" class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, July 26th (7:30PM)</div>
@@ -560,20 +847,32 @@ In this spoof of spy films, CIA agent, Kelly, is in Rio De Janeiro spying on a w
   <div class="event-body">
     
 
+<div class="movie-feature">
 <table class="movie-night">
 <tr>
 
 
 <td valign="top" class="movie-object">
+<div class="movie-heading">
+<div class="movie-poster" aria-hidden="true">
+<img src="/posters/sworn-to-justice-1996.svg" alt="" width="160" height="240" loading="lazy" decoding="async">
+</div>
+<div class="movie-information">
 <div class="movie-name">Sworn to Justice</div>
 <div class="movie-attrib">
 
-1996 | 97 mins | Rating: <span style="font-weight: normal">R</span>
-<br/>Director: <span style="font-weight: normal">Paul Maslak</span>
+<div class="movie-facts">
+<span class="movie-fact">1996</span>
+<span class="movie-fact">97 min</span>
+<span class="movie-fact">Rating: R</span>
+</div>
+<p class="movie-director">Director: Paul Maslak</p>
 <div>
 <a href="http://imdb.com/title/tt0117803" target="_blank" rel="noopener noreferrer" class="link-button">IMDB</a>
 </div>
 
+</div>
+</div>
 </div>
 <div class="movie-summary" height="*">
 
@@ -583,26 +882,54 @@ After attackers kill her sister and nephew, a female psychologist becomes a defe
 </td>
 
 <td class="movie-object movie-clip">
+<details class="movie-trailer">
+<summary>
+  <span class="movie-trailer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+  <span class="movie-trailer-show">Watch trailer</span>
+  <span class="movie-trailer-hide">Hide trailer</span>
+</summary>
+<div class="movie-trailer-frame">
+  <div class="movie-trailer-player" aria-busy="false"></div>
+  <p class="movie-trailer-status" role="status" hidden>Loading trailer...</p>
+</div>
+<template>
 <iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/GDWRQ6wZrQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</template>
+</details>
+<noscript><p>Enable JavaScript to watch trailers here.</p></noscript>
 </td>
 
 </tr>
 </table>
+</div>
 
+<div class="feature-intermission"><span>And then...</span></div>
+<div class="movie-feature">
 <table class="movie-night">
 <tr>
 
 
 <td valign="top" class="movie-object">
+<div class="movie-heading">
+<div class="movie-poster" aria-hidden="true">
+<img src="/posters/women-on-the-run-1993.svg" alt="" width="160" height="240" loading="lazy" decoding="async">
+</div>
+<div class="movie-information">
 <div class="movie-name">Women on the Run</div>
 <div class="movie-attrib">
 
-1993 | 89 mins | Rating: <span style="font-weight: normal">Unrated</span>
-<br/>Director: <span style="font-weight: normal">David Lai, Corey Yuen</span>
+<div class="movie-facts">
+<span class="movie-fact">1993</span>
+<span class="movie-fact">89 min</span>
+<span class="movie-fact">Rating: Unrated</span>
+</div>
+<p class="movie-director">Director: David Lai, Corey Yuen</p>
 <div>
 <a href="http://imdb.com/title/tt0106553" target="_blank" rel="noopener noreferrer" class="link-button">IMDB</a>
 </div>
 
+</div>
+</div>
 </div>
 <div class="movie-summary" height="*">
 
@@ -612,11 +939,26 @@ A young woman named Yin dreams of leaving her modest village life for a chance t
 </td>
 
 <td class="movie-object movie-clip">
+<details class="movie-trailer">
+<summary>
+  <span class="movie-trailer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+  <span class="movie-trailer-show">Watch trailer</span>
+  <span class="movie-trailer-hide">Hide trailer</span>
+</summary>
+<div class="movie-trailer-frame">
+  <div class="movie-trailer-player" aria-busy="false"></div>
+  <p class="movie-trailer-status" role="status" hidden>Loading trailer...</p>
+</div>
+<template>
 <iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/qQGqBybNP2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</template>
+</details>
+<noscript><p>Enable JavaScript to watch trailers here.</p></noscript>
 </td>
 
 </tr>
 </table>
+</div>
 
   </div>
 </div>
@@ -626,7 +968,7 @@ A young woman named Yin dreams of leaving her modest village life for a chance t
   <footer class="entry-footer"><span title='2025-07-26 00:15:57 -0700 PDT'>July 26, 2025</span></footer>
 </article>
 
-<article class="post-entry">
+<article id="event-posts2025-7-12" class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, July 12th (7:30PM)</div>
@@ -638,20 +980,32 @@ A young woman named Yin dreams of leaving her modest village life for a chance t
   <div class="event-body">
     
 
+<div class="movie-feature">
 <table class="movie-night">
 <tr>
 
 
 <td valign="top" class="movie-object">
+<div class="movie-heading">
+<div class="movie-poster" aria-hidden="true">
+<img src="/posters/brain-damage-1988.svg" alt="" width="160" height="240" loading="lazy" decoding="async">
+</div>
+<div class="movie-information">
 <div class="movie-name">Brain Damage</div>
 <div class="movie-attrib">
 
-1988 | 84 mins | Rating: <span style="font-weight: normal">R</span>
-<br/>Director: <span style="font-weight: normal">Frank Henenlotter</span>
+<div class="movie-facts">
+<span class="movie-fact">1988</span>
+<span class="movie-fact">84 min</span>
+<span class="movie-fact">Rating: R</span>
+</div>
+<p class="movie-director">Director: Frank Henenlotter</p>
 <div>
 <a href="http://imdb.com/title/tt0094793" target="_blank" rel="noopener noreferrer" class="link-button">IMDB</a>
 </div>
 
+</div>
+</div>
 </div>
 <div class="movie-summary" height="*">
 
@@ -661,26 +1015,54 @@ One morning, a young man wakes to find that a small, disgusting creature has att
 </td>
 
 <td class="movie-object movie-clip">
+<details class="movie-trailer">
+<summary>
+  <span class="movie-trailer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+  <span class="movie-trailer-show">Watch trailer</span>
+  <span class="movie-trailer-hide">Hide trailer</span>
+</summary>
+<div class="movie-trailer-frame">
+  <div class="movie-trailer-player" aria-busy="false"></div>
+  <p class="movie-trailer-status" role="status" hidden>Loading trailer...</p>
+</div>
+<template>
 <iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/53Vih-wt5OY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</template>
+</details>
+<noscript><p>Enable JavaScript to watch trailers here.</p></noscript>
 </td>
 
 </tr>
 </table>
+</div>
 
+<div class="feature-intermission"><span>And then...</span></div>
+<div class="movie-feature">
 <table class="movie-night">
 <tr>
 
 
 <td valign="top" class="movie-object">
+<div class="movie-heading">
+<div class="movie-poster" aria-hidden="true">
+<img src="/posters/bloody-muscle-body-builder-in-hell-1995.svg" alt="" width="160" height="240" loading="lazy" decoding="async">
+</div>
+<div class="movie-information">
 <div class="movie-name">Bloody Muscle Body Builder In Hell</div>
 <div class="movie-attrib">
 
-1995 | 62 mins | Rating: <span style="font-weight: normal">Unrated</span>
-<br/>Director: <span style="font-weight: normal">Shinichi Fukazawa</span>
+<div class="movie-facts">
+<span class="movie-fact">1995</span>
+<span class="movie-fact">62 min</span>
+<span class="movie-fact">Rating: Unrated</span>
+</div>
+<p class="movie-director">Director: Shinichi Fukazawa</p>
 <div>
 <a href="http://imdb.com/title/tt6403680" target="_blank" rel="noopener noreferrer" class="link-button">IMDB</a>
 </div>
 
+</div>
+</div>
 </div>
 <div class="movie-summary" height="*">
 
@@ -690,11 +1072,26 @@ Trapped inside a haunted house, a body builder must save himself from a gruesome
 </td>
 
 <td class="movie-object movie-clip">
+<details class="movie-trailer">
+<summary>
+  <span class="movie-trailer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+  <span class="movie-trailer-show">Watch trailer</span>
+  <span class="movie-trailer-hide">Hide trailer</span>
+</summary>
+<div class="movie-trailer-frame">
+  <div class="movie-trailer-player" aria-busy="false"></div>
+  <p class="movie-trailer-status" role="status" hidden>Loading trailer...</p>
+</div>
+<template>
 <iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/U_RV4OdeiWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</template>
+</details>
+<noscript><p>Enable JavaScript to watch trailers here.</p></noscript>
 </td>
 
 </tr>
 </table>
+</div>
 
   </div>
 </div>
@@ -704,7 +1101,7 @@ Trapped inside a haunted house, a body builder must save himself from a gruesome
   <footer class="entry-footer"><span title='2025-07-12 00:15:57 -0700 PDT'>July 12, 2025</span></footer>
 </article>
 
-<article class="post-entry">
+<article id="event-posts2025-6-28" class="post-entry">
   <header class="entry-header">
     <div class="event-date-box">
         <div class="event-date">Saturday, June 28th (7:30PM)</div>
@@ -716,21 +1113,33 @@ Trapped inside a haunted house, a body builder must save himself from a gruesome
   <div class="event-body">
     
 
+<div class="movie-feature">
 <table class="movie-night">
 <tr>
 
 
 <td valign="top" class="movie-object">
+<div class="movie-heading">
+<div class="movie-poster" aria-hidden="true">
+<img src="/posters/geteven-1993.svg" alt="" width="160" height="240" loading="lazy" decoding="async">
+</div>
+<div class="movie-information">
 <div class="movie-name">GETEVEN</div>
 <div class="movie-attrib">
 
-1993 | 90 mins | Rating: <span style="font-weight: normal">Unrated</span>
-<br/>Director: <span style="font-weight: normal">John De Hart, James Paradise</span>
+<div class="movie-facts">
+<span class="movie-fact">1993</span>
+<span class="movie-fact">90 min</span>
+<span class="movie-fact">Rating: Unrated</span>
+</div>
+<p class="movie-director">Director: John De Hart, James Paradise</p>
 <div>
 <a href="http://youtube.com/watch?v=7Bd_CLKt9yA" target="_blank" rel="noopener noreferrer" class="link-button">BOTW</a>
 <a href="http://imdb.com/title/tt0169183" target="_blank" rel="noopener noreferrer" class="link-button">IMDB</a>
 </div>
 
+</div>
+</div>
 </div>
 <div class="movie-summary" height="*">
 
@@ -740,27 +1149,55 @@ Two cops are fired after being setup by their corrupt boss, who gets appointed a
 </td>
 
 <td class="movie-object movie-clip">
+<details class="movie-trailer">
+<summary>
+  <span class="movie-trailer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+  <span class="movie-trailer-show">Watch trailer</span>
+  <span class="movie-trailer-hide">Hide trailer</span>
+</summary>
+<div class="movie-trailer-frame">
+  <div class="movie-trailer-player" aria-busy="false"></div>
+  <p class="movie-trailer-status" role="status" hidden>Loading trailer...</p>
+</div>
+<template>
 <iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/pSkgJY2P2gw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</template>
+</details>
+<noscript><p>Enable JavaScript to watch trailers here.</p></noscript>
 </td>
 
 </tr>
 </table>
+</div>
 
+<div class="feature-intermission"><span>And then...</span></div>
+<div class="movie-feature">
 <table class="movie-night">
 <tr>
 
 
 <td valign="top" class="movie-object">
+<div class="movie-heading">
+<div class="movie-poster" aria-hidden="true">
+<img src="/posters/the-instructor-1981.svg" alt="" width="160" height="240" loading="lazy" decoding="async">
+</div>
+<div class="movie-information">
 <div class="movie-name">The Instructor</div>
 <div class="movie-attrib">
 
-1981 | 94 mins | Rating: <span style="font-weight: normal">R</span>
-<br/>Director: <span style="font-weight: normal">Bob Bendell</span>
+<div class="movie-facts">
+<span class="movie-fact">1981</span>
+<span class="movie-fact">94 min</span>
+<span class="movie-fact">Rating: R</span>
+</div>
+<p class="movie-director">Director: Bob Bendell</p>
 <div>
 <a href="http://youtube.com/watch?v=m2IV0BajqAk" target="_blank" rel="noopener noreferrer" class="link-button">BOTW</a>
 <a href="http://imdb.com/title/tt0187993" target="_blank" rel="noopener noreferrer" class="link-button">IMDB</a>
 </div>
 
+</div>
+</div>
 </div>
 <div class="movie-summary" height="*">
 
@@ -770,11 +1207,26 @@ Bendell's self-defense school is considered pretty good, but not in the league o
 </td>
 
 <td class="movie-object movie-clip">
+<details class="movie-trailer">
+<summary>
+  <span class="movie-trailer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+  <span class="movie-trailer-show">Watch trailer</span>
+  <span class="movie-trailer-hide">Hide trailer</span>
+</summary>
+<div class="movie-trailer-frame">
+  <div class="movie-trailer-player" aria-busy="false"></div>
+  <p class="movie-trailer-status" role="status" hidden>Loading trailer...</p>
+</div>
+<template>
 <iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/ibvT3K71n6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</template>
+</details>
+<noscript><p>Enable JavaScript to watch trailers here.</p></noscript>
 </td>
 
 </tr>
 </table>
+</div>
 
   </div>
 </div>
@@ -784,7 +1236,7 @@ Bendell's self-defense school is considered pretty good, but not in the league o
   <footer class="entry-footer"><span title='2025-06-28 00:15:57 -0700 PDT'>June 28, 2025</span></footer>
 </article>
 
-<article class="post-entry">
+<article id="event-posts2024-end" class="post-entry post-entry-unboxed">
   <header class="entry-header">
     <div class="event-date-box">
     </div>
@@ -792,7 +1244,10 @@ Bendell's self-defense school is considered pretty good, but not in the league o
   <div class="entry-content">
     
 
-<div class="movie-name" style="text-align:center">Previous Nights 2024</div>
+<div class="season-divider">
+  <p class="season-divider-label">That's a wrap</p>
+  <h2>Previous Nights 2024</h2>
+</div>
 
 
   </div>
@@ -812,7 +1267,57 @@ Bendell's self-defense school is considered pretty good, but not in the league o
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
     </svg>
-</a>
+</a><script>
+    const mobileTrailers = window.matchMedia("(max-width: 1023.98px)");
+
+    document.querySelectorAll(".movie-trailer").forEach(trailer => {
+        const template = trailer.querySelector("template");
+        const player = trailer.querySelector(".movie-trailer-player");
+        const status = trailer.querySelector(".movie-trailer-status");
+
+        const updatePlayer = () => {
+            if (trailer.open && !player.firstElementChild) {
+                status.textContent = "Loading trailer...";
+                status.hidden = false;
+                player.setAttribute("aria-busy", "true");
+
+                const iframe = template.content.firstElementChild.cloneNode(true);
+                const finishLoading = (message = "") => {
+                    if (iframe.parentElement !== player) {
+                        return;
+                    }
+                    player.setAttribute("aria-busy", "false");
+                    status.hidden = !message;
+                    if (message) {
+                        status.textContent = message;
+                    }
+                };
+
+                iframe.addEventListener("load", () => finishLoading(), { once: true });
+                iframe.addEventListener("error", () => finishLoading(
+                    mobileTrailers.matches
+                        ? "The trailer couldn't load. Close and reopen it to try again."
+                        : "The trailer couldn't load. Reload the page to try again."
+                ), { once: true });
+                player.replaceChildren(iframe);
+            } else if (!trailer.open) {
+                player.replaceChildren();
+                player.setAttribute("aria-busy", "false");
+                status.hidden = true;
+            }
+        };
+
+        const updateLayout = () => {
+            trailer.open = !mobileTrailers.matches;
+            updatePlayer();
+        };
+
+        trailer.addEventListener("toggle", updatePlayer);
+        mobileTrailers.addEventListener("change", updateLayout);
+        updateLayout();
+    });
+</script>
+
 
 <script>
     let menu = document.getElementById('menu')
@@ -827,13 +1332,7 @@ Bendell's self-defense school is considered pretty good, but not in the league o
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
+            document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {

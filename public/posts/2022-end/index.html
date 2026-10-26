@@ -7,10 +7,11 @@
 <meta name="robots" content="index, follow">
 <title>Summer 2022 End | Zac&#39;s Summer Movie Night</title>
 <meta name="keywords" content="">
-<meta name="description" content="Previous Nights 2022">
+<meta name="description" content="That&#39;s a wrap
+Previous Nights 2022">
 <meta name="author" content="">
 <link rel="canonical" href="https://zac.events/posts/2022-end/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=5" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=19" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://zac.events/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://zac.events/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://zac.events/favicon-32x32.png">
@@ -59,7 +60,8 @@
   
 
 <meta property="og:title" content="Summer 2022 End" />
-<meta property="og:description" content="Previous Nights 2022" />
+<meta property="og:description" content="That&#39;s a wrap
+Previous Nights 2022" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zac.events/posts/2022-end/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-10-30T21:47:06-07:00" />
@@ -67,7 +69,8 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Summer 2022 End"/>
-<meta name="twitter:description" content="Previous Nights 2022"/>
+<meta name="twitter:description" content="That&#39;s a wrap
+Previous Nights 2022"/>
 
 
 <script type="application/ld+json">
@@ -96,12 +99,12 @@
   "@type": "BlogPosting",
   "headline": "Summer 2022 End",
   "name": "Summer 2022 End",
-  "description": "\rPrevious Nights 2022\r",
+  "description": "\rThat's a wrap\nPrevious Nights 2022\r",
   "keywords": [
     
   ],
-  "articleBody": "\rPrevious Nights 2022\r",
-  "wordCount" : "3",
+  "articleBody": "\rThat's a wrap\nPrevious Nights 2022\r",
+  "wordCount" : "6",
   "inLanguage": "en",
   "datePublished": "2022-10-30T21:47:06-07:00",
   "dateModified": "2022-10-30T21:47:06-07:00",
@@ -137,11 +140,12 @@
         <div class="logo">
             <a href="https://zac.events/" accesskey="h" title=" (Alt + H)">
                     <div class="logo-image-container">
-                        <img src="https://zac.events/moviebanner8.png" alt="Logo Image" class="logo-image">
+                        <img src="https://zac.events/banners/moviebanner8.png" alt="Logo Image" class="logo-image">
                         <div class="logo-image-text"></div>
                     </div>
             </a>
-            <div class="logo-switch-box"></div>
+        </div>
+        <div class="header-controls">
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -163,7 +167,6 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
-
             </div>
         </div>
         <ul id="menu">
@@ -181,7 +184,10 @@
   </header>
   <div class="post-content">
 
-<div class="movie-name" style="text-align:center">Previous Nights 2022</div>
+<div class="season-divider">
+  <p class="season-divider-label">That's a wrap</p>
+  <h2>Previous Nights 2022</h2>
+</div>
 
 
 
@@ -199,7 +205,57 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
     </svg>
-</a>
+</a><script>
+    const mobileTrailers = window.matchMedia("(max-width: 1023.98px)");
+
+    document.querySelectorAll(".movie-trailer").forEach(trailer => {
+        const template = trailer.querySelector("template");
+        const player = trailer.querySelector(".movie-trailer-player");
+        const status = trailer.querySelector(".movie-trailer-status");
+
+        const updatePlayer = () => {
+            if (trailer.open && !player.firstElementChild) {
+                status.textContent = "Loading trailer...";
+                status.hidden = false;
+                player.setAttribute("aria-busy", "true");
+
+                const iframe = template.content.firstElementChild.cloneNode(true);
+                const finishLoading = (message = "") => {
+                    if (iframe.parentElement !== player) {
+                        return;
+                    }
+                    player.setAttribute("aria-busy", "false");
+                    status.hidden = !message;
+                    if (message) {
+                        status.textContent = message;
+                    }
+                };
+
+                iframe.addEventListener("load", () => finishLoading(), { once: true });
+                iframe.addEventListener("error", () => finishLoading(
+                    mobileTrailers.matches
+                        ? "The trailer couldn't load. Close and reopen it to try again."
+                        : "The trailer couldn't load. Reload the page to try again."
+                ), { once: true });
+                player.replaceChildren(iframe);
+            } else if (!trailer.open) {
+                player.replaceChildren();
+                player.setAttribute("aria-busy", "false");
+                status.hidden = true;
+            }
+        };
+
+        const updateLayout = () => {
+            trailer.open = !mobileTrailers.matches;
+            updatePlayer();
+        };
+
+        trailer.addEventListener("toggle", updatePlayer);
+        mobileTrailers.addEventListener("change", updateLayout);
+        updateLayout();
+    });
+</script>
+
 
 <script>
     let menu = document.getElementById('menu')
@@ -214,13 +270,7 @@
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
+            document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {

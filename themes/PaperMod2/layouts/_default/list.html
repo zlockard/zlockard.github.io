@@ -34,14 +34,7 @@
 </div>
 {{- end }}
 
-{{- $pages := union .RegularPages .Sections }}
-
-{{- if .IsHome }}
-{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
-{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
-{{- end }}
-
-{{- $paginator := .Paginate $pages }}
+{{- $paginator := partial "event_paginator.html" . }}
 
 {{- $term := .Data.Term }}
 {{- range $paginator.Pages }}
@@ -55,7 +48,7 @@
 {{- $class = printf "%s tag-entry" $class }}
 {{- end }}
 
-<article class="{{ $class }}">
+<article id="event-{{ .RelPermalink | anchorize }}" class="{{ $class }}">
   <header class="entry-header">
     <div class="event-date-box">
       {{- if (ne (.Param "hideTitle") true) }}

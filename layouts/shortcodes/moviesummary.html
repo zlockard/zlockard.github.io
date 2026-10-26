@@ -1,14 +1,30 @@
 <!-- movie summary -->
 <td valign="top" class="movie-object">
+<div class="movie-heading">
+<div class="movie-poster" aria-hidden="true">
+{{- with .Get "poster" }}
+<img src="{{ . | relURL }}" alt="" width="160" height="240" loading="lazy" decoding="async">
+{{- else }}
+<div class="movie-poster-mockup">
+  <span class="movie-poster-brand">Backyard cinema</span>
+  <svg viewBox="0 0 40 40" aria-hidden="true"><path d="m20 2 4 11 11-5-5 11 10 4-12 3 3 12-11-7-9 8 1-13L0 22l12-5L8 5l10 8z"/></svg>
+  <span class="movie-poster-title">{{ .Get "title" }}</span>
+  <span class="movie-poster-year">{{ .Get "year" }}</span>
+</div>
+{{- end }}
+</div>
+<div class="movie-information">
 <div class="movie-name">{{ .Get "title" }}</div>
 <div class="movie-attrib">
 
-{{ .Get "year" }} | {{ .Get "length" }} mins
-
-{{- if .Get "rating" }} | Rating: <span style="font-weight: normal">{{ .Get "rating" }}</span>{{- end}}
+<div class="movie-facts">
+{{ with .Get "year" }}<span class="movie-fact">{{ . }}</span>{{ end }}
+{{ with .Get "length" }}<span class="movie-fact">{{ . }} min</span>{{ end }}
+{{ with .Get "rating" }}<span class="movie-fact">Rating: {{ . }}</span>{{ end }}
+</div>
 
 {{- if .Get "director" }}
-<br/>Director: <span style="font-weight: normal">{{ .Get "director" }}</span>
+<p class="movie-director">Director: {{ .Get "director" }}</p>
 {{- end }}
 {{- if or (.Get "botw") (.Get "imdb") }}
 <div>
@@ -26,6 +42,8 @@
 
 {{- if (.Get "movietag")}}<div><center><img src="{{ .Get "movietag"}}"></center></div>{{- end }}
 
+</div>
+</div>
 </div>
 <div class="movie-summary" height="*">
 {{.Inner}}

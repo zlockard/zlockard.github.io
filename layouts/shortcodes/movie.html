@@ -1,6 +1,16 @@
 <!-- movie  -->
+{{- $number := 1 -}}
+{{- with .Parent -}}
+  {{- .Scratch.Add "movie-feature-count" 1 -}}
+  {{- $number = .Scratch.Get "movie-feature-count" -}}
+{{- end -}}
+{{- if gt $number 1 }}
+<div class="feature-intermission"><span>And then...</span></div>
+{{- end }}
+<div class="movie-feature">
 <table class="movie-night">
 <tr>
 {{.Inner}}
 </tr>
 </table>
+</div>

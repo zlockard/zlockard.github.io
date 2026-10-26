@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450" viewBox="0 0 300 450" role="img" aria-labelledby="title description">
+  <title id="title">Troll 2 - original backyard cinema poster</title>
+  <desc id="description">A cream and forest-green Troll 2 video case, with a black VHS tape sliding out to the right. The cover features a Nilbog sign, a farmhouse among creeping plants, and a cup of bright green food.</desc>
+  <defs>
+    <linearGradient id="plastic" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop stop-color="#202529"/>
+      <stop offset=".65" stop-color="#363d42"/>
+      <stop offset="1" stop-color="#1b2023"/>
+    </linearGradient>
+    <radialGradient id="shadow">
+      <stop stop-color="#000000" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grip" width="7" height="8" patternUnits="userSpaceOnUse">
+      <path d="M1 2h5" stroke="#697379" stroke-width="1.5"/>
+    </pattern>
+    <g id="reel">
+      <circle r="28" fill="#d6d0ba" stroke="#161b1e" stroke-width="2.5"/>
+      <circle r="22" fill="none" stroke="#aaa38e" stroke-width="1.5"/>
+      <path d="M0-19v9M16.5-9.5l-7.8 4.5M16.5 9.5l-7.8-4.5M0 19V10M-16.5 9.5l7.8-4.5M-16.5-9.5l7.8 4.5" fill="none" stroke="#343b3e" stroke-width="3" stroke-linecap="round"/>
+      <circle r="6" fill="#202529"/>
+    </g>
+  </defs>
+  <ellipse cx="150" cy="421" rx="143" ry="12" fill="url(#shadow)"/>
+  <g id="cassette" transform="translate(-23.36 -32.56) scale(1.08)">
+    <path id="cassette-top" d="M100 63l6.5-4.55a6 6 0 0 1 6-6h180a6 6 0 0 1 6 6L292 63a6 6 0 0 0-6-6H106a6 6 0 0 0-6 6Z" fill="#586369" stroke="#111719" stroke-width="1"/>
+    <path id="cassette-right" d="M292 63l6.5-4.55v338a6 6 0 0 1-2.559 4.915l-6.5 4.55A6 6 0 0 0 292 401Z" fill="#141a1e" stroke="#111719" stroke-width="1"/>
+    <rect x="100" y="57" width="192" height="350" rx="6" fill="url(#plastic)" stroke="#111719" stroke-width="2"/>
+    <path d="M105 65h179v333" fill="none" stroke="#727e84" stroke-width="1"/>
+    <rect x="278" y="91" width="7" height="279" fill="url(#grip)"/>
+    <rect x="164" y="94" width="80" height="278" rx="14" fill="#485250" stroke="#14191c" stroke-width="3"/>
+    <path d="M187 143h46v182h-46Z" fill="#171d1d"/>
+    <path d="M235 157v154" stroke="#79827a" stroke-width="1" opacity=".5"/>
+    <use href="#reel" x="210" y="143"/>
+    <use href="#reel" x="210" y="325"/>
+    <rect x="253" y="157" width="18" height="151" rx="2" fill="#eee6cf"/>
+    <text x="262" y="233" transform="rotate(90 262 233)" text-anchor="middle" dominant-baseline="middle" fill="#294936" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="bold" letter-spacing="1">TROLL 2</text>
+    <text x="263" y="356" transform="rotate(90 263 356)" text-anchor="middle" fill="#c3cacc" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" font-style="italic">VHS</text>
+    <g fill="#8b9599" stroke="#151a1d" stroke-width="1.5">
+      <circle cx="282" cy="76" r="3"/>
+      <circle cx="282" cy="389" r="3"/>
+      <path d="m280.5 74.5 3 3m-3 310 3 3"/>
+    </g>
+  </g>
+  <g id="case">
+    <path d="m2 30 10-7h210.5l-10 7Z" fill="#fff2d2"/>
+    <rect x="2" y="30" width="210.5" height="380" fill="#f3e3bd" stroke="#b49c6b" stroke-width="1.5"/>
+    <path d="M12 42h190.5v356H12Z" fill="none" stroke="#d4bf91" stroke-width="1"/>
+    <g id="cover-art" transform="translate(7.25 0)">
+    <path d="M27 49h80" stroke="#294936" stroke-width="5"/>
+    <path d="M107 49h44" stroke="#b44c32" stroke-width="5"/>
+    <path d="M151 49h22" stroke="#d7a74a" stroke-width="5"/>
+    <g font-family="Arial, Helvetica, sans-serif" font-weight="900">
+      <text x="26" y="108" fill="#294936" font-size="43" letter-spacing="-1.5">TROLL</text>
+      <text x="172" y="198" text-anchor="end" fill="#b44c32" font-size="96" letter-spacing="-3">2</text>
+    </g>
+    <path d="M66 165v49" stroke="#94713f" stroke-width="4"/>
+    <path d="M28 140h79v26H28Z" fill="#294936"/>
+    <text x="67.5" y="157.5" text-anchor="middle" fill="#f7ebcf" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" letter-spacing="1">NILBOG</text>
+    <path d="M25 243q73-38 150-11v111H25Z" fill="#e7d6a6"/>
+    <path d="M25 314q63-32 150 1v28H25Z" fill="#879654"/>
+    <path d="M118 238v-13h7v23" fill="#294936"/>
+    <rect x="76" y="259" width="54" height="49" fill="#dfaf58" stroke="#294936" stroke-width="2.5"/>
+    <path d="m67 261 36-33 36 33Z" fill="#294936"/>
+    <path d="M98 308v-22h12v22" fill="#294936"/>
+    <g fill="#f7ebcf" stroke="#294936" stroke-width="2">
+      <rect x="83" y="270" width="9" height="11"/>
+      <rect x="115" y="270" width="9" height="11"/>
+    </g>
+    <g fill="none" stroke="#46643b" stroke-width="3" stroke-linecap="round">
+      <path d="M38 326q15-41-1-69M64 325q-1-27 12-41"/>
+    </g>
+    <g fill="#628043">
+      <path d="M42 281q-20-4-13-23 17 4 13 23ZM44 300q22-10 17-27-19 7-17 27Z"/>
+      <path d="M66 307q-18-5-12-21 17 4 12 21Z"/>
+    </g>
+    <path d="m144 296 4 25h17l4-25Z" fill="#f7ebcf" stroke="#294936" stroke-width="2.5"/>
+    <path d="M143 296q-2-9 6-10 1-10 9-6 10-4 10 6 7 0 3 10h-8v9q-3 5-6 0v-9Z" fill="#91b64c" stroke="#294936" stroke-width="2"/>
+    <path d="M27 366h146" stroke="#b49c6b" stroke-width="1"/>
+    <g font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#294936" font-size="14">
+      <text x="27" y="389" letter-spacing="1">1990</text>
+      <text x="173" y="389" text-anchor="end" font-style="italic">VHS</text>
+    </g>
+    </g>
+  </g>
+</svg>
