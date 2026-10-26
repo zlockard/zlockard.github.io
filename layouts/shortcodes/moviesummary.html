@@ -40,12 +40,13 @@
 </div>
 {{- end }}
 
-{{- if (.Get "movietag")}}<div><center><img src="{{ .Get "movietag"}}"></center></div>{{- end }}
-
 </div>
 </div>
 </div>
 <div class="movie-summary" height="*">
+{{- with .Get "movietag" }}
+<img class="movie-tag" src="{{ . | relURL }}" alt="">
+{{- end }}
 {{.Inner}}
 </div>
 </td>

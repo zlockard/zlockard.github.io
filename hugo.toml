@@ -14,4 +14,4 @@ theme = 'papermod2'
 #        text = "Zac's Summer Movie Night"
     [params.assets]
         disableFingerprinting = true
-        styleSheetVersion = 19
+        styleSheetVersion = 26

@@ -139,6 +139,11 @@ A short description of the movie.
 Put local poster files under `static/posters/`. Poster images are lazy-loaded,
 and the full movie title always remains readable beside the poster.
 
+The optional `movietag` image (for example, `movietag="/events/bestof.png"`)
+is centered directly above the summary text, independently of the poster and
+movie details. Put local tag images under `static/`; they scale down to fit on
+small screens.
+
 Home and posts listings include right-aligned **Browse by year** links on the
 same row as the left-aligned light/dark selector. On small screens the text label is hidden, keeping the selector and
 year buttons on one row; extra years can scroll horizontally. Each link jumps to the

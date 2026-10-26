@@ -18,6 +18,7 @@
 
 .link-button {
     background-color: var(--secondary);
+    border: 2px solid var(--primary);
     width: 33%;
     padding: 2px;
     margin-top: 8px;
@@ -125,7 +126,6 @@ table.movie-night td {
     border-radius: 4px;
     background: var(--primary);
     color: var(--theme);
-    box-shadow: 0 4px 0 var(--border);
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
@@ -356,7 +356,8 @@ table.movie-night td {
 .feature-intermission::after {
     content: "";
     flex: 1;
-    border-top: 1px solid var(--border);
+    border-top: 1px solid currentColor;
+    opacity: 0.35;
 }
 
 .season-navigation {
@@ -446,6 +447,13 @@ table.movie-night td {
     margin-right: 5px;
 }
 
+.movie-summary .movie-tag {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 12px;
+}
+
 .event {
     width: 100%;
     color: var(--primary);
@@ -468,8 +476,8 @@ table.movie-night td {
 .season-divider {
     width: 100%;
     padding: 16px 12px;
-    border-top: 1px dashed var(--border);
-    border-bottom: 1px dashed var(--border);
+    border-top: 1px dashed color-mix(in srgb, var(--secondary) 50%, transparent);
+    border-bottom: 1px dashed color-mix(in srgb, var(--secondary) 50%, transparent);
     text-align: center;
 }
 
