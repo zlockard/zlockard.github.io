@@ -44,15 +44,15 @@
 {{- $paginator := .Paginate $pages }}
 
 {{- $term := .Data.Term }}
-{{- range $index, $page := $paginator.Pages }}
+{{- range $paginator.Pages }}
 
 {{- $class := "post-entry" }}
 
-{{- $user_preferred := site.Params.disableSpecial1stPost }}
-{{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
-{{- $class = "first-entry" }}
-{{- else if $term }}
-{{- $class = "post-entry tag-entry" }}
+{{- if eq .Params.hidebox true }}
+{{- $class = printf "%s post-entry-unboxed" $class }}
+{{- end }}
+{{- if $term }}
+{{- $class = printf "%s tag-entry" $class }}
 {{- end }}
 
 <article class="{{ $class }}">

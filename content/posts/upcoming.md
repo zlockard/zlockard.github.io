@@ -4,6 +4,7 @@ date = 2024-05-14T23:19:05-07:00
 draft = true
 weight = 1
 hideMeta = true
+hideBox = true
 +++
 {{<rawhtml>}}
 <div class="movie-attrib">

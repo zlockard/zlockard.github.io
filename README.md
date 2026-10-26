@@ -26,6 +26,20 @@ The `event` container takes no title or type parameters. Titles belong to its
 content objects: use the optional `title` on `party` for a party heading, or
 the existing `title` on `moviesummary` for a movie name.
 
+## Post boxes
+
+All posts use the same boxed style in listings, including the first post on the
+home page. To remove the box for an individual post, add this to its front matter:
+
+```toml
+hideBox = true
+```
+
+This removes the background, visible border, rounded corners, and press animation
+in home, posts, and category/tag listings, including paginated pages. Padding,
+alignment, and typography stay consistent with boxed posts. Omit `hideBox` or
+set it to `false` to keep the normal box. Individual post pages are unaffected.
+
 ## Parties
 
 A `party` contains an optional title and a Markdown description. Its title,
