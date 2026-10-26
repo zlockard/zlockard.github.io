@@ -10,7 +10,7 @@
 <meta name="description" content="Posts - Zac&#39;s Summer Movie Night">
 <meta name="author" content="">
 <link rel="canonical" href="https://zac.events/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=3" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=4" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://zac.events/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://zac.events/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://zac.events/favicon-32x32.png">
@@ -96,43 +96,6 @@
     }
 
 </script>
-<script>
-    function handleLayout() {
-        if (window.innerWidth < 1024) {
-            [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-object').style.display='block';
-        } else {
-            [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-object').style.display='table-cell';
-        }
-    }
-
-    function handleTrailor() {
-        var height;
-        var width;
-
-        if (window.innerWidth >= 560) {
-            width = 560;
-        } else {
-            width = Math.round(window.innerWidth *.9);
-        }
-
-        height = Math.round(width * .5625);
-
-        [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-clip').style.width = width + "px";
-        [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-clip').style.height = height + "px";
-    }
-
-    function resizeHandler() {
-        handleLayout();
-        handleTrailor();
-    };
-
-    
-    window.addEventListener('resize', resizeHandler);
-
-    
-    resizeHandler();
-</script>
-
 <header class="header">
     <nav class="nav">
         <div class="logo">
@@ -164,32 +127,65 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+
             </div>
         </div>
         <ul id="menu">
         </ul>
     </nav>
 </header>
-<main class="main"> 
+<main class="main">
 <header class="page-header">
   <h1>
     Posts
   </h1>
 </header>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
-    <div class="movie-night-date-box">
-        <div class="movie-night-date">Saturday, October 17th (7:30PM)</div>
+    <div class="event-date-box">
+        <div class="event-date">Saturday, October 31st (8:00PM)</div>
     </div>
   </header>
   <div class="entry-content">
-    <p><p>
-<div>
-<hr>
+    <div class="event">
+  <hr>
+  <div class="event-body">
+    
+<table class="movie-night party">
+<tr>
+<td valign="top" class="movie-object">
+  <div class="movie-name text-orange-outline">Halloween Party!</div>
+  <div class="movie-summary">
+    <p>Halloween party night! Come enjoy drinks, snacks, and a good time. At 9 we&rsquo;ll watch one (good) movie. It&rsquo;s not a costume party, but don&rsquo;t let me stop you.</p>
+
+  </div>
+</td>
+</tr>
+</table>
+
+
+  </div>
+</div>
+
+
+  </div>
+  <footer class="entry-footer"><span title='2026-10-31 00:15:57 -0700 PDT'>October 31, 2026</span></footer>
+</article>
+
+<article class="post-entry">
+  <header class="entry-header">
+    <div class="event-date-box">
+        <div class="event-date">Saturday, October 17th (7:30PM)</div>
+    </div>
+  </header>
+  <div class="entry-content">
+    <div class="event">
+  <hr>
+  <div class="event-body">
+    
+
 <table class="movie-night">
-
-
 <tr>
 
 
@@ -216,7 +212,9 @@ Soon the countryside is under attack by a giant demon that looks like someone de
 </td>
 
 </tr>
+</table>
 
+<table class="movie-night">
 <tr>
 
 
@@ -243,28 +241,29 @@ After inheriting decades of unresolved family trauma, Cory does the sensible thi
 </td>
 
 </tr>
-
 </table>
-</div>m</p>
-</p>
+
+  </div>
+</div>
+
+
   </div>
   <footer class="entry-footer"><span title='2026-10-17 00:15:57 -0700 PDT'>October 17, 2026</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
-    <div class="movie-night-date-box">
-        <div class="movie-night-date">Saturday, October 3rd (7:30PM)</div>
+    <div class="event-date-box">
+        <div class="event-date">Saturday, October 3rd (7:30PM)</div>
     </div>
   </header>
   <div class="entry-content">
-    <p><p>
-<div>
-<hr>
+    <div class="event">
+  <hr>
+  <div class="event-body">
+    
+
 <table class="movie-night">
-
-
 <tr>
 
 
@@ -291,7 +290,9 @@ A Brooklyn liquor store discovers a forgotten bottle of bargain booze and asks t
 </td>
 
 </tr>
+</table>
 
+<table class="movie-night">
 <tr>
 
 
@@ -318,28 +319,29 @@ Sgt. Kabukiman N.Y.P.D. is basically what happens when someone asks, "What if Ba
 </td>
 
 </tr>
-
 </table>
-</div>m</p>
-</p>
+
+  </div>
+</div>
+
+
   </div>
   <footer class="entry-footer"><span title='2026-10-03 00:15:57 -0700 PDT'>October 3, 2026</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
-    <div class="movie-night-date-box">
-        <div class="movie-night-date">Saturday, September 19th (7:30PM)</div>
+    <div class="event-date-box">
+        <div class="event-date">Saturday, September 19th (7:30PM)</div>
     </div>
   </header>
   <div class="entry-content">
-    <p><p>
-<div>
-<hr>
+    <div class="event">
+  <hr>
+  <div class="event-body">
+    
+
 <table class="movie-night">
-
-
 <tr>
 
 
@@ -367,7 +369,9 @@ He's battling a deeply personal medical condition that absolutely no doctor prep
 </td>
 
 </tr>
+</table>
 
+<table class="movie-night">
 <tr>
 
 
@@ -394,28 +398,29 @@ Guided by his ghost grandfather, ignored by every adult in sight, and armed with
 </td>
 
 </tr>
-
 </table>
-</div>m</p>
-</p>
+
+  </div>
+</div>
+
+
   </div>
   <footer class="entry-footer"><span title='2026-09-19 00:15:57 -0700 PDT'>September 19, 2026</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
-    <div class="movie-night-date-box">
-        <div class="movie-night-date">Saturday, September 5th (7:30PM)</div>
+    <div class="event-date-box">
+        <div class="event-date">Saturday, September 5th (7:30PM)</div>
     </div>
   </header>
   <div class="entry-content">
-    <p>
-<div>
-<hr>
+    <div class="event">
+  <hr>
+  <div class="event-body">
+    
+
 <table class="movie-night">
-
-
 <tr>
 
 
@@ -442,7 +447,9 @@ Three thrill-seeking go-go dancers and strippers kidnap a young girl and attempt
 </td>
 
 </tr>
+</table>
 
+<table class="movie-night">
 <tr>
 
 
@@ -469,29 +476,30 @@ A group of scientists have developed the Resonator, a machine which allows whoev
 </td>
 
 </tr>
-
 </table>
+
+  </div>
 </div>
-</p>
+
+
   </div>
   <footer class="entry-footer"><span title='2026-09-05 00:15:57 -0700 PDT'>September 5, 2026</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
-    <div class="movie-night-date-box">
-        <div class="movie-night-date">Saturday, August 15th (7:30PM)</div>
+    <div class="event-date-box">
+        <div class="event-date">Saturday, August 15th (7:30PM)</div>
         <div class="event-logo"><img src="https://zac.events/sportsploitation.png" style="object-fit: none; "></div>
     </div>
   </header>
   <div class="entry-content">
-    <p>
-<div>
-<hr>
+    <div class="event">
+  <hr>
+  <div class="event-body">
+    
+
 <table class="movie-night">
-
-
 <tr>
 
 
@@ -518,7 +526,9 @@ Three teenagers find a stash of walkie-talkies and accidentally upgrade their su
 </td>
 
 </tr>
+</table>
 
+<table class="movie-night">
 <tr>
 
 
@@ -545,29 +555,30 @@ A small-town skater rolls into Los Angeles expecting sun, tricks, and maybe a li
 </td>
 
 </tr>
-
 </table>
+
+  </div>
 </div>
-</p>
+
+
   </div>
   <footer class="entry-footer"><span title='2026-08-15 00:15:57 -0700 PDT'>August 15, 2026</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
-    <div class="movie-night-date-box">
-        <div class="movie-night-date">Saturday, July 25th (7:30PM)</div>
+    <div class="event-date-box">
+        <div class="event-date">Saturday, July 25th (7:30PM)</div>
         <div class="event-logo"><img src="https://zac.events/coreyyuen.png" style="object-fit: none; "></div>
     </div>
   </header>
   <div class="entry-content">
-    <p>
-<div>
-<hr>
+    <div class="event">
+  <hr>
+  <div class="event-body">
+    
+
 <table class="movie-night">
-
-
 <tr>
 
 
@@ -596,7 +607,9 @@ Unfortunately for the thieves, chasing it are Michelle Yeoh and Cynthia Rothrock
 </td>
 
 </tr>
+</table>
 
+<table class="movie-night">
 <tr>
 
 
@@ -623,29 +636,30 @@ A young woman named Yin dreams of leaving her modest village life for a chance t
 </td>
 
 </tr>
-
 </table>
+
+  </div>
 </div>
-</p>
+
+
   </div>
   <footer class="entry-footer"><span title='2026-07-25 00:15:57 -0700 PDT'>July 25, 2026</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
-    <div class="movie-night-date-box">
-        <div class="movie-night-date">Saturday, July 11th (7:30PM)</div>
+    <div class="event-date-box">
+        <div class="event-date">Saturday, July 11th (7:30PM)</div>
         <div class="event-logo"><img src="https://zac.events/andysideris.png" style="object-fit: none; "></div>
     </div>
   </header>
   <div class="entry-content">
-    <p>
-<div>
-<hr>
+    <div class="event">
+  <hr>
+  <div class="event-body">
+    
+
 <table class="movie-night">
-
-
 <tr>
 
 
@@ -673,7 +687,9 @@ Some beaches have sharks. This one has rocket launchers.
 </td>
 
 </tr>
+</table>
 
+<table class="movie-night">
 <tr>
 
 
@@ -701,28 +717,29 @@ The mission is classified. The mustache is not.
 </td>
 
 </tr>
-
 </table>
+
+  </div>
 </div>
-</p>
+
+
   </div>
   <footer class="entry-footer"><span title='2026-07-11 00:15:57 -0700 PDT'>July 11, 2026</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
-    <div class="movie-night-date-box">
-        <div class="movie-night-date">Saturday, June 27th (7:30PM)</div>
+    <div class="event-date-box">
+        <div class="event-date">Saturday, June 27th (7:30PM)</div>
     </div>
   </header>
   <div class="entry-content">
-    <p>
-<div>
-<hr>
+    <div class="event">
+  <hr>
+  <div class="event-body">
+    
+
 <table class="movie-night">
-
-
 <tr>
 
 
@@ -752,7 +769,9 @@ This time, the terrorists aren’t the scary part, it’s what happens when they
 </td>
 
 </tr>
+</table>
 
+<table class="movie-night">
 <tr>
 
 
@@ -780,43 +799,28 @@ International terrorists pick the most terrifying target imaginable: a random In
 </td>
 
 </tr>
-
 </table>
+
+  </div>
 </div>
-</p>
+
+
   </div>
   <footer class="entry-footer"><span title='2026-06-27 00:15:57 -0700 PDT'>June 27, 2026</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
-    <div class="movie-night-date-box">
+    <div class="event-date-box">
     </div>
   </header>
   <div class="entry-content">
-    <p>
+    
 
 <div class="movie-name" style="text-align:center">Previous Nights 2025</div>
 
-</p>
+
   </div>
-  
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <div class="movie-night-date-box">
-    </div>
-  </header>
-  <div class="entry-content">
-    <p>
-
-<div class="movie-name" style="text-align:center">Previous Nights 2026</div>
-
-</p>
-  </div>
-  
 </article>
 <footer class="page-footer">
   <nav class="pagination">

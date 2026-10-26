@@ -7,10 +7,10 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Upcoming Movie Nights 2026 | Zac&#39;s Summer Movie Night</title>
 <meta name="keywords" content="">
-<meta name="description" content="End of the season">
+<meta name="description" content="End of the movie season">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/upcoming/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=3" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=4" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -69,43 +69,6 @@
     }
 
 </script>
-<script>
-    function handleLayout() {
-        if (window.innerWidth < 1024) {
-            [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-object').style.display='block';
-        } else {
-            [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-object').style.display='table-cell';
-        }
-    }
-
-    function handleTrailor() {
-        var height;
-        var width;
-
-        if (window.innerWidth >= 560) {
-            width = 560;
-        } else {
-            width = Math.round(window.innerWidth *.9);
-        }
-
-        height = Math.round(width * .5625);
-
-        [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-clip').style.width = width + "px";
-        [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-clip').style.height = height + "px";
-    }
-
-    function resizeHandler() {
-        handleLayout();
-        handleTrailor();
-    };
-
-    
-    window.addEventListener('resize', resizeHandler);
-
-    
-    resizeHandler();
-</script>
-
 <header class="header">
     <nav class="nav">
         <div class="logo">
@@ -137,6 +100,7 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+
             </div>
         </div>
         <ul id="menu">
@@ -157,11 +121,11 @@
         </svg>
       </span>
     </h1>
-  </header> 
+  </header>
   <div class="post-content">
 
 <div class="movie-attrib">
-<!-- June 27th | July 11th | July 25th | August 15th | September 5th | September 19th | October 3rd | October 17th -->End of the season
+<!-- June 27th | July 11th | July 25th | August 15th | September 5th | September 19th | October 3rd | October 17th -->End of the movie season
 </div>
 
 
@@ -172,6 +136,7 @@
     <ul class="post-tags">
     </ul>
   </footer>
+
 </article>
     </main>
     

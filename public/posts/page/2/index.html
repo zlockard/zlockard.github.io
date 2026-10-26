@@ -10,7 +10,7 @@
 <meta name="description" content="Posts - Zac&#39;s Summer Movie Night">
 <meta name="author" content="">
 <link rel="canonical" href="https://zac.events/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=3" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=4" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://zac.events/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://zac.events/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://zac.events/favicon-32x32.png">
@@ -96,43 +96,6 @@
     }
 
 </script>
-<script>
-    function handleLayout() {
-        if (window.innerWidth < 1024) {
-            [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-object').style.display='block';
-        } else {
-            [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-object').style.display='table-cell';
-        }
-    }
-
-    function handleTrailor() {
-        var height;
-        var width;
-
-        if (window.innerWidth >= 560) {
-            width = 560;
-        } else {
-            width = Math.round(window.innerWidth *.9);
-        }
-
-        height = Math.round(width * .5625);
-
-        [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-clip').style.width = width + "px";
-        [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-clip').style.height = height + "px";
-    }
-
-    function resizeHandler() {
-        handleLayout();
-        handleTrailor();
-    };
-
-    
-    window.addEventListener('resize', resizeHandler);
-
-    
-    resizeHandler();
-</script>
-
 <header class="header">
     <nav class="nav">
         <div class="logo">
@@ -164,32 +127,47 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+
             </div>
         </div>
         <ul id="menu">
         </ul>
     </nav>
 </header>
-<main class="main"> 
+<main class="main">
 <header class="page-header">
   <h1>
     Posts
   </h1>
 </header>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
-    <div class="movie-night-date-box">
-        <div class="movie-night-date">Saturday, October 11th (7:30PM)</div>
+    <div class="event-date-box">
     </div>
   </header>
   <div class="entry-content">
-    <p>
-<div>
-<hr>
+    
+
+<div class="movie-name" style="text-align:center">Previous Nights 2026</div>
+
+
+  </div>
+</article>
+
+<article class="post-entry">
+  <header class="entry-header">
+    <div class="event-date-box">
+        <div class="event-date">Saturday, October 11th (7:30PM)</div>
+    </div>
+  </header>
+  <div class="entry-content">
+    <div class="event">
+  <hr>
+  <div class="event-body">
+    
+
 <table class="movie-night">
-
-
 <tr>
 
 
@@ -216,7 +194,9 @@ After an odd new medical student arrives on campus, a dedicated local and his gi
 </td>
 
 </tr>
+</table>
 
+<table class="movie-night">
 <tr>
 
 
@@ -244,28 +224,29 @@ A mother resorts to voodoo to get back at those who killed her son.
 </td>
 
 </tr>
-
 </table>
+
+  </div>
 </div>
-</p>
+
+
   </div>
   <footer class="entry-footer"><span title='2025-10-11 00:15:57 -0700 PDT'>October 11, 2025</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
-    <div class="movie-night-date-box">
-        <div class="movie-night-date">Saturday, September 27th (7:30PM)</div>
+    <div class="event-date-box">
+        <div class="event-date">Saturday, September 27th (7:30PM)</div>
     </div>
   </header>
   <div class="entry-content">
-    <p>
-<div>
-<hr>
+    <div class="event">
+  <hr>
+  <div class="event-body">
+    
+
 <table class="movie-night">
-
-
 <tr>
 
 
@@ -293,7 +274,9 @@ A group of young shopping mall employees stay behind for a late night party in o
 </td>
 
 </tr>
+</table>
 
+<table class="movie-night">
 <tr>
 
 
@@ -321,28 +304,29 @@ A deformed man living with his mother in the countryside roams the woods killing
 </td>
 
 </tr>
-
 </table>
+
+  </div>
 </div>
-</p>
+
+
   </div>
   <footer class="entry-footer"><span title='2025-09-27 00:15:57 -0700 PDT'>September 27, 2025</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
-    <div class="movie-night-date-box">
-        <div class="movie-night-date">Saturday, September 13th (7:30PM)</div>
+    <div class="event-date-box">
+        <div class="event-date">Saturday, September 13th (7:30PM)</div>
     </div>
   </header>
   <div class="entry-content">
-    <p>
-<div>
-<hr>
+    <div class="event">
+  <hr>
+  <div class="event-body">
+    
+
 <table class="movie-night">
-
-
 <tr>
 
 
@@ -369,7 +353,9 @@ A master thief and his sensual lover pull off heist after heist, all while an en
 </td>
 
 </tr>
+</table>
 
+<table class="movie-night">
 <tr>
 
 
@@ -397,28 +383,29 @@ In Hawaii, an undercover DEA agent and her civilian friend stumble upon a drug t
 </td>
 
 </tr>
-
 </table>
+
+  </div>
 </div>
-</p>
+
+
   </div>
   <footer class="entry-footer"><span title='2025-09-13 00:15:57 -0700 PDT'>September 13, 2025</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
-    <div class="movie-night-date-box">
-        <div class="movie-night-date">Saturday, August 30th (7:30PM)</div>
+    <div class="event-date-box">
+        <div class="event-date">Saturday, August 30th (7:30PM)</div>
     </div>
   </header>
   <div class="entry-content">
-    <p>
-<div>
-<hr>
+    <div class="event">
+  <hr>
+  <div class="event-body">
+    
+
 <table class="movie-night">
-
-
 <tr>
 
 
@@ -445,7 +432,9 @@ Rival groups in a skiing school do battle on and off the piste. One gang are ric
 </td>
 
 </tr>
+</table>
 
+<table class="movie-night">
 <tr>
 
 
@@ -472,28 +461,29 @@ The story of one young man, Cru Jones, who has the intensity and desire to win a
 </td>
 
 </tr>
-
 </table>
+
+  </div>
 </div>
-</p>
+
+
   </div>
   <footer class="entry-footer"><span title='2025-08-30 00:15:57 -0700 PDT'>August 30, 2025</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
-    <div class="movie-night-date-box">
-        <div class="movie-night-date">Saturday, August 16th (7:30PM)</div>
+    <div class="event-date-box">
+        <div class="event-date">Saturday, August 16th (7:30PM)</div>
     </div>
   </header>
   <div class="entry-content">
-    <p>
-<div>
-<hr>
+    <div class="event">
+  <hr>
+  <div class="event-body">
+    
+
 <table class="movie-night">
-
-
 <tr>
 
 
@@ -520,7 +510,9 @@ The diminutive Agent 00 must rescue a kidnapped scientist and stop a mysterious 
 </td>
 
 </tr>
+</table>
 
+<table class="movie-night">
 <tr>
 
 
@@ -546,28 +538,29 @@ In this spoof of spy films, CIA agent, Kelly, is in Rio De Janeiro spying on a w
 </td>
 
 </tr>
-
 </table>
+
+  </div>
 </div>
-</p>
+
+
   </div>
   <footer class="entry-footer"><span title='2025-08-16 00:15:57 -0700 PDT'>August 16, 2025</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
-    <div class="movie-night-date-box">
-        <div class="movie-night-date">Saturday, July 26th (7:30PM)</div>
+    <div class="event-date-box">
+        <div class="event-date">Saturday, July 26th (7:30PM)</div>
     </div>
   </header>
   <div class="entry-content">
-    <p>
-<div>
-<hr>
+    <div class="event">
+  <hr>
+  <div class="event-body">
+    
+
 <table class="movie-night">
-
-
 <tr>
 
 
@@ -594,7 +587,9 @@ After attackers kill her sister and nephew, a female psychologist becomes a defe
 </td>
 
 </tr>
+</table>
 
+<table class="movie-night">
 <tr>
 
 
@@ -621,28 +616,29 @@ A young woman named Yin dreams of leaving her modest village life for a chance t
 </td>
 
 </tr>
-
 </table>
+
+  </div>
 </div>
-</p>
+
+
   </div>
   <footer class="entry-footer"><span title='2025-07-26 00:15:57 -0700 PDT'>July 26, 2025</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
-    <div class="movie-night-date-box">
-        <div class="movie-night-date">Saturday, July 12th (7:30PM)</div>
+    <div class="event-date-box">
+        <div class="event-date">Saturday, July 12th (7:30PM)</div>
     </div>
   </header>
   <div class="entry-content">
-    <p>
-<div>
-<hr>
+    <div class="event">
+  <hr>
+  <div class="event-body">
+    
+
 <table class="movie-night">
-
-
 <tr>
 
 
@@ -669,7 +665,9 @@ One morning, a young man wakes to find that a small, disgusting creature has att
 </td>
 
 </tr>
+</table>
 
+<table class="movie-night">
 <tr>
 
 
@@ -696,28 +694,29 @@ Trapped inside a haunted house, a body builder must save himself from a gruesome
 </td>
 
 </tr>
-
 </table>
+
+  </div>
 </div>
-</p>
+
+
   </div>
   <footer class="entry-footer"><span title='2025-07-12 00:15:57 -0700 PDT'>July 12, 2025</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
-    <div class="movie-night-date-box">
-        <div class="movie-night-date">Saturday, June 28th (7:30PM)</div>
+    <div class="event-date-box">
+        <div class="event-date">Saturday, June 28th (7:30PM)</div>
     </div>
   </header>
   <div class="entry-content">
-    <p>
-<div>
-<hr>
+    <div class="event">
+  <hr>
+  <div class="event-body">
+    
+
 <table class="movie-night">
-
-
 <tr>
 
 
@@ -745,7 +744,9 @@ Two cops are fired after being setup by their corrupt boss, who gets appointed a
 </td>
 
 </tr>
+</table>
 
+<table class="movie-night">
 <tr>
 
 
@@ -773,107 +774,28 @@ Bendell's self-defense school is considered pretty good, but not in the league o
 </td>
 
 </tr>
-
 </table>
+
+  </div>
 </div>
-</p>
+
+
   </div>
   <footer class="entry-footer"><span title='2025-06-28 00:15:57 -0700 PDT'>June 28, 2025</span></footer>
-  
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry">
   <header class="entry-header">
-    <div class="movie-night-date-box">
+    <div class="event-date-box">
     </div>
   </header>
   <div class="entry-content">
-    <p>
+    
 
 <div class="movie-name" style="text-align:center">Previous Nights 2024</div>
 
-</p>
+
   </div>
-  
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <div class="movie-night-date-box">
-        <div class="movie-night-date">Saturday, October 12th (7:30PM)</div>
-    </div>
-  </header>
-  <div class="entry-content">
-    <p>
-<div>
-<hr>
-<table class="movie-night">
-
-
-<tr>
-
-
-<td valign="top" class="movie-object">
-<div class="movie-name">Alien Private Eye</div>
-<div class="movie-attrib">
-
-1989 | 95 mins
-<br/>Director: <span style="font-weight: normal">Vik Rubenfeld</span>
-<div>
-<a href="http://youtube.com/watch?v=6hHyn29O81k" target="_blank" rel="noopener noreferrer" class="link-button">BOTW</a>
-</div>
-
-</div>
-<div class="movie-summary" height="*">
-
-Aliens have long integrated themselves among the human population to the point that they are physically indistinguishable, except for their uniquely pointed ears; a physical trait they go to great lengths to hide or have surgically altered in order to fully blend into human society. Lemro, an alien, has found his calling on earth working as a private investigator.
-<br/><br/>
-One day a beautiful and mysterious woman visits his office and shares the story of a mysterious disc shaped artifact which has the potential to destroy the human race, begging for Lemro's help in preventing such devastation. Initially uncertain if he should take the case, Lemro quickly finds himself embroiled in an intergalactic drug smuggling ring hellbent on turning every human into a mindless junkie. Putting his investigative - and martial arts skills - to the ultimate test, Lemro begins a deadly fight to smash the drug smuggling operation while racing against time to unlock the secret of the mysterious disc before it is too late.
-
-</div>
-</td>
-
-<td class="movie-object movie-clip">
-<iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/gCvnM7Dvsy0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</td>
-
-</tr>
-
-<tr>
-
-
-<td valign="top" class="movie-object">
-<div class="movie-name">American Rickshaw</div>
-<div class="movie-attrib">
-
-1989 | 93 mins
-<br/>Director: <span style="font-weight: normal">Sergio Martino</span>
-<div>
-<a href="http://youtube.com/watch?v=-F0jtrV3RxI" target="_blank" rel="noopener noreferrer" class="link-button">BOTW</a>
-</div>
-
-</div>
-<div class="movie-summary" height="*">
-
-In a movie with way, way too much plot, a Miami manual rickshaw driver finds himself entangled in the murder of a man he just met. He becomes part of a good vs evil battle between an ancient Chinese witch and a televangelist.
-<br/><br/>
-Directed by Sergio Martino, director of such classics as 'Hands of Steel'
-
-</div>
-</td>
-
-<td class="movie-object movie-clip">
-<iframe width="100%" height="100%" style="object-fit:fill;" src="https://www.youtube.com/embed/HY0guCiwzBw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</td>
-
-</tr>
-
-</table>
-</div>
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-10-12 00:15:57 -0700 PDT'>October 12, 2024</span></footer>
-  
 </article>
 <footer class="page-footer">
   <nav class="pagination">

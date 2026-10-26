@@ -10,7 +10,7 @@
 <meta name="description" content="Slaughter Day1991 | 58 minsDirector: Brent CousinsIn the rural recesses of Hawaii, a pair of friends must fight an ancient evil force brought to life by an occult book that possesses a group of construction workers, turning them into murderous maniacs.Night of the Creeps1986 | 88 minsDirector: Fred DekkerIn 1959, an alien experiment crashes to earth and infects a fraternity member. They freeze the body, but in the modern day, two geeks pledging a fraternity accidentally thaw the corpse, which proceeds to infect the campus with parasites that transform their hosts into killer zombies.">
 <meta name="author" content="">
 <link rel="canonical" href="https://zac.events/posts/2022-10-15/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=3" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css?v=4" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://zac.events/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://zac.events/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://zac.events/favicon-32x32.png">
@@ -132,43 +132,6 @@
     }
 
 </script>
-<script>
-    function handleLayout() {
-        if (window.innerWidth < 1024) {
-            [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-object').style.display='block';
-        } else {
-            [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-object').style.display='table-cell';
-        }
-    }
-
-    function handleTrailor() {
-        var height;
-        var width;
-
-        if (window.innerWidth >= 560) {
-            width = 560;
-        } else {
-            width = Math.round(window.innerWidth *.9);
-        }
-
-        height = Math.round(width * .5625);
-
-        [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-clip').style.width = width + "px";
-        [...document.styleSheets[0].cssRules].find(x=> x.selectorText=='.movie-clip').style.height = height + "px";
-    }
-
-    function resizeHandler() {
-        handleLayout();
-        handleTrailor();
-    };
-
-    
-    window.addEventListener('resize', resizeHandler);
-
-    
-    resizeHandler();
-</script>
-
 <header class="header">
     <nav class="nav">
         <div class="logo">
@@ -200,6 +163,7 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+
             </div>
         </div>
         <ul id="menu">
@@ -214,16 +178,14 @@
     <h1 class="post-title entry-hint-parent">
       Saturday, October 15th (7:30PM)
     </h1>
-    <div class="post-meta"><span title='2022-10-15 21:47:06 -0700 PDT'>October 15, 2022</span>
+    <div class="post-meta"><span title='2022-10-15 21:47:06 -0700 PDT'>October 15, 2022</span></div>
+  </header>
+  <div class="post-content"><div class="event">
+  <hr>
+  <div class="event-body">
+    
 
-</div>
-  </header> 
-  <div class="post-content">
-<div>
-<hr>
 <table class="movie-night">
-
-
 <tr>
 
 
@@ -247,7 +209,9 @@ In the rural recesses of Hawaii, a pair of friends must fight an ancient evil fo
 </td>
 
 </tr>
+</table>
 
+<table class="movie-night">
 <tr>
 
 
@@ -271,9 +235,11 @@ In 1959, an alien experiment crashes to earth and infects a fraternity member. T
 </td>
 
 </tr>
-
 </table>
+
+  </div>
 </div>
+
 
 
   </div>
@@ -282,6 +248,7 @@ In 1959, an alien experiment crashes to earth and infects a fraternity member. T
     <ul class="post-tags">
     </ul>
   </footer>
+
 </article>
     </main>
     

@@ -21,13 +21,6 @@
     flex-wrap: wrap;
 }
 
-.post-meta .i18n_list li {
-    display: inline-flex;
-    list-style: none;
-    margin: auto 3px;
-    box-shadow: 0 1px 0 var(--secondary);
-}
-
 .breadcrumbs a {
     font-size: 16px;
 }
@@ -69,8 +62,7 @@
     font-size: 12px;
 }
 
-.post-content a,
-.toc a:hover {
+.post-content a {
     box-shadow: 0 1px 0;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
@@ -252,45 +244,6 @@
     font-weight: normal;
 }
 
-.toc {
-    margin: 0 2px 40px 2px;
-    border: 1px solid var(--border);
-    background: var(--code-bg);
-    border-radius: var(--radius);
-    padding: 0.4em;
-}
-
-.dark .toc {
-    background: var(--entry);
-}
-
-.toc details summary {
-    cursor: zoom-in;
-    margin-inline-start: 20px;
-}
-
-.toc details[open] summary {
-    cursor: zoom-out;
-}
-
-.toc .details {
-    display: inline;
-    font-weight: 500;
-}
-
-.toc .inner {
-    margin: 0 20px;
-    padding: 10px 20px;
-}
-
-.toc li ul {
-    margin-inline-start: var(--gap);
-}
-
-.toc summary:focus {
-    outline: 0;
-}
-
 .post-footer {
     margin-top: 56px;
 }
@@ -309,9 +262,7 @@
     display: inline-block;
 }
 
-.post-tags a,
-.share-buttons,
-.paginav {
+.post-tags a {
     border-radius: var(--radius);
     background: var(--code-bg);
     border: 1px solid var(--border);
@@ -326,26 +277,8 @@
     background: var(--code-bg);
 }
 
-.post-tags a:hover,
-.paginav a:hover {
+.post-tags a:hover {
     background: var(--border);
-}
-
-.share-buttons {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    overflow-x: auto;
-    gap: 10px;
-}
-
-.share-buttons li,
-.share-buttons a {
-    display: inline-flex;
-}
-
-.share-buttons a:not(:last-of-type) {
-    margin-inline-end: 12px;
 }
 
 h1:hover .anchor,
@@ -361,47 +294,6 @@ h6:hover .anchor {
     user-select: none;
 }
 
-.paginav {
-    display: flex;
-    line-height: 30px;
-}
-
-.paginav a {
-    padding-inline-start: 14px;
-    padding-inline-end: 14px;
-    border-radius: var(--radius);
-}
-
-.paginav .title {
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: small;
-    color: var(--secondary);
-}
-
-.paginav .prev,
-.paginav .next {
-    width: 50%;
-}
-
-.paginav span:hover:not(.title) {
-    box-shadow: 0 1px 0;
-}
-
-.paginav .next {
-    margin-inline-start: auto;
-    text-align: right;
-}
-
-[dir="rtl"] .paginav .next {
-    text-align: left;
-}
-
 h1>a>svg {
     display: inline;
-}
-
-img.in-text {
-    display: inline;
-    margin: auto;
 }
