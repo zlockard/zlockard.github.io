@@ -1,14 +1,22 @@
 ---
-description: "Use when creating, regenerating, or refining movie posters, VHS sleeve and cassette artwork, poster sizing, or poster styling for this site."
+description: "Use when creating, regenerating, or refining movie posters, raster PNG sleeve artwork, IMDb-inspired title lettering, VHS sleeves and cassette labels, poster sizing, or poster styling for this site."
 applyTo: "static/posters/**,layouts/shortcodes/moviesummary.html,themes/PaperMod2/assets/css/extended/custom.css"
 ---
 
 # Approved movie-poster design
 
-Use the current [Troll 2](../../static/posters/troll-2.svg) and
-[Bad Biology](../../static/posters/bad-biology.svg) artwork as the approved
-references for VHS construction and their individual color identities.
-Keep that construction consistent while varying the sleeve-front design.
+The approved default for **future poster generation** is the latest
+[2026 raster-sleeve collection](../../static/posters/prototypes/2026-comparison.html),
+including its IMDb-inspired title lettering and clean, outlined tape labels.
+These designs are installed at the canonical paths in `static/posters/`;
+the gallery retains archived previous covers for comparison.
+This supersedes the earlier abstract-only sleeve-art preference.
+
+Use [Rawhead Rex](../../static/posters/rawhead-rex-1989.svg) as
+a complete reference. The archived original
+[Troll 2](../../static/posters/prototypes/originals/troll-2.svg) and
+[Bad Biology](../../static/posters/prototypes/originals/bad-biology.svg) remain construction
+references, not the default illustration or lettering style for new covers.
 See the [authoring guide](../../README.md) for the optional `poster` parameter.
 
 ## Composition and proportions
@@ -29,50 +37,69 @@ See the [authoring guide](../../README.md) for the optional `poster` parameter.
   do not leave a notch, disconnected edge, square projection, or abrupt step.
   Preserve the approved top-right corner when refining the bottom.
 
-## Artwork and typography
+## Original raster sleeve artwork
 
-- Create original, full-color SVG illustrations, not reproductions of official
-  posters, logos, or actor likenesses. Keep all SVG resources local.
-- Include recognizable, non-graphic elements from the actual movie, rather
-  than only generic genre symbols. Reference examples include Nilbog, green
-  food, and vegetation for Troll 2; abnormal cells and chemical motifs for
-  Bad Biology.
-- Prefer the original restrained, abstract illustrations and symbolic movie
-  props over literal scenes, detailed characters, or photographic artwork.
-  The fuller scene-based revision was rejected in favor of the abstract covers.
-- Preserve existing illustration shapes when the request is only for layout,
-  color, or typography changes. Repositioning and uniform scaling are fine.
-- Use clean silhouettes, restrained detail, consistent strokes, aligned margins,
-  and bold, readable titles. Recenter artwork when changing the sleeve width.
-- Never stretch the lettering or illustrations with nonuniform scaling.
+- View the actual primary image on the movie's IMDb page before designing.
+  Understand its broad ideas, mood, palette, and lettering; do not infer them
+  from a search snippet or claim to have viewed an inaccessible image.
+- Draw a new composition from those concepts and the movie's settings or props.
+  Do not copy, trace, crop, or embed the official poster, its exact logo, or actor
+  likenesses. IMDb is a visual reference, not an asset source.
+- Prefer atmospheric, illustrated scenes with recognizable silhouettes, layered
+  landscapes or interiors, gradients, mist or lighting, and subtle pigment grain.
+  Keep the imagery non-graphic and readable at thumbnail size. Do not revert to
+  the old two-symbol abstract template or merely rasterize an old cover.
+- Use a regular PNG image for the sleeve-front art, including its title.
+  The approved sleeve PNGs are **421 x 760 pixels**, exactly twice the
+  210.5 x 380 SVG-unit front face. Keep that ratio; use at least this resolution
+  for comparable detail. This is not the full VHS composition's 2:3 ratio.
+- Keep the reusable sleeve bevel, black cassette, and ground shadow in SVG.
+  Embed the PNG as a data URI in an SVG `image` at x2, y30, width210.5, height380,
+  so the wrapper is self-contained when displayed through an HTML `img`.
+  Retain a companion PNG for editing. No remote image dependencies.
+- Coordinate the sleeve top with the front palette; the approved prototypes
+  lighten a sampled upper-front color with 18% white.
 - Do not include "Backyard Video" branding or host-written explanations.
   Movie titles, years, a small VHS mark, and relevant in-world signs are fine.
-- Preserve each reference's color identity: cream/forest green/burnt orange
-  for Troll 2, and deep purple/coral/turquoise/acid green for Bad Biology.
 
-## Sleeve-front variety
+## Reference-inspired title lettering
 
-- Do not give every movie the same title-above-art template. Mix artwork-first
-  covers with lower titles, boxed lower titles, angled headings, left- and
-  right-aligned titles, side-by-side motifs, and staggered title lines.
-- Preserve the established varied layouts when changing only colors or fonts.
-  Useful examples are [Savage Beach](../../static/posters/savage-beach-1989.svg),
-  [Rock and Roll Nightmare](../../static/posters/rock-and-roll-nightmare-1987.svg),
-  [Miami Connection](../../static/posters/miami-connection-1987.svg), and
-  [Alien Private Eye](../../static/posters/alien-private-eye-1989.svg).
-- Mix saturated and pastel colorways, warm and cool hues, and light and dark
-  sleeve backgrounds. Use coordinated, contrasting colors for titles and motifs;
-  do not merely recolor a small accent while leaving every sleeve alike.
-- Vary title typography with condensed display faces, bold serifs, monospace,
-  humanist or wide sans-serifs, heavy lettering, and italic treatments.
-  Use system-font stacks with appropriate generic fallbacks; do not introduce
-  font downloads or change the site's typography for poster styling.
+- Loosely match the IMDb reference's typographic character: weight, width,
+  serif or brush style, slant, capitalization, colors, outlines, shadows,
+  metallic effects, and restrained distressing. Exact logo matching is neither
+  necessary nor desired. Preserve the movie's title wording.
+- Choose movie-specific treatments instead of one shared display font.
+  Approved examples in the 2026 collection include red slab-serif Rawhead Rex,
+  gold stencil Terror Squad, white italic Savage Beach, pink script Yes Madam,
+  chrome-blue BMX Bandits, cyan/pink brush Thrashin, classic red/black serif
+  Faster, Pussycat! Kill! Kill!, and purple-on-yellow brush Street Trash.
+- Use available local fonts to create the raster lettering; do not download
+  fonts or change the website's typography. Verify that the drawing environment
+  actually renders the chosen face rather than silently substituting a fallback.
+  The rendered PNG must not depend on fonts being installed on visitors' devices.
+- Vary title placement and composition between movies: top and bottom titles,
+  stacked lines, modest angles, and tight title panels are all approved.
+  Mix coordinated warm/cool, light/dark, and saturated/pastel palettes.
 - Keep title text at least 4.5:1 contrast against the sleeve background.
-  Measure actual title bounds and refit font sizes, line spacing, and positions
-  for each font treatment. Check fallback fonts as well as the preferred face.
-  Do not stretch text, distort glyphs, or let titles touch borders or artwork.
-- Keep these variations on the sleeve. Preserve the black cassette, its labels,
-  and its approved geometry unless a cassette change is specifically requested.
+  A contrasting title panel is fine when needed. Measure actual glyph bounds,
+  including rotation, strokes, shadows, and descenders; refit size and spacing
+  without clipping or collisions. Never stretch letters or art nonuniformly.
+
+## Cassette labels and refinement scope
+
+- Preserve the approved cassette faces, reels, grip, label panel, and rounded
+  joins. Keep tape lettering separate from the illustrated sleeve title.
+- Use fitted vector outlines for the rotated tape-title lettering and VHS mark,
+  as in the 2026 prototypes, rather than font-dependent SVG text that can render
+  inconsistently. Preserve the full title and keep paths within the label panel.
+  The current title outline is centered at x262, y232.5 before a 90-degree
+  rotation, with measured width at most 139 and height at most 11 SVG units.
+- For typography-only requests, change only title lettering and its immediate
+  backdrop. Preserve all illustration pixels outside the title bands, palette,
+  sleeve construction, and corrected cassette labels.
+- Keep exploratory revisions separate and show current/new comparisons.
+  Approval of these style instructions is not permission to replace existing
+  live posters or change event-page poster references automatically.
 
 ## Display and verification
 
@@ -87,5 +114,11 @@ See the [authoring guide](../../README.md) for the optional `poster` parameter.
   edges, close sleeve fit, and clipping; loading successfully is not enough.
 - Review collection contact sheets to confirm meaningful layout, color, and
   font variety. Check title/art overlap and contrast, not just asset loading.
+- For collections, provide side-by-side current/new views with large, 84px,
+  and 72px previews on light and dark backgrounds, as in the 2026 gallery.
+- For lettering-only revisions, verify pixel equality outside the title bands
+  and unchanged cassette geometry and labels against a saved baseline.
+- Build Hugo into an isolated verification destination, not tracked `public`;
+  verify the generated assets match their sources and image references resolve.
 - Reuse the same poster for repeat screenings. Preserve movie metadata and
   unrelated site styles when refining artwork.

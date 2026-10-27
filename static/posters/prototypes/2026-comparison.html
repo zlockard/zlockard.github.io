@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026 VHS sleeves: previous vs approved</title>
+<style>
+:root { color-scheme:light; --bg:#edeee9; --panel:#fafbf7; --ink:#242d34; --muted:#58636d; --edge:#c4ccc7; --poster:210px; }
+body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.5 system-ui,sans-serif; }
+body.dark { color-scheme:dark; --bg:#161c25; --panel:#202936; --ink:#f3ecdb; --muted:#bdc8ce; --edge:#465361; }
+body[data-size="84"] { --poster:84px; }
+body[data-size="72"] { --poster:72px; }
+header { max-width:1100px; margin:auto; padding:24px; }
+h1 { margin:0 0 8px; font-size:clamp(24px,4vw,36px); line-height:1.2; }
+header p { max-width:78ch; color:var(--muted); }
+.controls { display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+button, select { font:inherit; border:2px solid var(--edge); border-radius:5px; padding:6px 12px; background:var(--panel); color:var(--ink); }
+button { cursor:pointer; }
+button:focus-visible, select:focus-visible, a:focus-visible { outline:3px solid #ad7940; outline-offset:3px; }
+main { max-width:1200px; margin:0 auto 32px; padding:0 20px; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+article { min-width:0; background:var(--panel); border:1px solid var(--edge); border-radius:8px; padding:18px; }
+h2 { font-size:19px; line-height:1.3; margin:0 0 4px; }
+time { color:var(--muted); font-size:13px; }
+.pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:12px; align-items:start; }
+figure { margin:0; min-width:0; text-align:center; }
+figure img { width:var(--poster); height:auto; max-width:100%; aspect-ratio:2/3; display:block; margin:auto; }
+figcaption { font-size:13px; color:var(--muted); padding-top:6px; }
+.concept { font-size:13px; color:var(--muted); margin:14px 0 0; }
+.links { font-size:13px; display:flex; gap:14px; flex-wrap:wrap; margin-top:6px; }
+a { color:inherit; text-underline-offset:3px; }
+@media(max-width:750px) { main { grid-template-columns:1fr; padding:0 12px; } header { padding:20px 16px; } article { padding:14px; } }
+@media(min-width:1000px) { body:not([data-size="full"]) main { grid-template-columns:repeat(4,minmax(0,1fr)); } }
+</style>
+<body data-size="full">
+<header>
+<h1>2026 VHS sleeve comparison</h1>
+<p>All 16 movies in screening order. Left: archived previous artwork. Right: the approved posters now used by the project's event pages, with original PNG sleeve paintings, IMDb-inspired title lettering, and outlined tape labels. Repeat screenings share the updated artwork.</p>
+<div class="controls">
+<button id="theme" type="button" aria-pressed="false">Dark background</button>
+<label for="size">Preview size</label>
+<select id="size"><option value="full">Large comparison</option><option value="84">84px desktop thumbnails</option><option value="72">72px mobile thumbnails</option></select>
+</div>
+</header>
+<main>
+<article data-movie="invasion-usa-1985">
+<h2>Invasion USA</h2>
+<time datetime="2026-06-27">2026-06-27</time>
+<div class="pair">
+<figure><a href="originals/invasion-usa-1985.svg"><img src="originals/invasion-usa-1985.svg" width="300" height="450" alt="Previous Invasion USA artwork"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="../invasion-usa-1985.svg"><img src="../invasion-usa-1985.svg" width="300" height="450" alt="Approved Invasion USA raster poster"></a><figcaption>Approved</figcaption></figure>
+</div>
+<p class="concept">A lone defender on a palm-lined causeway facing a burning city.</p>
+<div class="links"><a href="../invasion-usa-1985-sleeve.png">PNG sleeve</a><a href="https://www.imdb.com/title/tt0089348/" target="_blank" rel="noopener noreferrer">IMDb reference</a></div>
+</article>
+<article data-movie="terror-squad-1987">
+<h2>Terror Squad</h2>
+<time datetime="2026-06-27">2026-06-27</time>
+<div class="pair">
+<figure><a href="originals/terror-squad-1987.svg"><img src="originals/terror-squad-1987.svg" width="300" height="450" alt="Previous Terror Squad artwork"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="../terror-squad-1987.svg"><img src="../terror-squad-1987.svg" width="300" height="450" alt="Approved Terror Squad raster poster"></a><figcaption>Approved</figcaption></figure>
+</div>
+<p class="concept">An abandoned school bus, pursuit lights, and smoke over a small town.</p>
+<div class="links"><a href="../terror-squad-1987-sleeve.png">PNG sleeve</a><a href="https://www.imdb.com/title/tt0094125/" target="_blank" rel="noopener noreferrer">IMDb reference</a></div>
+</article>
+<article data-movie="savage-beach-1989">
+<h2>Savage Beach</h2>
+<time datetime="2026-07-11">2026-07-11</time>
+<div class="pair">
+<figure><a href="originals/savage-beach-1989.svg"><img src="originals/savage-beach-1989.svg" width="300" height="450" alt="Previous Savage Beach artwork"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="../savage-beach-1989.svg"><img src="../savage-beach-1989.svg" width="300" height="450" alt="Approved Savage Beach raster poster"></a><figcaption>Approved</figcaption></figure>
+</div>
+<p class="concept">A stranded cargo plane, a remote lagoon, and a half-buried gold chest.</p>
+<div class="links"><a href="../savage-beach-1989-sleeve.png">PNG sleeve</a><a href="https://www.imdb.com/title/tt0098257/" target="_blank" rel="noopener noreferrer">IMDb reference</a></div>
+</article>
+<article data-movie="malibu-express-1985">
+<h2>Malibu Express</h2>
+<time datetime="2026-07-11">2026-07-11</time>
+<div class="pair">
+<figure><a href="originals/malibu-express-1985.svg"><img src="originals/malibu-express-1985.svg" width="300" height="450" alt="Previous Malibu Express artwork"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="../malibu-express-1985.svg"><img src="../malibu-express-1985.svg" width="300" height="450" alt="Approved Malibu Express raster poster"></a><figcaption>Approved</figcaption></figure>
+</div>
+<p class="concept">A marina at sunset, a yacht, and a red sports car seen from above.</p>
+<div class="links"><a href="../malibu-express-1985-sleeve.png">PNG sleeve</a><a href="https://www.imdb.com/title/tt0089539/" target="_blank" rel="noopener noreferrer">IMDb reference</a></div>
+</article>
+<article data-movie="yes-madam-1985">
+<h2>Yes Madam</h2>
+<time datetime="2026-07-25">2026-07-25</time>
+<div class="pair">
+<figure><a href="originals/yes-madam-1985.svg"><img src="originals/yes-madam-1985.svg" width="300" height="450" alt="Previous Yes Madam artwork"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="../yes-madam-1985.svg"><img src="../yes-madam-1985.svg" width="300" height="450" alt="Approved Yes Madam raster poster"></a><figcaption>Approved</figcaption></figure>
+</div>
+<p class="concept">Two investigators cross a glass-filled office with stolen microfilm in the foreground.</p>
+<div class="links"><a href="../yes-madam-1985-sleeve.png">PNG sleeve</a><a href="https://www.imdb.com/title/tt0093229/" target="_blank" rel="noopener noreferrer">IMDb reference</a></div>
+</article>
+<article data-movie="women-on-the-run-1993">
+<h2>Women on the Run</h2>
+<time datetime="2026-07-25">2026-07-25</time>
+<div class="pair">
+<figure><a href="originals/women-on-the-run-1993.svg"><img src="originals/women-on-the-run-1993.svg" width="300" height="450" alt="Previous Women on the Run artwork"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="../women-on-the-run-1993.svg"><img src="../women-on-the-run-1993.svg" width="300" height="450" alt="Approved Women on the Run raster poster"></a><figcaption>Approved</figcaption></figure>
+</div>
+<p class="concept">Two fugitives move through a rain-swept neon alley beneath the city skyline.</p>
+<div class="links"><a href="../women-on-the-run-1993-sleeve.png">PNG sleeve</a><a href="https://www.imdb.com/title/tt0106553/" target="_blank" rel="noopener noreferrer">IMDb reference</a></div>
+</article>
+<article data-movie="bmx-bandits-1983">
+<h2>BMX Bandits</h2>
+<time datetime="2026-08-15">2026-08-15</time>
+<div class="pair">
+<figure><a href="originals/bmx-bandits-1983.svg"><img src="originals/bmx-bandits-1983.svg" width="300" height="450" alt="Previous BMX Bandits artwork"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="../bmx-bandits-1983.svg"><img src="../bmx-bandits-1983.svg" width="300" height="450" alt="Approved BMX Bandits raster poster"></a><figcaption>Approved</figcaption></figure>
+</div>
+<p class="concept">Three cyclists race along a curving concrete canal beside a walkie-talkie.</p>
+<div class="links"><a href="../bmx-bandits-1983-sleeve.png">PNG sleeve</a><a href="https://www.imdb.com/title/tt0085204/" target="_blank" rel="noopener noreferrer">IMDb reference</a></div>
+</article>
+<article data-movie="thrashin-1986">
+<h2>Thrashin</h2>
+<time datetime="2026-08-15">2026-08-15</time>
+<div class="pair">
+<figure><a href="originals/thrashin-1986.svg"><img src="originals/thrashin-1986.svg" width="300" height="450" alt="Previous Thrashin artwork"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="../thrashin-1986.svg"><img src="../thrashin-1986.svg" width="300" height="450" alt="Approved Thrashin raster poster"></a><figcaption>Approved</figcaption></figure>
+</div>
+<p class="concept">A skater hangs over an illuminated downhill road through Los Angeles.</p>
+<div class="links"><a href="../thrashin-1986-sleeve.png">PNG sleeve</a><a href="https://www.imdb.com/title/tt0092085/" target="_blank" rel="noopener noreferrer">IMDb reference</a></div>
+</article>
+<article data-movie="faster-pussycat-kill-kill-1965">
+<h2>Faster, Pussycat! Kill! Kill!</h2>
+<time datetime="2026-09-05">2026-09-05</time>
+<div class="pair">
+<figure><a href="originals/faster-pussycat-kill-kill-1965.svg"><img src="originals/faster-pussycat-kill-kill-1965.svg" width="300" height="450" alt="Previous Faster, Pussycat! Kill! Kill! artwork"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="../faster-pussycat-kill-kill-1965.svg"><img src="../faster-pussycat-kill-kill-1965.svg" width="300" height="450" alt="Approved Faster, Pussycat! Kill! Kill! raster poster"></a><figcaption>Approved</figcaption></figure>
+</div>
+<p class="concept">A desert highway, three dangerous silhouettes, and a parked sports car.</p>
+<div class="links"><a href="../faster-pussycat-kill-kill-1965-sleeve.png">PNG sleeve</a><a href="https://www.imdb.com/title/tt0059170/" target="_blank" rel="noopener noreferrer">IMDb reference</a></div>
+</article>
+<article data-movie="from-beyond-1986">
+<h2>From Beyond</h2>
+<time datetime="2026-09-05">2026-09-05</time>
+<div class="pair">
+<figure><a href="originals/from-beyond-1986.svg"><img src="originals/from-beyond-1986.svg" width="300" height="450" alt="Previous From Beyond artwork"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="../from-beyond-1986.svg"><img src="../from-beyond-1986.svg" width="300" height="450" alt="Approved From Beyond raster poster"></a><figcaption>Approved</figcaption></figure>
+</div>
+<p class="concept">An electromagnetic resonator opens a magenta portal filled with impossible eyes.</p>
+<div class="links"><a href="../from-beyond-1986-sleeve.png">PNG sleeve</a><a href="https://www.imdb.com/title/tt0091083/" target="_blank" rel="noopener noreferrer">IMDb reference</a></div>
+</article>
+<article data-movie="troll-2">
+<h2>Troll 2</h2>
+<time datetime="2026-09-19">2026-09-19</time>
+<div class="pair">
+<figure><a href="originals/troll-2.svg"><img src="originals/troll-2.svg" width="300" height="450" alt="Previous Troll 2 artwork"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="../troll-2.svg"><img src="../troll-2.svg" width="300" height="450" alt="Approved Troll 2 raster poster"></a><figcaption>Approved</figcaption></figure>
+</div>
+<p class="concept">A goblin shape hides in the forest behind a farmhouse and an ominous picnic.</p>
+<div class="links"><a href="../troll-2-sleeve.png">PNG sleeve</a><a href="https://www.imdb.com/title/tt0105643/" target="_blank" rel="noopener noreferrer">IMDb reference</a></div>
+</article>
+<article data-movie="bad-biology">
+<h2>Bad Biology</h2>
+<time datetime="2026-09-19">2026-09-19</time>
+<div class="pair">
+<figure><a href="originals/bad-biology.svg"><img src="originals/bad-biology.svg" width="300" height="450" alt="Previous Bad Biology artwork"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="../bad-biology.svg"><img src="../bad-biology.svg" width="300" height="450" alt="Approved Bad Biology raster poster"></a><figcaption>Approved</figcaption></figure>
+</div>
+<p class="concept">Two anonymous profiles face a suspended cell in a midnight laboratory.</p>
+<div class="links"><a href="../bad-biology-sleeve.png">PNG sleeve</a><a href="https://www.imdb.com/title/tt0974977/" target="_blank" rel="noopener noreferrer">IMDb reference</a></div>
+</article>
+<article data-movie="street-trash-1987">
+<h2>Street Trash</h2>
+<time datetime="2026-10-03">2026-10-03</time>
+<div class="pair">
+<figure><a href="originals/street-trash-1987.svg"><img src="originals/street-trash-1987.svg" width="300" height="450" alt="Previous Street Trash artwork"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="../street-trash-1987.svg"><img src="../street-trash-1987.svg" width="300" height="450" alt="Approved Street Trash raster poster"></a><figcaption>Approved</figcaption></figure>
+</div>
+<p class="concept">A discarded bottle throws unnatural color over a nocturnal junkyard.</p>
+<div class="links"><a href="../street-trash-1987-sleeve.png">PNG sleeve</a><a href="https://www.imdb.com/title/tt0094057/" target="_blank" rel="noopener noreferrer">IMDb reference</a></div>
+</article>
+<article data-movie="sgt-kabukiman-n-y-p-d-1990">
+<h2>Sgt. Kabukiman N.Y.P.D.</h2>
+<time datetime="2026-10-03">2026-10-03</time>
+<div class="pair">
+<figure><a href="originals/sgt-kabukiman-n-y-p-d-1990.svg"><img src="originals/sgt-kabukiman-n-y-p-d-1990.svg" width="300" height="450" alt="Previous Sgt. Kabukiman N.Y.P.D. artwork"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="../sgt-kabukiman-n-y-p-d-1990.svg"><img src="../sgt-kabukiman-n-y-p-d-1990.svg" width="300" height="450" alt="Approved Sgt. Kabukiman N.Y.P.D. raster poster"></a><figcaption>Approved</figcaption></figure>
+</div>
+<p class="concept">An original theatrical mask floats above a New York street, gold fabric, and a badge.</p>
+<div class="links"><a href="../sgt-kabukiman-n-y-p-d-1990-sleeve.png">PNG sleeve</a><a href="https://www.imdb.com/title/tt0117609/" target="_blank" rel="noopener noreferrer">IMDb reference</a></div>
+</article>
+<article data-movie="rawhead-rex-1989">
+<h2>Rawhead Rex</h2>
+<time datetime="2026-10-17">2026-10-17</time>
+<div class="pair">
+<figure><a href="originals/rawhead-rex-1989.svg"><img src="originals/rawhead-rex-1989.svg" width="300" height="450" alt="Previous Rawhead Rex artwork"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="../rawhead-rex-1989.svg"><img src="../rawhead-rex-1989.svg" width="300" height="450" alt="Approved Rawhead Rex raster poster"></a><figcaption>Approved</figcaption></figure>
+</div>
+<p class="concept">A storm-lit field, a cracked standing stone, and a looming ancient creature.</p>
+<div class="links"><a href="../rawhead-rex-1989-sleeve.png">PNG sleeve</a><a href="https://www.imdb.com/title/tt0091829/" target="_blank" rel="noopener noreferrer">IMDb reference</a></div>
+</article>
+<article data-movie="demon-wind-1990">
+<h2>Demon Wind</h2>
+<time datetime="2026-10-17">2026-10-17</time>
+<div class="pair">
+<figure><a href="originals/demon-wind-1990.svg"><img src="originals/demon-wind-1990.svg" width="300" height="450" alt="Previous Demon Wind artwork"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="../demon-wind-1990.svg"><img src="../demon-wind-1990.svg" width="300" height="450" alt="Approved Demon Wind raster poster"></a><figcaption>Approved</figcaption></figure>
+</div>
+<p class="concept">A farmhouse door stands in a field as ghostly hands spiral out of the storm.</p>
+<div class="links"><a href="../demon-wind-1990-sleeve.png">PNG sleeve</a><a href="https://www.imdb.com/title/tt0099401/" target="_blank" rel="noopener noreferrer">IMDb reference</a></div>
+</article>
+</main>
+<script>
+document.getElementById('theme').addEventListener('click', event => {
+  const dark=document.body.classList.toggle('dark');
+  event.currentTarget.textContent=dark?'Light background':'Dark background';
+  event.currentTarget.setAttribute('aria-pressed',String(dark));
+});
+document.getElementById('size').addEventListener('change', event => {
+  document.body.dataset.size=event.target.value;
+});
+</script>
+</body>
+</html>

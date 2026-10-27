@@ -113,20 +113,21 @@ affect this sequence. Year,
 runtime, and rating appear as small, bold-text chips with contrasting 2px borders,
 with the director on a separate line.
 
-All current movies use original, full-color SVG artwork in `static/posters/`,
-not official film posters. Repeat screenings share the same artwork. Each
+The collection uses original illustrated artwork in `static/posters/`,
+not official film posters. All 69 movies across 82 screenings have raster-painted
+sleeves embedded in self-contained SVG wrappers. Repeat screenings share the same
+artwork. Each
 design shows an illustrated case on the left and a VHS
 cassette partly slid out to the right, with vertically stacked reel windows.
 Sleeve fronts use an approximately 7.4:4.1 height-to-width ratio, excluding the
 perspective bevel.
-The covers use restrained, abstract, non-graphic movie-specific motifs. Layouts
-vary between artwork-first compositions, boxed lower titles, angled headings,
-left/right-aligned titles, paired motifs, and staggered lettering, while the VHS
-shape stays consistent. These do not use TMDB assets or require TMDB attribution.
-Sleeves also mix saturated and pastel palettes with condensed, serif, monospace,
-humanist, heavy sans-serif, and italic title treatments. Titles use system-font
-stacks with generic fallbacks, without downloading fonts or changing the site's
-typography.
+The covers use atmospheric, non-graphic, movie-specific scenes, varied palettes,
+and title treatments loosely inspired by each film's primary IMDb image. They
+do not copy official artwork, actor likenesses, or traced logos. The VHS shape
+stays consistent. Sleeve titles are rasterized and cassette labels use fitted
+vector outlines, so visitors do not need the fonts used to draw them. No fonts
+are downloaded and the site's typography is unchanged. These do not use TMDB
+assets or require TMDB attribution.
 To select artwork, add an optional `poster` to `moviesummary`. New movies without
 this parameter retain the automatic title-and-year mockup:
 
@@ -138,6 +139,21 @@ A short description of the movie.
 
 Put local poster files under `static/posters/`. Poster images are lazy-loaded,
 and the full movie title always remains readable beside the poster.
+
+The [complete comparison gallery](static/posters/prototypes/collection-comparison.html)
+shows archived previous covers beside the current illustrated sleeves for all
+69 movies. The [2026 comparison gallery](static/posters/prototypes/2026-comparison.html)
+still shows the original 16 approved designs, unchanged by the rest-of-collection
+rollout. This is the default style for future poster
+generation, documented in the
+[poster instructions](.github/instructions/movie-posters.instructions.md).
+The approved SVGs and companion `*-sleeve.png` files are in `static/posters/`;
+the previous covers are preserved under `static/posters/prototypes/originals/`.
+Existing event-page poster paths are unchanged. The designs embed PNG artwork in the
+existing SVG VHS construction and use outlined tape-label lettering. Their
+title treatments loosely echo the type styles and colors of the IMDb reference
+posters, using local fonts rather than traced logos or copied poster assets. The
+gallery includes large, 84px, and 72px views with light/dark backgrounds.
 
 The optional `movietag` image (for example, `movietag="/events/bestof.png"`)
 is centered directly above the summary text, independently of the poster and
