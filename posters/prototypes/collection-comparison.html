@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Complete VHS collection: previous vs current</title>
+<style>
+:root { color-scheme:light; --bg:#edeee9; --panel:#fafbf7; --ink:#242d34; --muted:#58636d; --edge:#c4ccc7; --poster:210px; }
+body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.5 system-ui,sans-serif; }
+body.dark { color-scheme:dark; --bg:#161c25; --panel:#202936; --ink:#f3ecdb; --muted:#bdc8ce; --edge:#465361; }
+body[data-size="84"] { --poster:84px; }
+body[data-size="72"] { --poster:72px; }
+header { max-width:1100px; margin:auto; padding:24px; }
+h1 { margin:0 0 8px; font-size:clamp(24px,4vw,36px); line-height:1.2; }
+header p { max-width:78ch; color:var(--muted); }
+.controls { display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+button, select { font:inherit; border:2px solid var(--edge); border-radius:5px; padding:6px 12px; background:var(--panel); color:var(--ink); }
+button { cursor:pointer; }
+button:focus-visible, select:focus-visible, a:focus-visible { outline:3px solid #ad7940; outline-offset:3px; }
+main { max-width:1200px; margin:0 auto 32px; padding:0 20px; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+article { min-width:0; background:var(--panel); border:1px solid var(--edge); border-radius:8px; padding:18px; }
+h2 { font-size:19px; line-height:1.3; margin:0 0 4px; }
+time { color:var(--muted); font-size:13px; }
+.pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:12px; align-items:start; }
+figure { margin:0; min-width:0; text-align:center; }
+figure img { width:var(--poster); height:auto; max-width:100%; aspect-ratio:2/3; display:block; margin:auto; }
+figcaption { font-size:13px; color:var(--muted); padding-top:6px; }
+.concept { font-size:13px; color:var(--muted); margin:14px 0 0; }
+.links { font-size:13px; display:flex; gap:14px; flex-wrap:wrap; margin-top:6px; }
+a { color:inherit; text-underline-offset:3px; }
+@media(max-width:750px) { main { grid-template-columns:1fr; padding:0 12px; } header { padding:20px 16px; } article { padding:14px; } }
+@media(min-width:1000px) { body:not([data-size="full"]) main { grid-template-columns:repeat(4,minmax(0,1fr)); } }
+</style>
+<body data-size="full">
+<header>
+<h1>Complete VHS collection comparison</h1>
+<p>All 69 movies, including the 53 newly illustrated sleeves and the unchanged 16 approved 2026 designs. Left: archived previous artwork. Right: the original illustrated sleeves now used on the event pages, with IMDb-inspired lettering and fitted vector tape labels. Choose a large view or actual desktop/mobile thumbnail sizes below.</p>
+<div class="controls">
+<button id="theme" type="button" aria-pressed="false">Dark background</button>
+<label for="size">Preview size</label>
+<select id="size"><option value="full">Large comparison</option><option value="84">84px desktop thumbnails</option><option value="72">72px mobile thumbnails</option></select>
+</div>
+</header>
+<main>
+<article data-movie="action-usa-1989">
+<h2>Action USA</h2>
+<time>1989</time>
+<div class="pair">
+<figure><img src="originals/action-usa-1989.svg" alt="Action USA: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../action-usa-1989.svg" alt="Action USA: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A stunt car leaps from an elevated freeway through a Texas city at sunset.</p>
+<div class="links"><a href="../action-usa-1989.svg">Complete VHS artwork</a><a href="../action-usa-1989-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="alien-private-eye-1989">
+<h2>Alien Private Eye</h2>
+<time>1989</time>
+<div class="pair">
+<figure><img src="originals/alien-private-eye-1989.svg" alt="Alien Private Eye: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../alien-private-eye-1989.svg" alt="Alien Private Eye: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An anonymous fedora-wearing detective follows an electric-blue trail toward a rooftop transmitter.</p>
+<div class="links"><a href="../alien-private-eye-1989.svg">Complete VHS artwork</a><a href="../alien-private-eye-1989-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="american-rickshaw-1989">
+<h2>American Rickshaw</h2>
+<time>1989</time>
+<div class="pair">
+<figure><img src="originals/american-rickshaw-1989.svg" alt="American Rickshaw: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../american-rickshaw-1989.svg" alt="American Rickshaw: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An empty rickshaw crosses a wet neon waterfront beneath a floating jade charm.</p>
+<div class="links"><a href="../american-rickshaw-1989.svg">Complete VHS artwork</a><a href="../american-rickshaw-1989-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="attack-of-the-beast-creatures-1985">
+<h2>Attack of the Beast Creatures</h2>
+<time>1985</time>
+<div class="pair">
+<figure><img src="originals/attack-of-the-beast-creatures-1985.svg" alt="Attack of the Beast Creatures: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../attack-of-the-beast-creatures-1985.svg" alt="Attack of the Beast Creatures: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">Small red-eyed island creatures watch castaways beside a wrecked lifeboat.</p>
+<div class="links"><a href="../attack-of-the-beast-creatures-1985.svg">Complete VHS artwork</a><a href="../attack-of-the-beast-creatures-1985-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="bad-biology">
+<h2>Bad Biology</h2>
+<time>2008</time>
+<div class="pair">
+<figure><img src="originals/bad-biology.svg" alt="Bad Biology: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../bad-biology.svg" alt="Bad Biology: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An original raster sleeve with a black VHS tape partly pulled out to the right. Two anonymous profiles face a suspended cell in a midnight laboratory.</p>
+<div class="links"><a href="../bad-biology.svg">Complete VHS artwork</a><a href="../bad-biology-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="basket-case-1982">
+<h2>Basket Case</h2>
+<time>1982</time>
+<div class="pair">
+<figure><img src="originals/basket-case-1982.svg" alt="Basket Case: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../basket-case-1982.svg" alt="Basket Case: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A wicker basket opens in a narrow hotel corridor, revealing two watchful eyes.</p>
+<div class="links"><a href="../basket-case-1982.svg">Complete VHS artwork</a><a href="../basket-case-1982-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="black-roses-1988">
+<h2>Black Roses</h2>
+<time>1988</time>
+<div class="pair">
+<figure><img src="originals/black-roses-1988.svg" alt="Black Roses: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../black-roses-1988.svg" alt="Black Roses: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A rose-covered electric guitar rises from a deserted stage in violet mist.</p>
+<div class="links"><a href="../black-roses-1988.svg">Complete VHS artwork</a><a href="../black-roses-1988-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="bloody-muscle-body-builder-in-hell-1995">
+<h2>Bloody Muscle Body Builder In Hell</h2>
+<time>1995</time>
+<div class="pair">
+<figure><img src="originals/bloody-muscle-body-builder-in-hell-1995.svg" alt="Bloody Muscle Body Builder In Hell: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../bloody-muscle-body-builder-in-hell-1995.svg" alt="Bloody Muscle Body Builder In Hell: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A lone strongman faces spectral hands in a ruined Japanese house.</p>
+<div class="links"><a href="../bloody-muscle-body-builder-in-hell-1995.svg">Complete VHS artwork</a><a href="../bloody-muscle-body-builder-in-hell-1995-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="bmx-bandits-1983">
+<h2>BMX Bandits</h2>
+<time>1983</time>
+<div class="pair">
+<figure><img src="originals/bmx-bandits-1983.svg" alt="BMX Bandits: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../bmx-bandits-1983.svg" alt="BMX Bandits: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An original raster sleeve with a black VHS tape partly pulled out to the right. Three cyclists race along a curving concrete canal beside a walkie-talkie.</p>
+<div class="links"><a href="../bmx-bandits-1983.svg">Complete VHS artwork</a><a href="../bmx-bandits-1983-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="brain-damage-1988">
+<h2>Brain Damage</h2>
+<time>1988</time>
+<div class="pair">
+<figure><img src="originals/brain-damage-1988.svg" alt="Brain Damage: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../brain-damage-1988.svg" alt="Brain Damage: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A glowing blue parasite coils beside a discarded syringe on a subway platform.</p>
+<div class="links"><a href="../brain-damage-1988.svg">Complete VHS artwork</a><a href="../brain-damage-1988-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="carnosaur-2-1995">
+<h2>Carnosaur 2</h2>
+<time>1995</time>
+<div class="pair">
+<figure><img src="originals/carnosaur-2-1995.svg" alt="Carnosaur 2: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../carnosaur-2-1995.svg" alt="Carnosaur 2: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A dinosaur silhouette looms between steam pipes in an underground industrial facility.</p>
+<div class="links"><a href="../carnosaur-2-1995.svg">Complete VHS artwork</a><a href="../carnosaur-2-1995-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="china-o-brien-1990">
+<h2>China O&#39;Brien</h2>
+<time>1990</time>
+<div class="pair">
+<figure><img src="originals/china-o-brien-1990.svg" alt="China O&#39;Brien: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../china-o-brien-1990.svg" alt="China O&#39;Brien: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A martial artist stands at the end of a rain-darkened main street beneath mountain ridges.</p>
+<div class="links"><a href="../china-o-brien-1990.svg">Complete VHS artwork</a><a href="../china-o-brien-1990-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="china-o-brien-2-1990">
+<h2>China O&#39;Brien 2</h2>
+<time>1990</time>
+<div class="pair">
+<figure><img src="originals/china-o-brien-2-1990.svg" alt="China O&#39;Brien 2: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../china-o-brien-2-1990.svg" alt="China O&#39;Brien 2: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">Two defenders meet on a timber bridge over a moonlit mountain river.</p>
+<div class="links"><a href="../china-o-brien-2-1990.svg">Complete VHS artwork</a><a href="../china-o-brien-2-1990-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="chopping-mall-1986">
+<h2>Chopping Mall</h2>
+<time>1986</time>
+<div class="pair">
+<figure><img src="originals/chopping-mall-1986.svg" alt="Chopping Mall: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../chopping-mall-1986.svg" alt="Chopping Mall: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A security robot patrols an empty shopping atrium, its laser reflected in the tiled floor.</p>
+<div class="links"><a href="../chopping-mall-1986.svg">Complete VHS artwork</a><a href="../chopping-mall-1986-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="danger-diabolik-1968">
+<h2>Danger: Diabolik</h2>
+<time>1968</time>
+<div class="pair">
+<figure><img src="originals/danger-diabolik-1968.svg" alt="Danger: Diabolik: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../danger-diabolik-1968.svg" alt="Danger: Diabolik: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A masked jewel thief escapes a cliffside vault in a sleek sports car.</p>
+<div class="links"><a href="../danger-diabolik-1968.svg">Complete VHS artwork</a><a href="../danger-diabolik-1968-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="demon-wind-1990">
+<h2>Demon Wind</h2>
+<time>1990</time>
+<div class="pair">
+<figure><img src="originals/demon-wind-1990.svg" alt="Demon Wind: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../demon-wind-1990.svg" alt="Demon Wind: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An original raster sleeve with a black VHS tape partly pulled out to the right. A farmhouse door stands in a field as ghostly hands spiral out of the storm.</p>
+<div class="links"><a href="../demon-wind-1990.svg">Complete VHS artwork</a><a href="../demon-wind-1990-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="devil-story-1986">
+<h2>Devil Story</h2>
+<time>1986</time>
+<div class="pair">
+<figure><img src="originals/devil-story-1986.svg" alt="Devil Story: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../devil-story-1986.svg" alt="Devil Story: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A shrouded figure walks between a derelict castle, a black horse, and an open ancient tomb.</p>
+<div class="links"><a href="../devil-story-1986.svg">Complete VHS artwork</a><a href="../devil-story-1986-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="don-t-panic-1987">
+<h2>Don&#39;t Panic</h2>
+<time>1987</time>
+<div class="pair">
+<figure><img src="originals/don-t-panic-1987.svg" alt="Don&#39;t Panic: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../don-t-panic-1987.svg" alt="Don&#39;t Panic: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An ornate dagger hovers above a bedroom as cold light pours through its doorway.</p>
+<div class="links"><a href="../don-t-panic-1987.svg">Complete VHS artwork</a><a href="../don-t-panic-1987-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="faster-pussycat-kill-kill-1965">
+<h2>Faster, Pussycat! Kill! Kill!</h2>
+<time>1965</time>
+<div class="pair">
+<figure><img src="originals/faster-pussycat-kill-kill-1965.svg" alt="Faster, Pussycat! Kill! Kill!: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../faster-pussycat-kill-kill-1965.svg" alt="Faster, Pussycat! Kill! Kill!: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An original raster sleeve with a black VHS tape partly pulled out to the right. A desert highway, three dangerous silhouettes, and a parked sports car.</p>
+<div class="links"><a href="../faster-pussycat-kill-kill-1965.svg">Complete VHS artwork</a><a href="../faster-pussycat-kill-kill-1965-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="for-your-height-only-1981">
+<h2>For Your Height Only</h2>
+<time>1981</time>
+<div class="pair">
+<figure><img src="originals/for-your-height-only-1981.svg" alt="For Your Height Only: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../for-your-height-only-1981.svg" alt="For Your Height Only: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A small secret agent races across a rooftop beside an enormous radio antenna.</p>
+<div class="links"><a href="../for-your-height-only-1981.svg">Complete VHS artwork</a><a href="../for-your-height-only-1981-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="frankenhooker-1990">
+<h2>Frankenhooker</h2>
+<time>1990</time>
+<div class="pair">
+<figure><img src="originals/frankenhooker-1990.svg" alt="Frankenhooker: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../frankenhooker-1990.svg" alt="Frankenhooker: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A violet-lit laboratory overlooks the city while a lightning coil illuminates a stitched mannequin.</p>
+<div class="links"><a href="../frankenhooker-1990.svg">Complete VHS artwork</a><a href="../frankenhooker-1990-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="from-beyond-1986">
+<h2>From Beyond</h2>
+<time>1986</time>
+<div class="pair">
+<figure><img src="originals/from-beyond-1986.svg" alt="From Beyond: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../from-beyond-1986.svg" alt="From Beyond: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An original raster sleeve with a black VHS tape partly pulled out to the right. An electromagnetic resonator opens a magenta portal filled with impossible eyes.</p>
+<div class="links"><a href="../from-beyond-1986.svg">Complete VHS artwork</a><a href="../from-beyond-1986-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="game-of-survival-1989">
+<h2>Game of Survival</h2>
+<time>1989</time>
+<div class="pair">
+<figure><img src="originals/game-of-survival-1989.svg" alt="Game of Survival: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../game-of-survival-1989.svg" alt="Game of Survival: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">Six alien beacons surround a lone traveler in an abandoned industrial arena.</p>
+<div class="links"><a href="../game-of-survival-1989.svg">Complete VHS artwork</a><a href="../game-of-survival-1989-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="geteven-1993">
+<h2>GETEVEN</h2>
+<time>1993</time>
+<div class="pair">
+<figure><img src="originals/geteven-1993.svg" alt="GETEVEN: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../geteven-1993.svg" alt="GETEVEN: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A champagne bottle and two glasses overlook a neon marina and a distant pursuit.</p>
+<div class="links"><a href="../geteven-1993.svg">Complete VHS artwork</a><a href="../geteven-1993-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="hands-of-steel-1986">
+<h2>Hands of Steel</h2>
+<time>1986</time>
+<div class="pair">
+<figure><img src="originals/hands-of-steel-1986.svg" alt="Hands of Steel: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../hands-of-steel-1986.svg" alt="Hands of Steel: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A mechanical hand emerges above a desert highway and a damaged roadside diner.</p>
+<div class="links"><a href="../hands-of-steel-1986.svg">Complete VHS artwork</a><a href="../hands-of-steel-1986-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="hard-ticket-to-hawaii-1987">
+<h2>Hard Ticket to Hawaii</h2>
+<time>1987</time>
+<div class="pair">
+<figure><img src="originals/hard-ticket-to-hawaii-1987.svg" alt="Hard Ticket to Hawaii: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../hard-ticket-to-hawaii-1987.svg" alt="Hard Ticket to Hawaii: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A seaplane skims a tropical cove while a coiled snake watches a diamond case on the sand.</p>
+<div class="links"><a href="../hard-ticket-to-hawaii-1987.svg">Complete VHS artwork</a><a href="../hard-ticket-to-hawaii-1987-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="heroin-busters-1977">
+<h2>Heroin Busters</h2>
+<time>1977</time>
+<div class="pair">
+<figure><img src="originals/heroin-busters-1977.svg" alt="Heroin Busters: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../heroin-busters-1977.svg" alt="Heroin Busters: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An undercover investigator follows a courier through railway arches toward a propeller plane.</p>
+<div class="links"><a href="../heroin-busters-1977.svg">Complete VHS artwork</a><a href="../heroin-busters-1977-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="hollow-gate-1988">
+<h2>Hollow Gate</h2>
+<time>1988</time>
+<div class="pair">
+<figure><img src="originals/hollow-gate-1988.svg" alt="Hollow Gate: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../hollow-gate-1988.svg" alt="Hollow Gate: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A locked wrought-iron gate frames a haunted house and a solitary glowing jack-o-lantern.</p>
+<div class="links"><a href="../hollow-gate-1988.svg">Complete VHS artwork</a><a href="../hollow-gate-1988-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="horror-high-1973">
+<h2>Horror High</h2>
+<time>1973</time>
+<div class="pair">
+<figure><img src="originals/horror-high-1973.svg" alt="Horror High: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../horror-high-1973.svg" alt="Horror High: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A chemistry flask casts a monstrous shadow through an empty school laboratory.</p>
+<div class="links"><a href="../horror-high-1973.svg">Complete VHS artwork</a><a href="../horror-high-1973-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="invasion-usa-1985">
+<h2>Invasion USA</h2>
+<time>1985</time>
+<div class="pair">
+<figure><img src="originals/invasion-usa-1985.svg" alt="Invasion USA: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../invasion-usa-1985.svg" alt="Invasion USA: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An original raster sleeve with a black VHS tape partly pulled out to the right. A lone defender on a palm-lined causeway facing a burning city.</p>
+<div class="links"><a href="../invasion-usa-1985.svg">Complete VHS artwork</a><a href="../invasion-usa-1985-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="kiss-the-girls-and-make-them-die-1966">
+<h2>Kiss the Girls and Make Them Die</h2>
+<time>1966</time>
+<div class="pair">
+<figure><img src="originals/kiss-the-girls-and-make-them-die-1966.svg" alt="Kiss the Girls and Make Them Die: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../kiss-the-girls-and-make-them-die-1966.svg" alt="Kiss the Girls and Make Them Die: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A cable car crosses Rio at sunset below an ominous satellite.</p>
+<div class="links"><a href="../kiss-the-girls-and-make-them-die-1966.svg">Complete VHS artwork</a><a href="../kiss-the-girls-and-make-them-die-1966-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="madman-1981">
+<h2>Madman</h2>
+<time>1981</time>
+<div class="pair">
+<figure><img src="originals/madman-1981.svg" alt="Madman: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../madman-1981.svg" alt="Madman: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An axe rests against a tree outside a deserted camp cabin in blue fog.</p>
+<div class="links"><a href="../madman-1981.svg">Complete VHS artwork</a><a href="../madman-1981-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="magic-crystal-1986">
+<h2>Magic Crystal</h2>
+<time>1986</time>
+<div class="pair">
+<figure><img src="originals/magic-crystal-1986.svg" alt="Magic Crystal: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../magic-crystal-1986.svg" alt="Magic Crystal: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A luminous green crystal floats above a ruined temple as two adventurers climb its stairway.</p>
+<div class="links"><a href="../magic-crystal-1986.svg">Complete VHS artwork</a><a href="../magic-crystal-1986-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="malibu-express-1985">
+<h2>Malibu Express</h2>
+<time>1985</time>
+<div class="pair">
+<figure><img src="originals/malibu-express-1985.svg" alt="Malibu Express: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../malibu-express-1985.svg" alt="Malibu Express: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An original raster sleeve with a black VHS tape partly pulled out to the right. A marina at sunset, a yacht, and a red sports car seen from above.</p>
+<div class="links"><a href="../malibu-express-1985.svg">Complete VHS artwork</a><a href="../malibu-express-1985-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="miami-connection-1987">
+<h2>Miami Connection</h2>
+<time>1987</time>
+<div class="pair">
+<figure><img src="originals/miami-connection-1987.svg" alt="Miami Connection: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../miami-connection-1987.svg" alt="Miami Connection: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A rock band plays beside a moonlit waterfront as motorcycles approach beneath the palms.</p>
+<div class="links"><a href="../miami-connection-1987.svg">Complete VHS artwork</a><a href="../miami-connection-1987-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="new-york-ninja-2021">
+<h2>New York Ninja</h2>
+<time>2021</time>
+<div class="pair">
+<figure><img src="originals/new-york-ninja-2021.svg" alt="New York Ninja: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../new-york-ninja-2021.svg" alt="New York Ninja: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A white-clad ninja watches an elevated train curl through a rain-soaked New York canyon.</p>
+<div class="links"><a href="../new-york-ninja-2021.svg">Complete VHS artwork</a><a href="../new-york-ninja-2021-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="night-of-the-creeps-1986">
+<h2>Night of the Creeps</h2>
+<time>1986</time>
+<div class="pair">
+<figure><img src="originals/night-of-the-creeps-1986.svg" alt="Night of the Creeps: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../night-of-the-creeps-1986.svg" alt="Night of the Creeps: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A college portico glows over a lawn crossed by luminous slugs and a fallen dance invitation.</p>
+<div class="links"><a href="../night-of-the-creeps-1986.svg">Complete VHS artwork</a><a href="../night-of-the-creeps-1986-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="petey-wheatstraw-1977">
+<h2>Petey Wheatstraw</h2>
+<time>1977</time>
+<div class="pair">
+<figure><img src="originals/petey-wheatstraw-1977.svg" alt="Petey Wheatstraw: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../petey-wheatstraw-1977.svg" alt="Petey Wheatstraw: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A sharply dressed comedian faces a red pitchfork in a fiery midnight theater.</p>
+<div class="links"><a href="../petey-wheatstraw-1977.svg">Complete VHS artwork</a><a href="../petey-wheatstraw-1977-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="primal-rage-1988">
+<h2>Primal Rage</h2>
+<time>1988</time>
+<div class="pair">
+<figure><img src="originals/primal-rage-1988.svg" alt="Primal Rage: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../primal-rage-1988.svg" alt="Primal Rage: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A broken laboratory cage overlooks a college campus beneath a gathering electrical storm.</p>
+<div class="links"><a href="../primal-rage-1988.svg">Complete VHS artwork</a><a href="../primal-rage-1988-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="rad-1986">
+<h2>Rad</h2>
+<time>1986</time>
+<div class="pair">
+<figure><img src="originals/rad-1986.svg" alt="Rad: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../rad-1986.svg" alt="Rad: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A BMX rider launches over a wooden race ramp high above a mountain town.</p>
+<div class="links"><a href="../rad-1986.svg">Complete VHS artwork</a><a href="../rad-1986-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="raw-force-1981">
+<h2>Raw Force</h2>
+<time>1981</time>
+<div class="pair">
+<figure><img src="originals/raw-force-1981.svg" alt="Raw Force: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../raw-force-1981.svg" alt="Raw Force: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A martial artist steps from a wrecked boat toward a misty island shrine guarded by spectral warriors.</p>
+<div class="links"><a href="../raw-force-1981.svg">Complete VHS artwork</a><a href="../raw-force-1981-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="rawhead-rex-1989">
+<h2>Rawhead Rex</h2>
+<time>1989</time>
+<div class="pair">
+<figure><img src="originals/rawhead-rex-1989.svg" alt="Rawhead Rex: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../rawhead-rex-1989.svg" alt="Rawhead Rex: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An original raster sleeve with a black VHS tape partly pulled out to the right. A storm-lit field, a cracked standing stone, and a looming ancient creature.</p>
+<div class="links"><a href="../rawhead-rex-1989.svg">Complete VHS artwork</a><a href="../rawhead-rex-1989-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="re-animator-1985">
+<h2>Re-Animator</h2>
+<time>1985</time>
+<div class="pair">
+<figure><img src="originals/re-animator-1985.svg" alt="Re-Animator: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../re-animator-1985.svg" alt="Re-Animator: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A glowing green syringe lights a deserted anatomy table and a wall of laboratory glassware.</p>
+<div class="links"><a href="../re-animator-1985.svg">Complete VHS artwork</a><a href="../re-animator-1985-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="righting-wrongs-1986">
+<h2>Righting Wrongs</h2>
+<time>1986</time>
+<div class="pair">
+<figure><img src="originals/righting-wrongs-1986.svg" alt="Righting Wrongs: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../righting-wrongs-1986.svg" alt="Righting Wrongs: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">Two martial artists clash above a courthouse stairway while a small plane banks overhead.</p>
+<div class="links"><a href="../righting-wrongs-1986.svg">Complete VHS artwork</a><a href="../righting-wrongs-1986-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="rock-and-roll-nightmare-1987">
+<h2>Rock and Roll Nightmare</h2>
+<time>1987</time>
+<div class="pair">
+<figure><img src="originals/rock-and-roll-nightmare-1987.svg" alt="Rock and Roll Nightmare: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../rock-and-roll-nightmare-1987.svg" alt="Rock and Roll Nightmare: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A guitarist stands inside a barn as demonic silhouettes curl through the stage smoke.</p>
+<div class="links"><a href="../rock-and-roll-nightmare-1987.svg">Complete VHS artwork</a><a href="../rock-and-roll-nightmare-1987-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="samurai-cop-1991">
+<h2>Samurai Cop</h2>
+<time>1991</time>
+<div class="pair">
+<figure><img src="originals/samurai-cop-1991.svg" alt="Samurai Cop: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../samurai-cop-1991.svg" alt="Samurai Cop: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A sword divides a Los Angeles rooftop, a police car, and a glowing sunset.</p>
+<div class="links"><a href="../samurai-cop-1991.svg">Complete VHS artwork</a><a href="../samurai-cop-1991-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="savage-beach-1989">
+<h2>Savage Beach</h2>
+<time>1989</time>
+<div class="pair">
+<figure><img src="originals/savage-beach-1989.svg" alt="Savage Beach: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../savage-beach-1989.svg" alt="Savage Beach: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An original raster sleeve with a black VHS tape partly pulled out to the right. A stranded cargo plane, a remote lagoon, and a half-buried gold chest.</p>
+<div class="links"><a href="../savage-beach-1989.svg">Complete VHS artwork</a><a href="../savage-beach-1989-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="sgt-kabukiman-n-y-p-d-1990">
+<h2>Sgt. Kabukiman N.Y.P.D.</h2>
+<time>1990</time>
+<div class="pair">
+<figure><img src="originals/sgt-kabukiman-n-y-p-d-1990.svg" alt="Sgt. Kabukiman N.Y.P.D.: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../sgt-kabukiman-n-y-p-d-1990.svg" alt="Sgt. Kabukiman N.Y.P.D.: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An original raster sleeve with a black VHS tape partly pulled out to the right. An original theatrical mask floats above a New York street, gold fabric, and a badge.</p>
+<div class="links"><a href="../sgt-kabukiman-n-y-p-d-1990.svg">Complete VHS artwork</a><a href="../sgt-kabukiman-n-y-p-d-1990-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="she-1984">
+<h2>She</h2>
+<time>1984</time>
+<div class="pair">
+<figure><img src="originals/she-1984.svg" alt="She: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../she-1984.svg" alt="She: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A warrior with a sword approaches a ruined arch in a wild post-apocalyptic landscape.</p>
+<div class="links"><a href="../she-1984.svg">Complete VHS artwork</a><a href="../she-1984-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="ski-school-1991">
+<h2>Ski School</h2>
+<time>1991</time>
+<div class="pair">
+<figure><img src="originals/ski-school-1991.svg" alt="Ski School: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../ski-school-1991.svg" alt="Ski School: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">Two skiers weave between colorful slalom gates beside a sunlit alpine lodge.</p>
+<div class="links"><a href="../ski-school-1991.svg">Complete VHS artwork</a><a href="../ski-school-1991-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="slaughter-day-1991">
+<h2>Slaughter Day</h2>
+<time>1991</time>
+<div class="pair">
+<figure><img src="originals/slaughter-day-1991.svg" alt="Slaughter Day: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../slaughter-day-1991.svg" alt="Slaughter Day: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An abandoned jeep and a mysterious book wait in a wind-tossed tropical forest.</p>
+<div class="links"><a href="../slaughter-day-1991.svg">Complete VHS artwork</a><a href="../slaughter-day-1991-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="slaughter-high-1986">
+<h2>Slaughter High</h2>
+<time>1986</time>
+<div class="pair">
+<figure><img src="originals/slaughter-high-1986.svg" alt="Slaughter High: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../slaughter-high-1986.svg" alt="Slaughter High: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A jester mask hangs on a locker beside an empty school corridor and a forgotten reunion banner.</p>
+<div class="links"><a href="../slaughter-high-1986.svg">Complete VHS artwork</a><a href="../slaughter-high-1986-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="sleepaway-camp-1983">
+<h2>Sleepaway Camp</h2>
+<time>1983</time>
+<div class="pair">
+<figure><img src="originals/sleepaway-camp-1983.svg" alt="Sleepaway Camp: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../sleepaway-camp-1983.svg" alt="Sleepaway Camp: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An abandoned sneaker hangs from a dock above a still lake and distant camp cabins.</p>
+<div class="links"><a href="../sleepaway-camp-1983.svg">Complete VHS artwork</a><a href="../sleepaway-camp-1983-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="spookies-1986">
+<h2>Spookies</h2>
+<time>1986</time>
+<div class="pair">
+<figure><img src="originals/spookies-1986.svg" alt="Spookies: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../spookies-1986.svg" alt="Spookies: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An old mansion rises beyond broken gravestones while spectral faces drift through its windows.</p>
+<div class="links"><a href="../spookies-1986.svg">Complete VHS artwork</a><a href="../spookies-1986-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="stone-cold-1991">
+<h2>Stone Cold</h2>
+<time>1991</time>
+<div class="pair">
+<figure><img src="originals/stone-cold-1991.svg" alt="Stone Cold: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../stone-cold-1991.svg" alt="Stone Cold: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A lone motorcycle heads toward a courthouse beneath ranks of shadowy riders.</p>
+<div class="links"><a href="../stone-cold-1991.svg">Complete VHS artwork</a><a href="../stone-cold-1991-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="street-trash-1987">
+<h2>Street Trash</h2>
+<time>1987</time>
+<div class="pair">
+<figure><img src="originals/street-trash-1987.svg" alt="Street Trash: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../street-trash-1987.svg" alt="Street Trash: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An original raster sleeve with a black VHS tape partly pulled out to the right. A discarded bottle throws unnatural color over a nocturnal junkyard.</p>
+<div class="links"><a href="../street-trash-1987.svg">Complete VHS artwork</a><a href="../street-trash-1987-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="sworn-to-justice-1996">
+<h2>Sworn to Justice</h2>
+<time>1996</time>
+<div class="pair">
+<figure><img src="originals/sworn-to-justice-1996.svg" alt="Sworn to Justice: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../sworn-to-justice-1996.svg" alt="Sworn to Justice: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An investigator stands before a fractured mirror, her silhouette echoed in warm city windows.</p>
+<div class="links"><a href="../sworn-to-justice-1996.svg">Complete VHS artwork</a><a href="../sworn-to-justice-1996-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="terror-squad-1987">
+<h2>Terror Squad</h2>
+<time>1987</time>
+<div class="pair">
+<figure><img src="originals/terror-squad-1987.svg" alt="Terror Squad: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../terror-squad-1987.svg" alt="Terror Squad: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An original raster sleeve with a black VHS tape partly pulled out to the right. An abandoned school bus, pursuit lights, and smoke over a small town.</p>
+<div class="links"><a href="../terror-squad-1987.svg">Complete VHS artwork</a><a href="../terror-squad-1987-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="the-human-tornado-1976">
+<h2>The Human Tornado</h2>
+<time>1976</time>
+<div class="pair">
+<figure><img src="originals/the-human-tornado-1976.svg" alt="The Human Tornado: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../the-human-tornado-1976.svg" alt="The Human Tornado: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A dazzlingly dressed performer rises above a city as a golden whirlwind lifts a hat and cane.</p>
+<div class="links"><a href="../the-human-tornado-1976.svg">Complete VHS artwork</a><a href="../the-human-tornado-1976-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="the-instructor-1981">
+<h2>The Instructor</h2>
+<time>1981</time>
+<div class="pair">
+<figure><img src="originals/the-instructor-1981.svg" alt="The Instructor: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../the-instructor-1981.svg" alt="The Instructor: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A martial artist trains among burning barrels, broken concrete, and an industrial crane.</p>
+<div class="links"><a href="../the-instructor-1981.svg">Complete VHS artwork</a><a href="../the-instructor-1981-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="thrashin-1986">
+<h2>Thrashin</h2>
+<time>1986</time>
+<div class="pair">
+<figure><img src="originals/thrashin-1986.svg" alt="Thrashin: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../thrashin-1986.svg" alt="Thrashin: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An original raster sleeve with a black VHS tape partly pulled out to the right. A skater hangs over an illuminated downhill road through Los Angeles.</p>
+<div class="links"><a href="../thrashin-1986.svg">Complete VHS artwork</a><a href="../thrashin-1986-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="troll-2">
+<h2>Troll 2</h2>
+<time>1990</time>
+<div class="pair">
+<figure><img src="originals/troll-2.svg" alt="Troll 2: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../troll-2.svg" alt="Troll 2: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An original raster sleeve with a black VHS tape partly pulled out to the right. A goblin shape hides in the forest behind a farmhouse and an ominous picnic.</p>
+<div class="links"><a href="../troll-2.svg">Complete VHS artwork</a><a href="../troll-2-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="twisted-pair-2018">
+<h2>Twisted Pair</h2>
+<time>2018</time>
+<div class="pair">
+<figure><img src="originals/twisted-pair-2018.svg" alt="Twisted Pair: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../twisted-pair-2018.svg" alt="Twisted Pair: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">Two identical anonymous silhouettes face a fractured digital skyline and a hovering surveillance drone.</p>
+<div class="links"><a href="../twisted-pair-2018.svg">Complete VHS artwork</a><a href="../twisted-pair-2018-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="undefeatable-1993">
+<h2>Undefeatable</h2>
+<time>1993</time>
+<div class="pair">
+<figure><img src="originals/undefeatable-1993.svg" alt="Undefeatable: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../undefeatable-1993.svg" alt="Undefeatable: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A fighter waits inside a deserted boxing gym beneath a single lamp and red brick arches.</p>
+<div class="links"><a href="../undefeatable-1993.svg">Complete VHS artwork</a><a href="../undefeatable-1993-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="uninvited-1987">
+<h2>Uninvited</h2>
+<time>1987</time>
+<div class="pair">
+<figure><img src="originals/uninvited-1987.svg" alt="Uninvited: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../uninvited-1987.svg" alt="Uninvited: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An ominous cat watches a luxury yacht from a pier while moonlight streaks the water.</p>
+<div class="links"><a href="../uninvited-1987.svg">Complete VHS artwork</a><a href="../uninvited-1987-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="velocipastor-2017">
+<h2>Velocipastor</h2>
+<time>2017</time>
+<div class="pair">
+<figure><img src="originals/velocipastor-2017.svg" alt="Velocipastor: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../velocipastor-2017.svg" alt="Velocipastor: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A dinosaur shadow stretches behind a priest on a church path under a volcanic sky.</p>
+<div class="links"><a href="../velocipastor-2017.svg">Complete VHS artwork</a><a href="../velocipastor-2017-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="women-on-the-run-1993">
+<h2>Women on the Run</h2>
+<time>1993</time>
+<div class="pair">
+<figure><img src="originals/women-on-the-run-1993.svg" alt="Women on the Run: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../women-on-the-run-1993.svg" alt="Women on the Run: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An original raster sleeve with a black VHS tape partly pulled out to the right. Two fugitives move through a rain-swept neon alley beneath the city skyline.</p>
+<div class="links"><a href="../women-on-the-run-1993.svg">Complete VHS artwork</a><a href="../women-on-the-run-1993-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="yes-madam-1985">
+<h2>Yes Madam</h2>
+<time>1985</time>
+<div class="pair">
+<figure><img src="originals/yes-madam-1985.svg" alt="Yes Madam: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../yes-madam-1985.svg" alt="Yes Madam: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">An original raster sleeve with a black VHS tape partly pulled out to the right. Two investigators cross a glass-filled office with stolen microfilm in the foreground.</p>
+<div class="links"><a href="../yes-madam-1985.svg">Complete VHS artwork</a><a href="../yes-madam-1985-sleeve.png">Sleeve PNG</a></div>
+</article>
+<article data-movie="zombie-nightmare-1987">
+<h2>Zombie Nightmare</h2>
+<time>1987</time>
+<div class="pair">
+<figure><img src="originals/zombie-nightmare-1987.svg" alt="Zombie Nightmare: previous abstract VHS cover" width="300" height="450"><figcaption>Previous</figcaption></figure>
+<figure><img src="../zombie-nightmare-1987.svg" alt="Zombie Nightmare: current illustrated VHS sleeve" width="300" height="450"><figcaption>Current</figcaption></figure>
+</div>
+<p class="concept">A lone figure rises beyond a graveyard as blue candles lead toward a moonlit mausoleum.</p>
+<div class="links"><a href="../zombie-nightmare-1987.svg">Complete VHS artwork</a><a href="../zombie-nightmare-1987-sleeve.png">Sleeve PNG</a></div>
+</article>
+</main>
+<script>
+document.getElementById('theme').addEventListener('click', event => {
+  const dark=document.body.classList.toggle('dark');
+  event.currentTarget.textContent=dark?'Light background':'Dark background';
+  event.currentTarget.setAttribute('aria-pressed',String(dark));
+});
+document.getElementById('size').addEventListener('change', event => {
+  document.body.dataset.size=event.target.value;
+});
+</script>
+</body>
+</html>
